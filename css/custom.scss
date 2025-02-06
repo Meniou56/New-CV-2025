@@ -1,10 +1,20 @@
-// Importer les variables et mixins Bootstrap
+// Variables
+$primary:       #658d96;
+$secondary:     #1b414a;
+
+// Importer des variables et mixins
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
-// Ajouter tes propres variables avant d'importer le reste
-$primary: #007bff; // Exemple de personnalisation
+/*Non modifié à suppr*/
+
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-900;
 
 // Importer les styles Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";

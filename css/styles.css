@@ -8,7 +8,7 @@
 }
 
 /* Applications des polices */
-h1, h3, h4, h6 {
+h1, h3, h4, h6, .alegreya {
     font-family: "Alegreya Sans", sans-serif;
 }
 
@@ -21,10 +21,20 @@ h5 {
 }
 
 /* Formes et couleurs */
+.BandeauBleu {
+    left: -56px;
+    margin: 36px 0;
+}
+h3 {
+    background-color: #4eb8d2;
+    border-radius: 0 7px 7px 0;
+    max-width: 200px;
+}
 .triangle {
-    display: inline-block;
-    height: 0;
-    width: 0;
-    border-top: 15px solid white;
-    border-left: 15px solid transparent;
-  }
+    border-top: 15px solid #658d96;
+    border-left: 8px solid transparent;
+    width: 7px;
+}
+.titre-marron {
+    color: #666666;
+}

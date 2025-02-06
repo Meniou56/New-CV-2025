@@ -4,18 +4,19 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="CV de Emmanuel Schmitt, apprenti développeur full-stack" />
+    <meta name="description" content="CV de Emmanuel Schmitt, apprenti développeur full stack" />
     <meta name="author" content="Emmanuel Schmitt" />
 
     <!--Titre-->
-    <title>Emmanuel Schmitt - Apprenti développeur web</title>
+    <title>Emmanuel Schmitt - Apprenti développeur Full Stack</title>
 
-    <!--Import Bootstrap CSS et votre CSS-->
+    <!--Import Bootstrap CSS et custom CSS-->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css" />
 
     <!--Import script JS-->
     <script src="script.js" defer></script>
+
 </head>
 
 <body>
@@ -25,132 +26,131 @@
         <div class="row">
             <!-- Colonne gauche (bandeau) -->
             <div class="col-12 col-md-4 p-3">
-                <section class="bg-primary text-light rounded-4 p-3 shadow" id="bloc-bandeau">
+                <section class="bg-primary shadow-lg text-light rounded-4 shadow" id="bloc-bandeau">
                     <!-- En-tête -->
-                    <header id="en-tete" class="text-center">
+                    <header id="en-tete" class="text-center p-3">
                         <!-- Photo -->
                         <img class="rounded-circle shadow w-75" src="Images/eschmitt.jpg" srcset="
-                  Images/eschmitt_large.webp 266w,
-                  Images/eschmitt_small.webp 125w
-                " sizes="(max-width: 768px) 80vw, 25vw" alt="Portrait d'Emmanuel Schmitt" />
+                        Images/eschmitt_large.webp 266w,
+                        mages/eschmitt_small.webp 125w" 
+                        sizes="(max-width: 768px) 80vw, 25vw" alt="Portrait d'Emmanuel Schmitt" />
 
                         <!-- Nom + Job -->
                         <div class="py-4">
                             <h1 class="fw-bold">Emmanuel Schmitt</h1>
-                            <h2 class="fw-bold">Développeur</h2>
+                            <h2 class="fw-bold">Développeur Full Stack</h2>
                         </div>
                     </header>
 
                     <!-- Informations personnelles -->
                     <div id="info_perso">
-                        <div class="bg-secondary">
+                        <div class="bg-secondary py-2 text-center">
                             <h4 class="fw-bold">Informations personnelles</h4>
                         </div>
-                        <div>
-                            <p class="fw-bold">Adresse</p>
+                        <div class="m-4">
+                            <p class="fw-bold fs-4 mb-0 mt-3 alegreya">Adresse</p>
                             <p>
                                 34 rue de la Fleurière<br />Résidence Rosa Alba<br />53000<br />Laval
                             </p>
 
-                            <p class="fw-bold">Téléphone</p>
+                            <p class="fw-bold fs-4 mb-0 mt-3 alegreya">Téléphone</p>
                             <p>+33 6 98 63 99 96</p>
 
-                            <p class="fw-bold">e-mail</p>
+                            <p class="fw-bold fs-4 mb-0 mt-3 alegreya">e-mail</p>
                             <a class="text-light text-decoration-none" href="mailto:emmanuelschmitt01@gmail.com"
                                 target="_blank" rel="noopener noreferrer">
                                 emmanuelschmitt01@gmail.com
                             </a>
 
-                            <p class="fw-bold">GitHub</p>
+                            <p class="fw-bold fs-4 mb-0 mt-3 alegreya">GitHub</p>
                             <a class="text-light text-decoration-none" href="https://github.com/Meniou56"
                                 target="_blank" rel="noopener noreferrer">
                                 Meniou56
                             </a>
 
-                            <p class="fw-bold">Permis</p>
+                            <p class="fw-bold fs-4 mb-0 mt-3 alegreya">Permis</p>
                             <p>Permis B/C/CE et motorisé</p>
                         </div>
                     </div>
 
                     <!-- Compétences -->
                     <div id="competences">
-                        <div class="bg-secondary">
+                        <div class="bg-secondary text-center py-2">
                             <h4 class="fw-bold">Compétences numériques</h4>
                         </div>
 
-                        <!-- Rubrique développement -->
-                        <h4 class="fw-bold">Développement</h4>
-                        <div class="row p-1">
-                            <div class="col-4">
-                                <img class="img-fluid" src="images/competences/html.png" alt="HTML" />
+                        <div class="m-4">
+                            <!-- Rubrique développement -->
+                            <h4 class="fw-bold">Développement</h4>
+                            <div class="row">
+                                <div class="col-4">
+                                    <img class="img-fluid" src="images/competences/html.png" alt="Logo HTML" />
+                                </div>
+                                <div class="col-4">
+                                    <img class="img-fluid" src="images/competences/css.png" alt="Logo CSS" />
+                                </div>
+                                <div class="col-4">
+                                    <img class="img-fluid" src="images/competences/JS.png" alt="Logo JavaScript" />
+                                </div>
                             </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="images/competences/css.png" alt="CSS" />
+                            <div class="row">
+                                <div class="col-4">
+                                    <img class="img-fluid" src="images/competences/php.png" alt="Logo php" />
+                                </div>
+                                <div class="col-4">
+                                    <img class="img-fluid" src="images/competences/git.png" alt="Logo git" />
+                                </div>
+                                <div class="col-4">
+                                    <img class="img-fluid" src="images/competences/github.png" alt="Logo GitHub" />
+                                </div>
                             </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="images/competences/JS.png" alt="JavaScript" />
+                            <!-- Rubrique maquettage -->
+                            <h4 class="fw-bold">Maquettage</h4>
+                            <div class="row">
+                                <div class="col-4">
+                                    <img class="img-fluid" src="images/competences/xd.png" alt="Logo Adobe XD" />
+                                </div>
+                                <div class="col-4">
+                                    <img class="img-fluid" src="images/competences/Figma.png" alt="Logo Figma" />
+                                </div>
+                                <div class="col-4">
+                                    <img class="img-fluid" src="images/competences/Id.png" alt="Logo Adobe InDesign" />
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-4">
-                                <img class="img-fluid" src="images/competences/php.png" alt="php" />
+                            <!-- Rubrique Visuels -->
+                            <h4 class="fw-bold">Visuels</h4>
+                            <div class="row">
+                                <div class="col-4">
+                                    <img class="img-fluid" src="images/competences/lr.png" alt="Logo Adobe Lightroom" />
+                                </div>
+                                <div class="col-4">
+                                    <img class="img-fluid" src="images/competences/ps.png" alt="Logo Adobe Photoshop" />
+                                </div>
+                                <div class="col-4">
+                                    <img class="img-fluid" src="images/competences/Ai.png" alt="Logo Adobe Illustrator" />
+                                </div>
                             </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="images/competences/git.png" alt="git" />
+                            <!-- Rubrique Autres -->
+                            <h4 class="fw-bold">Autres</h4>
+                            <div class="row">
+                                <div class="col-4">
+                                    <img class="img-fluid" src="images/competences/Pr.png" alt="Logo Adobe Première" />
+                                </div>
+                                <div class="col-4">
+                                    <img class="img-fluid" src="images/competences/WP.png" alt="Logo WordPress" />
+                                </div>
+                                <div class="col-4"></div>
                             </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="images/competences/github.png" alt="GitHub" />
-                            </div>
-                        </div>
-
-                        <!-- Rubrique maquettage -->
-                        <h4 class="fw-bold">Maquettage</h4>
-                        <div class="row">
-                            <div class="col-4">
-                                <img class="img-fluid" src="images/competences/xd.png" alt="Adobe XD" />
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="images/competences/Figma.png" alt="Figma" />
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="images/competences/Id.png" alt="Adobe InDesign" />
-                            </div>
-                        </div>
-
-                        <!-- Rubrique Visuels -->
-                        <h4 class="fw-bold">Visuels</h4>
-                        <div class="row">
-                            <div class="col-4">
-                                <img class="img-fluid" src="images/competences/lr.png" alt="Adobe Lightroom" />
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="images/competences/ps.png" alt="Adobe Photoshop" />
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="images/competences/Ai.png" alt="Adobe Illustrator" />
-                            </div>
-                        </div>
-
-                        <!-- Rubrique Autres -->
-                        <h4 class="fw-bold">Autres</h4>
-                        <div class="row">
-                            <div class="col-4">
-                                <img class="img-fluid" src="images/competences/Pr.png" alt="Adobe Première" />
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="images/competences/WP.png" alt="WordPress" />
-                            </div>
-                            <div class="col-4"></div>
                         </div>
                     </div>
 
                     <!-- Autres infos -->
                     <div id="autres">
-                        <div class="bg-secondary">
+                        <div class="bg-secondary text-center py-2">
                             <h4 class="fw-bold">Informations complémentaires</h4>
                         </div>
-                        <div class="container text-center">
-                            <div class="row">
+                        <div class="container">
+                            <div class="row m-4 text-center">
                                 <div class="col-6">
                                     <img class="img-fluid" src="images/autres/anglais.png" alt="anglais B1" />
                                     <p>Anglais niveau B1</p>
@@ -160,7 +160,7 @@
                                     <p>Goût pour les voyages</p>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row m-4 text-center">
                                 <div class="col-6">
                                     <img class="img-fluid" src="images/autres/sport.png" alt="Sport" />
                                     <p>Pratique sportive régulière</p>
@@ -177,10 +177,10 @@
 
             <!-- Colonne droite (corps du CV) -->
             <div class="col-12 col-md-8 p-3">
-                <main id="corps" class="p-3">
-                    <header id="EnTeteCorps" class="m-4">
-                        <h5 id="machineAecrire" class="display-5"></h5>
-                        <p>
+                <main id="corps" class="container m-auto">
+                    <header id="EnTeteCorps" class=" row m-4">
+                        <h5 id="machineAecrire" class="col-12 display-5"></h5>
+                        <p class="col-12">
                             Dès 2001, ces mots inauguraient mon aventure en programmation
                             avec Dark Basic, marquant le début d'une passion durable pour
                             l'informatique. Cette passion m'a conduit à réaliser divers
@@ -201,22 +201,22 @@
                     </header>
 
                     <!-- Bouton CTA mail -->
-                    <div class="text-center">
-                        <a href="mailto:emmanuelschmitt01@gmail.com" class="btn btn-primary m-4 px-4 py-2 shadow"
+                    <div class="text-center col-12">
+                        <a href="mailto:emmanuelschmitt01@gmail.com" class="btn btn-secondary m-4 px-4 py-2 shadow"
                             target="_blank" rel="noopener noreferrer" aria-label="Envoyer un e-mail à Emmanuel Schmitt">
                             emmanuelschmitt01@gmail.com
                         </a>
                     </div>
 
                     <!-- Bloc Formations -->
-                    <div class="shadow p-5 m-4 rounded-4">
-                        <div class="bg-secondary">
-                            <h3>Formations</h3>
-                            <div class="triangle"></div>
+                    <div class="col-12 shadow p-5 my-4 rounded-4">
+                        <div class="BandeauBleu position-relative d-flex flex-column">
+                            <h3 class="text-light px-4 py-2 shadow m-0">Formations</h3>
+                            <div class="triangle d-inline-block"></div>
                         </div>
-                        <h6>
-                            Développeur web (en cours), autoformation & MOOCs, 2023-2024 à
-                            Sarzeau (56)
+                        <h6 class="fs-4 titre-marron fw-bold">
+                            Développeur Full Stack, ESECAD & MOOCs, 2024-2025 à
+                            Laval (53)
                         </h6>
                         <p>
                             HTML, CSS & Sass, JavaScript, SQL, PHP. WordPress & ses plugins.
@@ -224,7 +224,7 @@
                             Illustrator. Git et GitHub. Gestion de projet en mode agile et
                             collaboratif. Marketing web, SEO et SEA. Certification Opquast.
                         </p>
-                        <h6>Photojournaliste, EMI-CFD, 2014-2015 à Paris (75)</h6>
+                        <h6 class="fs-4 titre-marron fw-bold">Photojournaliste, EMI-CFD, 2014-2015 à Paris (75)</h6>
                         <p>
                             Formation professionnelle à l’Ecole des métiers de
                             l’information, RNCP Niv.6 Adobe Lightroom, Photoshop, Final cut
@@ -233,7 +233,7 @@
                             reportage, studio, corporate, editing, traitement, vidéo avec
                             reflex, montage, projets multimédias audio, vidéo.
                         </p>
-                        <h6>Journaliste, IUT, 2007-2010 à Lannion (22)</h6>
+                        <h6 class="fs-4 titre-marron fw-bold">Journaliste, IUT, 2007-2010 à Lannion (22)</h6>
                         <p>
                             DUT puis Licence professionnelle, spécialisation presse
                             magazine. Rédacteur, secrétaire de rédaction, journaliste radio,
@@ -245,14 +245,14 @@
                     </div>
 
                     <!-- Bloc Expériences -->
-                    <div class="shadow p-5 m-4 rounded-4">
-                        <div class="bg-secondary">
-                            <h3>Expériences</h3>
-                            <div class="triangle"></div>
+                    <div class="col-12 shadow p-5 my-4 rounded-4">
+                        <div class="BandeauBleu position-relative d-flex flex-column">
+                            <h3 class="text-light px-4 py-2 shadow m-0">Expériences</h3>
+                            <div class="triangle d-inline-block"></div>
                         </div>
 
                         <!-- Informatique -->
-                        <h6>Informatique</h6>
+                        <h6 class="fs-4 titre-marron fw-bold">Informatique</h6>
                         <ul>
                             <li>
                                 Projet de développement d'un
@@ -290,7 +290,7 @@
                         </ul>
 
                         <!-- Médias -->
-                        <h6>Médias</h6>
+                        <h6 class="fs-4 titre-marron fw-bold">Médias</h6>
                         <ul>
                             <li>
                                 Photographe/Vidéaste de presse, corporate et événementiel
@@ -312,7 +312,7 @@
                         </ul>
 
                         <!-- Transport -->
-                        <h6>Transport</h6>
+                        <h6 class="fs-4 titre-marron fw-bold">Transport</h6>
                         <ul>
                             <li>
                                 Conducteur poids-lourd et super poids-lourd, de 2018 à 2023
