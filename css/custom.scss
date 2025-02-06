@@ -1,0 +1,10 @@
+// Importer les variables et mixins Bootstrap
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// Ajouter tes propres variables avant d'importer le reste
+$primary: #007bff; // Exemple de personnalisation
+
+// Importer les styles Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
