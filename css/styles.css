@@ -35,6 +35,8 @@ h3 {
     border-left: 8px solid transparent;
     width: 7px;
 }
+
+/*Changement couleurs*/
 .marron {
-    color: #666666;
+    color: #666666 !important;
 }

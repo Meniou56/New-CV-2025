@@ -6,195 +6,275 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="CV de Emmanuel Schmitt, apprenti développeur full stack" />
     <meta name="author" content="Emmanuel Schmitt" />
-
-    <!--Titre-->
     <title>Emmanuel Schmitt - Apprenti développeur Full Stack</title>
 
-    <!--Import Bootstrap CSS et custom CSS-->
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Import Bootstrap CSS et custom CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/styles.css" />
 
-    <!--Import script JS-->
+    <!-- Import script JS -->
     <script src="script.js" defer></script>
-
 </head>
 
 <body>
-    <!-- Conteneur principal -->
-    <div class="container-xxl m-auto" id="main-container">
-        <!-- Ligne principale -->
+    <div class="container-xxl" id="main-container">
         <div class="row">
-            <!-- Colonne gauche (bandeau) -->
-            <div class="col-12 col-md-5 p-3">
-                <section class="bg-primary shadow-lg text-light rounded-4 shadow" id="bloc-bandeau">
-                    <!-- En-tête -->
+            <!-- Sidebar : informations personnelles, compétences et infos complémentaires -->
+            <aside class="col-12 col-md-5 p-3" id="sidebar">
+                <article id="bloc-bandeau" class="bg-primary shadow-lg text-light rounded-4 mb-4"
+                    aria-labelledby="bandeau-title">
+                    <!-- En-tête avec portrait et identifiant -->
                     <header id="en-tete" class="text-center p-3">
-                        <!-- Photo -->
-                        <img class="rounded-circle shadow w-75" src="Images/eschmitt.jpg" srcset="
-                        Images/eschmitt_large.webp 266w,
-                        Images/eschmitt_small.webp 125w" 
-                        sizes="(max-width: 768px) 80vw, 25vw" alt="Portrait d'Emmanuel Schmitt" />
-
-                        <!-- Nom + Job -->
+                        <img class="rounded-circle shadow w-75" src="Images/eschmitt.jpg"
+                            srcset="Images/eschmitt_large.webp 266w, Images/eschmitt_small.webp 125w"
+                            sizes="(max-width: 768px) 80vw, 25vw" alt="Portrait d'Emmanuel Schmitt" />
                         <div class="py-4">
-                            <h1 class="fw-bold">Emmanuel Schmitt</h1>
+                            <h1 id="bandeau-title" class="fw-bold">Emmanuel Schmitt</h1>
                             <h2 class="fw-bold">Développeur Full Stack</h2>
                         </div>
                     </header>
 
                     <!-- Informations personnelles -->
-                    <div id="info_perso">
+                    <section id="info_perso" aria-labelledby="info-perso-title">
                         <div class="bg-secondary py-2 text-center">
-                            <h4 class="fw-bold m-2">Informations personnelles</h4>
+                            <h4 id="info-perso-title" class="fw-bold m-2">
+                                Informations personnelles
+                            </h4>
                         </div>
                         <div class="m-4">
-                            <p class="fw-bold fs-4 mb-0 mt-3 alegreya">Adresse</p>
-                            <p>
-                                34 rue de la Fleurière<br />Résidence Rosa Alba<br />53000<br />Laval
-                            </p>
-
-                            <p class="fw-bold fs-4 mb-0 mt-3 alegreya">Téléphone</p>
-                            <p>+33 6 98 63 99 96</p>
-
-                            <p class="fw-bold fs-4 mb-0 mt-3 alegreya">e-mail</p>
-                            <a class="text-light text-decoration-none" href="mailto:emmanuelschmitt01@gmail.com"
-                                target="_blank" rel="noopener noreferrer">
-                                emmanuelschmitt01@gmail.com
-                            </a>
-
-                            <p class="fw-bold fs-4 mb-0 mt-3 alegreya">GitHub</p>
-                            <a class="text-light text-decoration-none" href="https://github.com/Meniou56"
-                                target="_blank" rel="noopener noreferrer">
-                                Meniou56
-                            </a>
-
-                            <p class="fw-bold fs-4 mb-0 mt-3 alegreya">Permis</p>
-                            <p>Permis B/C/CE et motorisé</p>
+                            <!--Adresse-->
+                            <div class="mb-3">
+                                <p class="fw-bold fs-4 mb-0">Adresse</p>
+                                <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                                  <span itemprop="streetAddress">34 rue de la Fleurière, Résidence Rosa Alba</span><br />
+                                  <span itemprop="postalCode">53000</span>
+                                  <span itemprop="addressLocality">Laval</span>
+                                </address>
+                            </div>
+                            <div class="mb-3">
+                                <p class="fw-bold fs-4 mb-0">Téléphone</p>
+                                <p>
+                                    <a href="tel:+33698639996" class="text-light text-decoration-none">+33 6 98 63 99 96</a>
+                                </p>
+                            </div>
+                            <div class="mb-3">
+                                <p class="fw-bold fs-4 mb-0">E-mail</p>
+                                <p>
+                                    <a class="text-light text-decoration-none" href="mailto:emmanuelschmitt01@gmail.com"
+                                        target="_blank" rel="noopener noreferrer">emmanuelschmitt01@gmail.com</a>
+                                </p>
+                            </div>
+                            <div class="mb-3">
+                                <p class="fw-bold fs-4 mb-0">GitHub</p>
+                                <p>
+                                    <a class="text-light text-decoration-none" href="https://github.com/Meniou56"
+                                        target="_blank" rel="noopener noreferrer">Meniou56</a>
+                                </p>
+                            </div>
+                            <div>
+                                <p class="fw-bold fs-4 mb-0">Permis</p>
+                                <p>Permis B/C/CE et motorisé</p>
+                            </div>
                         </div>
-                    </div>
+                    </section>
 
-                    <!-- Compétences -->
-                    <div id="competences">
+                    <!-- Compétences numériques -->
+                    <section id="competences" aria-labelledby="competences-title">
                         <div class="bg-secondary text-center py-2">
-                            <h4 class="fw-bold m-2">Compétences numériques</h4>
+                            <h4 id="competences-title" class="fw-bold m-2">
+                                Compétences numériques
+                            </h4>
                         </div>
-
                         <div class="m-4">
-                            <!-- Rubrique développement -->
-                            <h4 class="fw-bold">Développement</h4>
-                            <div class="row">
-                                <div class="col-4">
-                                    <img class="img-fluid" src="images/competences/html.png" alt="Logo HTML" />
-                                    <div class="progress bg-secondary mt-1 mb-2" role="progressbar" aria-label="barre de progression de maîtrise du HTML" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar rounded m-02" style="width: 75%">75%</div>
+                            <!-- Rubrique Développement -->
+                            <section aria-labelledby="dev-title" class="mb-4">
+                                <h4 id="dev-title" class="fw-bold">Développement</h4>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img class="img-fluid" src="images/competences/html.png" alt="Logo HTML" />
+                                        <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
+                                            aria-label="Maîtrise du HTML" aria-valuenow="75" aria-valuemin="0"
+                                            aria-valuemax="100">
+                                            <div class="progress-bar rounded m-02" style="width: 75%;">
+                                                75%
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <img class="img-fluid" src="images/competences/css.png" alt="Logo CSS" />
+                                        <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
+                                            aria-label="Maîtrise du CSS" aria-valuenow="70" aria-valuemin="0"
+                                            aria-valuemax="100">
+                                            <div class="progress-bar rounded m-02" style="width: 70%;">
+                                                70%
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <img class="img-fluid" src="images/competences/JS.png" alt="Logo JavaScript" />
+                                        <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
+                                            aria-label="Maîtrise du JavaScript" aria-valuenow="40" aria-valuemin="0"
+                                            aria-valuemax="100">
+                                            <div class="progress-bar rounded m-02" style="width: 40%;">
+                                                40%
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
-                                    <img class="img-fluid" src="images/competences/css.png" alt="Logo CSS" />
-                                    <div class="progress bg-secondary mt-1 mb-2" role="progressbar" aria-label="barre de progression de maîtrise du CSS" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar rounded m-02" style="width: 70%">70%</div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img class="img-fluid" src="images/competences/php.png" alt="Logo PHP" />
+                                        <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
+                                            aria-label="Maîtrise du PHP" aria-valuenow="25" aria-valuemin="0"
+                                            aria-valuemax="100">
+                                            <div class="progress-bar rounded m-02" style="width: 25%;">
+                                                25%
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <img class="img-fluid" src="images/competences/git.png" alt="Logo Git" />
+                                        <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
+                                            aria-label="Maîtrise de Git" aria-valuenow="50" aria-valuemin="0"
+                                            aria-valuemax="100">
+                                            <div class="progress-bar rounded m-02" style="width: 50%;">
+                                                50%
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <img class="img-fluid" src="images/competences/github.png" alt="Logo GitHub" />
+                                        <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
+                                            aria-label="Maîtrise de GitHub" aria-valuenow="55" aria-valuemin="0"
+                                            aria-valuemax="100">
+                                            <div class="progress-bar rounded m-02" style="width: 55%;">
+                                                55%
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
-                                    <img class="img-fluid" src="images/competences/JS.png" alt="Logo JavaScript" />
-                                    <div class="progress bg-secondary mt-1 mb-2" role="progressbar" aria-label="barre de progression de maîtrise du JavaScript" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar rounded m-02" style="width: 40%">40%</div>
+                            </section>
+
+                            <!-- Rubrique Maquettage -->
+                            <section aria-labelledby="maquettage-title" class="mb-4">
+                                <h4 id="maquettage-title" class="fw-bold">Maquettage</h4>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img class="img-fluid" src="images/competences/xd.png" alt="Logo Adobe XD" />
+                                        <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
+                                            aria-label="Maîtrise d'Adobe XD" aria-valuenow="40" aria-valuemin="0"
+                                            aria-valuemax="100">
+                                            <div class="progress-bar rounded m-02" style="width: 40%;">
+                                                40%
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <img class="img-fluid" src="images/competences/Figma.png" alt="Logo Figma" />
+                                        <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
+                                            aria-label="Maîtrise de Figma" aria-valuenow="40" aria-valuemin="0"
+                                            aria-valuemax="100">
+                                            <div class="progress-bar rounded m-02" style="width: 40%;">
+                                                40%
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <img class="img-fluid" src="images/competences/Id.png"
+                                            alt="Logo Adobe InDesign" />
+                                        <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
+                                            aria-label="Maîtrise d'InDesign" aria-valuenow="35" aria-valuemin="0"
+                                            aria-valuemax="100">
+                                            <div class="progress-bar rounded m-02" style="width: 35%;">
+                                                35%
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-4">
-                                    <img class="img-fluid" src="images/competences/php.png" alt="Logo php" />
-                                    <div class="progress bg-secondary mt-1 mb-2" role="progressbar" aria-label="barre de progression de maîtrise du PHP" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar rounded m-02" style="width: 25%">25%</div>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <img class="img-fluid" src="images/competences/git.png" alt="Logo git" />
-                                    <div class="progress bg-secondary mt-1 mb-2" role="progressbar" aria-label="barre de progression de maîtrise de GIT" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar rounded m-02" style="width: 50%">50%</div>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <img class="img-fluid" src="images/competences/github.png" alt="Logo GitHub" />
-                                    <div class="progress bg-secondary mt-1 mb-2" role="progressbar" aria-label="barre de progression de maîtrise de GitHub" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar rounded m-02" style="width: 55%">55%</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Rubrique maquettage -->
-                            <h4 class="fw-bold">Maquettage</h4>
-                            <div class="row">
-                                <div class="col-4">
-                                    <img class="img-fluid" src="images/competences/xd.png" alt="Logo Adobe XD" />
-                                    <div class="progress bg-secondary mt-1 mb-2" role="progressbar" aria-label="barre de progression de maîtrise de Adobe XD" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar rounded m-02" style="width: 40%">40%</div>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <img class="img-fluid" src="images/competences/Figma.png" alt="Logo Figma" />
-                                    <div class="progress bg-secondary mt-1 mb-2" role="progressbar" aria-label="barre de progression de maîtrise de Figma" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar rounded m-02" style="width: 40%">40%</div>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <img class="img-fluid" src="images/competences/Id.png" alt="Logo Adobe InDesign" />
-                                    <div class="progress bg-secondary mt-1 mb-2" role="progressbar" aria-label="barre de progression de maîtrise de InDesign" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar rounded m-02" style="width: 35%">35%</div>
-                                    </div>
-                                </div>
-                            </div>
+                            </section>
+
                             <!-- Rubrique Visuels -->
-                            <h4 class="fw-bold">Visuels</h4>
-                            <div class="row">
-                                <div class="col-4">
-                                    <img class="img-fluid" src="images/competences/lr.png" alt="Logo Adobe Lightroom" />
-                                    <div class="progress bg-secondary mt-1 mb-2" role="progressbar" aria-label="barre de progression de maîtrise de Lightroom" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar rounded m-02" style="width: 90%">90%</div>
+                            <section aria-labelledby="visuels-title" class="mb-4">
+                                <h4 id="visuels-title" class="fw-bold">Visuels</h4>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img class="img-fluid" src="images/competences/lr.png"
+                                            alt="Logo Adobe Lightroom" />
+                                        <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
+                                            aria-label="Maîtrise de Lightroom" aria-valuenow="90" aria-valuemin="0"
+                                            aria-valuemax="100">
+                                            <div class="progress-bar rounded m-02" style="width: 90%;">
+                                                90%
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <img class="img-fluid" src="images/competences/ps.png"
+                                            alt="Logo Adobe Photoshop" />
+                                        <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
+                                            aria-label="Maîtrise de Photoshop" aria-valuenow="45" aria-valuemin="0"
+                                            aria-valuemax="100">
+                                            <div class="progress-bar rounded m-02" style="width: 45%;">
+                                                45%
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <img class="img-fluid" src="images/competences/Ai.png"
+                                            alt="Logo Adobe Illustrator" />
+                                        <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
+                                            aria-label="Maîtrise d'Illustrator" aria-valuenow="20" aria-valuemin="0"
+                                            aria-valuemax="100">
+                                            <div class="progress-bar rounded m-02" style="width: 20%;">
+                                                20%
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
-                                    <img class="img-fluid" src="images/competences/ps.png" alt="Logo Adobe Photoshop" />
-                                    <div class="progress bg-secondary mt-1 mb-2" role="progressbar" aria-label="barre de progression de maîtrise de Photoshop" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar rounded m-02" style="width: 45%">45%</div>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <img class="img-fluid" src="images/competences/Ai.png" alt="Logo Adobe Illustrator" />
-                                    <div class="progress bg-secondary mt-1 mb-2" role="progressbar" aria-label="barre de progression de maîtrise d'Illustrator'" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar rounded m-02" style="width: 20%">20%</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Rubrique Autres -->
-                            <h4 class="fw-bold">Autres</h4>
-                            <div class="row">
-                                <div class="col-4">
-                                    <img class="img-fluid" src="images/competences/Pr.png" alt="Logo Adobe Première" />
-                                    <div class="progress bg-secondary mt-1 mb-2" role="progressbar" aria-label="barre de progression de maîtrise de Première Pro" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar rounded m-02" style="width: 65%">65%</div>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <img class="img-fluid" src="images/competences/WP.png" alt="Logo WordPress" />
-                                    <div class="progress bg-secondary mt-1 mb-2" role="progressbar" aria-label="barre de progression de maîtrise de WordPress" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar rounded m-02" style="width: 75%">75%</div>
-                                    </div>
-                                </div>
-                                <div class="col-4"></div>
-                            </div>
-                        </div>
-                    </div>
+                            </section>
 
-                    <!-- Autres infos -->
-                    <div id="autres">
+                            <!-- Rubrique Autres -->
+                            <section aria-labelledby="autres-title">
+                                <h4 id="autres-title" class="fw-bold">Autres</h4>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img class="img-fluid" src="images/competences/Pr.png"
+                                            alt="Logo Adobe Première" />
+                                        <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
+                                            aria-label="Maîtrise de Première Pro" aria-valuenow="65" aria-valuemin="0"
+                                            aria-valuemax="100">
+                                            <div class="progress-bar rounded m-02" style="width: 65%;">
+                                                65%
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <img class="img-fluid" src="images/competences/WP.png" alt="Logo WordPress" />
+                                        <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
+                                            aria-label="Maîtrise de WordPress" aria-valuenow="75" aria-valuemin="0"
+                                            aria-valuemax="100">
+                                            <div class="progress-bar rounded m-02" style="width: 75%;">
+                                                75%
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4"></div>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+
+                    <!-- Informations complémentaires -->
+                    <section id="infos-complementaires" aria-labelledby="infos-complementaires-title">
                         <div class="bg-secondary text-center py-2">
-                            <h4 class="fw-bold m-2">Informations complémentaires</h4>
+                            <h4 id="infos-complementaires-title" class="fw-bold m-2">
+                                Informations complémentaires
+                            </h4>
                         </div>
                         <div class="container">
                             <div class="row m-4 text-center">
                                 <div class="col-6">
-                                    <img class="img-fluid" src="images/autres/anglais.png" alt="anglais B1" />
+                                    <img class="img-fluid" src="images/autres/anglais.png" alt="Anglais B1" />
                                     <p>Anglais niveau B1</p>
                                 </div>
                                 <div class="col-6">
@@ -213,54 +293,57 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-            </div>
+                    </section>
 
-            <!-- Colonne droite (corps du CV) -->
-            <div class="col-12 col-md-7 p-3">
-                <main id="corps" class="container m-auto">
-                    <header id="EnTeteCorps" class=" row m-0 m-lg-4">
-                        <h5 id="machineAecrire" class="col-12 display-5"></h5>
-                        <p class="col-12 fs-5 marron">
-                            Dès 2001, ces mots inauguraient mon aventure en programmation
-                            avec Dark Basic, marquant le début d'une passion durable pour
-                            l'informatique. Cette passion m'a conduit à réaliser divers
-                            projets, dont un jeu de Puissance 4 qui symbolise mes premiers
-                            pas dans ce monde fascinant. Pendant près de deux décennies,
-                            j'ai exploré les domaines du journalisme et du transport, ce qui
-                            a enrichi mon approche du monde technologique avec une
-                            perspective multidisciplinaire. Revenant à mes racines, j'ai
-                            modernisé mon Puissance 4 en JavaScript, enrichi d'une IA et
-                            d'un mode réseau, marquant ainsi mon retour au développement.
-                            Aujourd'hui, je poursuis ma quête de connaissances en explorant
-                            PHP, les bases de données, Git/GitHub, et WordPress, complétée
-                            par des cours MOOCs pour satisfaire ma soif d'apprendre. En
-                            quête d'un stage PMSMP, je suis désireux de plonger plus
+                </article>
+            </aside>
+
+            <!-- Contenu principal -->
+            <main class="col-12 col-md-7 p-3" id="corps" role="main">
+                <!-- Introduction -->
+                <section id="introduction">
+                    <header class="row m-0 m-lg-4">
+                        <h5 id="machineAecrire" class="col-12 display-5" aria-hidden="polite"></h5>
+                        <p class="col-12 fs-5 text-body marron">
+                            Dès 2001, ces mots inauguraient mon aventure en programmation avec
+                            Dark Basic, marquant le début d'une passion durable pour
+                            l'informatique. Cette passion m'a conduit à réaliser divers projets,
+                            dont un jeu de Puissance 4 qui symbolise mes premiers pas dans ce
+                            monde fascinant. Pendant près de deux décennies, j'ai exploré les
+                            domaines du journalisme et du transport, ce qui a enrichi mon approche
+                            du monde technologique avec une perspective multidisciplinaire.
+                            Revenant à mes racines, j'ai modernisé mon Puissance 4 en JavaScript,
+                            enrichi d'une IA et d'un mode réseau, marquant ainsi mon retour au
+                            développement. Aujourd'hui, je poursuis ma quête de connaissances en
+                            explorant PHP, les bases de données, Git/GitHub, et WordPress,
+                            complétée par des cours MOOCs pour satisfaire ma soif d'apprendre.
+                            En quête d'un stage PMSMP, je suis désireux de plonger plus
                             profondément dans le développement, d'affiner mes compétences et
                             d'apporter ma contribution créative à des projets innovants.
                         </p>
                     </header>
-
-                    <!-- Bouton CTA mail -->
-                    <div class="text-center col-12 my-lg-4 my-4">
+                    <!-- Bouton d'appel à l'action -->
+                    <div id="cta-contact" class="text-center my-4">
                         <a href="mailto:emmanuelschmitt01@gmail.com" class="btn btn-lg btn-secondary py-3 px-4 shadow"
-                            target="_blank" rel="noopener noreferrer" aria-label="Envoyer un e-mail à Emmanuel Schmitt">
-                            EMMANUELSCHMITT01@GMAIL.COM
-                        </a>
+                            target="_blank" rel="noopener noreferrer"
+                            aria-label="Envoyer un e-mail à Emmanuel Schmitt">EMMANUELSCHMITT01@GMAIL.COM</a>
                     </div>
+                </section>
 
-                    <!-- Bloc Formations -->
-                    <div class="col-12 mx-0 mx-lg-4">
-                        <div class="card shadow px-5 pb-4 mb-3">
-                            <div class="card-body p-0">
-                                <div class="BandeauBleu position-relative d-flex flex-column">
-                                    <h3 class="card-title text-light px-4 py-2 shadow m-0">Formations</h3>
-                                    <div class="triangle d-inline-block"></div>
-                                </div>
-                                <h6 class="card-subtitle fs-4 marron fw-bold">
-                                    Développeur Full Stack, ESECAD & MOOCs, 2024-2025 à
-                                    Laval (53)
+
+                <!-- Formations -->
+                <section id="formations" class="mb-4" aria-labelledby="formations-title">
+                    <div class="card shadow px-5 pb-4 mb-3">
+                        <div class="card-body p-0">
+                            <div class="BandeauBleu position-relative d-flex flex-column">
+                                <h3 id="formations-title" class="card-title text-light px-4 py-2 shadow m-0">
+                                    Formations
+                                </h3>
+                                <div class="triangle d-inline-block" aria-hidden="true"></div>
+                            </div>
+                            <section class="mt-3">
+                                <h6 class="card-subtitle marron fs-4 text-body fw-bold">
+                                    Développeur Full Stack, ESECAD & MOOCs, 2024-2025 à Laval (53)
                                 </h6>
                                 <p class="card-text">
                                     HTML, CSS & Sass, JavaScript, SQL, PHP. WordPress & ses plugins.
@@ -268,114 +351,127 @@
                                     Illustrator. Git et GitHub. Gestion de projet en mode agile et
                                     collaboratif. Marketing web, SEO et SEA. Certification Opquast.
                                 </p>
-                                <h6 class="card-subtitle fs-4 marron fw-bold">Photojournaliste, EMI-CFD, 2014-2015 à Paris (75)</h6>
+                            </section>
+                            <section class="mt-3">
+                                <h6 class="card-subtitle marron fs-4 text-body fw-bold">
+                                    Photojournaliste, EMI-CFD, 2014-2015 à Paris (75)
+                                </h6>
                                 <p class="card-text">
-                                    Formation professionnelle à l’Ecole des métiers de
-                                    l’information, RNCP Niv.6 Adobe Lightroom, Photoshop, Final cut
-                                    X. Mise en ligne d'articles et photographies sur les sites des
-                                    médias, création d'un site internet immersif. News, portrait,
-                                    reportage, studio, corporate, editing, traitement, vidéo avec
-                                    reflex, montage, projets multimédias audio, vidéo.
+                                    Formation professionnelle à l’Ecole des métiers de l’information,
+                                    RNCP Niv.6 Adobe Lightroom, Photoshop, Final cut X. Mise en ligne
+                                    d'articles et photographies sur les sites des médias, création
+                                    d'un site internet immersif. News, portrait, reportage, studio,
+                                    corporate, editing, traitement, vidéo avec reflex, montage, projets
+                                    multimédias audio, vidéo.
                                 </p>
-                                <h6 class="card-subtitle fs-4 marron fw-bold">Journaliste, IUT, 2007-2010 à Lannion (22)</h6>
+                            </section>
+                            <section class="mt-3">
+                                <h6 class="card-subtitle marron fs-4 text-body fw-bold">
+                                    Journaliste, IUT, 2007-2010 à Lannion (22)
+                                </h6>
                                 <p class="card-text">
-                                    DUT puis Licence professionnelle, spécialisation presse
-                                    magazine. Rédacteur, secrétaire de rédaction, journaliste radio,
-                                    journaliste reporter d’images et web-journaliste. Cours de HTML
-                                    + CSS ainsi que WordPress, mise en ligne d'articles,
-                                    photographies et vidéos. Cours de mise en page avec Adobe
-                                    InDesign et QuarkXpress.
+                                    DUT puis Licence professionnelle, spécialisation presse magazine.
+                                    Rédacteur, secrétaire de rédaction, journaliste radio,
+                                    journaliste reporter d’images et web-journaliste. Cours de HTML + CSS
+                                    ainsi que WordPress, mise en ligne d'articles, photographies et vidéos.
+                                    Cours de mise en page avec Adobe InDesign et QuarkXpress.
                                 </p>
-                            </div>
+                            </section>
                         </div>
-                        <!-- Bloc Expériences -->
-                        <div class="card shadow px-5 pb-4 mb-3">
-                            <div class="card-body p-0">
-                                <div class="BandeauBleu position-relative d-flex flex-column">
-                                    <h3 class="card-title text-light px-4 py-2 shadow m-0">Expériences</h3>
-                                    <div class="triangle d-inline-block"></div>
-                                </div>
-                                <!-- Informatique -->
-                                <h6 class="card-subtitle fs-4 marron fw-bold">Informatique</h6>
+                    </div>
+                </section>
+
+                <!-- Expériences -->
+                <section id="experiences" aria-labelledby="experiences-title">
+                    <div class="card shadow px-5 pb-4 mb-3">
+                        <div class="card-body p-0">
+                            <div class="BandeauBleu position-relative d-flex flex-column">
+                                <h3 id="experiences-title" class="card-title text-light px-4 py-2 shadow m-0">
+                                    Expériences
+                                </h3>
+                                <div class="triangle d-inline-block" aria-hidden="true"></div>
+                            </div>
+                            <section class="mt-3" aria-labelledby="informatique-title">
+                                <h6 id="informatique-title" class="card-subtitle marron fs-4 text-body fw-bold">
+                                    Informatique
+                                </h6>
                                 <ul>
                                     <li>
                                         Projet de développement d'un
                                         <a href="https://www.emmanuelschmitt.com/puissance4" target="_blank"
-                                            rel="noopener noreferrer">
-                                            Puissance 4
-                                        </a>
+                                            rel="noopener noreferrer">Puissance 4</a>
                                     </li>
                                     <li>
                                         Création de sites internet, entre autres :
-                                        <a href="https://www.frederiquelebrun.com" target="_blank" rel="noopener noreferrer">
-                                            Frédérique Le Brun - Photojournaliste </a>,
-                                        <a href="https://www.bernardschmitt.com" target="_blank" rel="noopener noreferrer">
-                                            Bernard Schmitt - Photographe </a>,
-                                        <a href="https://www.meskad.fr" target="_blank" rel="noopener noreferrer">
-                                            Restaurant Le Meskad
-                                        </a>
+                                        <a href="https://www.frederiquelebrun.com" target="_blank"
+                                            rel="noopener noreferrer">Frédérique Le Brun - Photojournaliste</a>,
+                                        <a href="https://www.bernardschmitt.com" target="_blank"
+                                            rel="noopener noreferrer">Bernard Schmitt - Photographe</a>,
+                                        <a href="https://www.meskad.fr" target="_blank"
+                                            rel="noopener noreferrer">Restaurant Le Meskad</a>
                                     </li>
                                     <li>
                                         Certifications CSS, HTML, JavaScript, PHP, Sass, Github & Git,
-                                        IA... sur Openclassrooms (2023-2024)
+                                        IA… sur Openclassrooms (2023-2024)
                                     </li>
                                     <li>
-                                        Développement de jeux vidéo et programmes en Dark Basic Pro
-                                        (2001-2005)
+                                        Développement de jeux vidéo et programmes en Dark Basic Pro (2001-2005)
                                     </li>
                                     <li>
-                                        Forte appétence pour le développement (JS, HTML, CSS) et le
-                                        web design
+                                        Forte appétence pour le développement (JS, HTML, CSS) et le web design
                                     </li>
                                     <li>
-                                        Montages/réparations basiques hardware & software (Depuis
-                                        1999)
+                                        Montages/réparations basiques hardware & software (Depuis 1999)
                                     </li>
                                 </ul>
-                                <!-- Médias -->
-                                <h6 class="card-subtitle fs-4 marron fw-bold">Médias</h6>
+                            </section>
+                            <section class="mt-3" aria-labelledby="medias-title">
+                                <h6 id="medias-title" class="card-subtitle marron fs-4 text-body fw-bold">
+                                    Médias
+                                </h6>
                                 <ul>
                                     <li>
-                                        Photographe/Vidéaste de presse, corporate et événementiel
-                                        (Depuis 2012)
+                                        Photographe/Vidéaste de presse, corporate et événementiel (Depuis 2012)
                                     </li>
                                     <li>
-                                        Co-gérant et directeur photo de l'entreprise DHLS Editions,
-                                        éditrice du magazine Brest Mag' (2011 et 2012)
+                                        Co-gérant et directeur photo de l'entreprise DHLS Editions, éditrice du
+                                        magazine Brest Mag' (2011 et 2012)
                                     </li>
                                     <li>
-                                        Journaliste et photoreporter pour la presse quotidienne
-                                        (Ouest-France, Le Télégramme, Aujourd'hui en France, La
-                                        Nouvelle République, Paris Normandie - de 2008 à 2015)
+                                        Journaliste et photoreporter pour la presse quotidienne (Ouest-France,
+                                        Le Télégramme, Aujourd'hui en France, La Nouvelle République, Paris
+                                        Normandie – de 2008 à 2015)
                                     </li>
                                     <li>
-                                        Jeune expérience en journalisme radio (France Bleu Armorique,
-                                        Virgin radio) et dans la presse associative
+                                        Jeune expérience en journalisme radio (France Bleu Armorique, Virgin radio)
+                                        et dans la presse associative
                                     </li>
                                 </ul>
-                                <!-- Transport -->
-                                <h6 class="card-subtitle fs-4 marron fw-bold">Transport</h6>
+                            </section>
+                            <section class="mt-3" aria-labelledby="transport-title">
+                                <h6 id="transport-title" class="card-subtitle marron fs-4 text-body fw-bold">
+                                    Transport
+                                </h6>
                                 <ul>
                                     <li>
                                         Conducteur poids-lourd et super poids-lourd, de 2018 à 2023
                                     </li>
                                     <li>
-                                        Exploitant transport pour les Routiers Bretons (septembre 2019
-                                        à mars 2020)
+                                        Exploitant transport pour les Routiers Bretons (septembre 2019 à mars 2020)
                                     </li>
-                                    <li>Chauffeur-livreur en CDD puis intérim de 2015 à 2017</li>
+                                    <li>
+                                        Chauffeur-livreur en CDD puis intérim de 2015 à 2017
+                                    </li>
                                 </ul>
-                            </div>
+                            </section>
                         </div>
                     </div>
-                </main>
-            </div>
+                </section>
+            </main>
         </div>
-        <!-- Fin de la row -->
     </div>
-    <!-- Fin du container -->
 
-    <!--Import Bootstrap JS-->
+    <!-- Import Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
