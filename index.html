@@ -406,9 +406,8 @@
                     </header>
                     <!-- Bouton d'appel à l'action -->
                     <div id="cta-contact" class="text-center my-4">
-                        <a href="mailto:emmanuelschmitt01@gmail.com" class="btn btn-lg btn-secondary py-3 px-4 shadow"
-                            target="_blank" rel="noopener noreferrer"
-                            aria-label="Envoyer un e-mail à Emmanuel Schmitt">EMMANUELSCHMITT01@GMAIL.COM</a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#contactFormModal" class="btn btn-lg btn-secondary py-3 px-4 shadow"
+                        aria-label="Envoyer un e-mail à Emmanuel Schmitt">EMMANUELSCHMITT01@GMAIL.COM</a>
                     </div>
                 </section>
 
@@ -563,6 +562,63 @@
                     d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
             </svg>
         </a>
+    </div>
+
+    <!--Modal Contact form-->
+    <div class="modal fade modal-lg" id="contactFormModal" tabindex="-1" aria-labelledby="formModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!--Header du contact form-->
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="formModal">Formulaire de contact</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!--Main contact form-->
+                <div id="form" class="p-3">
+                    <div class="container">
+                        <form id="contactFormDisplay" class="row text-secondary fw-bold" action="traitement.php"
+                            method="post"> <!--a changer en post plus tard-->
+
+                            <!--lastname field-->
+                            <div class="col-12 col-sm-6 mb-3">
+                                <label for="lastname" class="form-label">Nom</label>
+                                <input type="text" class="form-control" id="lastname" name="lastname"
+                                    placeholder="Dupond" />
+                            </div>
+
+                            <!--firstname field-->
+                            <div class="col-12 col-sm-6 mb-3">
+                                <label for="firstname" class="form-label">Prénom</label>
+                                <input type="text" class="form-control" id="firstname" name="firstname"
+                                    placeholder="Martin" />
+                            </div>
+
+                            <!--Email field-->
+                            <div class="col-12 mb-3">
+                                <label for="email" class="form-label">Adresse e-mail</label>
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="name@example.com" />
+                            </div>
+
+                            <!--Message field-->
+                            <div class="col-12 mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!--Footer contact form-->
+                <div class="modal-footer">
+                    <button type="submit" form="contactFormDisplay" class="btn btn-success">Envoyer</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <!-- Import Bootstrap JS -->
