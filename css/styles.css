@@ -40,3 +40,8 @@ h3 {
 .marron {
     color: #666666 !important;
 }
+
+/*Positionnement*/
+.z-1080 {
+    z-index: 1080;
+}
