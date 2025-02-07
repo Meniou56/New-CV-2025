@@ -1,20 +1,27 @@
-// Variables
+// Changement des couleurs
 $primary:       #658d96;
 $secondary:     #1b414a;
+$fourth:        #4eb8d2;
+
+//Changement des progress-bar
+$progress-height: 0.75rem;
 
 // Importer des variables et mixins
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
-/*Non modifié à suppr*/
+//Changement des progress-bar avec variables pré-définis
+$progress-font-size: $font-size-base * .60;
+$progress-bar-bg: $fourth;
 
-$success:       $green;
-$info:          $cyan;
-$warning:       $yellow;
-$danger:        $red;
-$light:         $gray-100;
-$dark:          $gray-900;
+
+//Ajout de variable de dimensions supplémentaires
+
+/* Marges et padding */
+.m-02 {
+    margin: 0.2em;
+}
 
 // Importer les styles Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
