@@ -46,3 +46,18 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 })
 
+//Bouton de scroll UP
+document.addEventListener("DOMContentLoaded", function () {
+    const btnUp = document.getElementById("btnUP");
+
+    // Afficher le bouton quand on scrolle vers le bas
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 300) {
+            btnUp.style.display = "block";
+        } else {
+            btnUp.style.display = "none";
+        }
+    });
+});
+
+

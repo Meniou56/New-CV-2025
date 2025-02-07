@@ -21,6 +21,10 @@ $progress-bar-bg: $fourth;
 .m-02 {
     margin: 0.2em;
 }
+/* Dimensions */
+.w-40px {
+    width: 40px;
+}
 
 // Importer les styles Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";

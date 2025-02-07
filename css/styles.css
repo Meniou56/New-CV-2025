@@ -20,7 +20,7 @@ h5 {
     font-family: "MS DOS";
 }
 
-/* Formes et couleurs */
+/* Objets */
 .BandeauBleu {
     left: -56px;
     margin: 36px 0;
@@ -34,6 +34,9 @@ h3 {
     border-top: 15px solid #658d96;
     border-left: 8px solid transparent;
     width: 7px;
+}
+#btnUP {
+    display: none;
 }
 
 /*Changement couleurs*/
