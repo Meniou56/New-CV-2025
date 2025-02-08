@@ -59,3 +59,10 @@ h3 {
 .z-1080 {
     z-index: 1080;
 }
+
+/** Zone à ne pas imprimer si impression du CV **/
+@media print {
+    nav, footer {
+        display: none;
+    }  
+}
