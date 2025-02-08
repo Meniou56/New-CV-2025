@@ -447,7 +447,7 @@
                     <div id="cta-contact" class="text-center my-4">
                         <a href="#" data-bs-toggle="modal" data-bs-target="#contactFormModal"
                             class="btn btn-lg btn-secondary py-3 px-4 shadow"
-                            aria-label="Envoyer un message à Emmanuel Schmitt">EMMANUELSCHMITT01@GMAIL.COM</a>
+                            aria-label="Envoyer un message à Emmanuel Schmitt">Me contacter</a>
                     </div>
                 </section>
 
@@ -598,9 +598,35 @@
                     </div>
                 </section>
             </main>
+
+            <!--Footer-->
+            <footer class="col-12 p-3" id="footer" role="contentinfo">
+
+                <!--Structure bootstrap-->
+                <div class="container-fluid">
+                    <div class="row bg-secondary p-3 rounded-4 shadow">
+
+                        <!--Legals-->
+                        <div class="col-6 d-flex justify-content-start">
+                            <!--Liens-->
+                            <a class="text-light" href="#" data-bs-toggle="modal" data-bs-target="#legalesMentionsModal">Mentions légales</a>
+                        </div>
+                        <!--Copyright-->
+                        <div class="col-6 d-flex justify-content-end">
+                            <a class="text-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                href="https://www.emmanuelschmitt.com">
+                                &copy; Emmanuel Schmitt - 2025
+                            </a>
+                        </div>
+
+                    <!--Fin col/row bootstrap-->    
+                    </div>
+                </div>
+                
+            </footer>
         </div>
     </div>
-
+    
     <!--Bouton UP-->
     <div id="nav-button" class="position-fixed end-0 bottom-0 m-5">
         <!--UP button-->
@@ -653,6 +679,13 @@
                                     placeholder="name@example.com" />
                             </div>
 
+                            <!--Subject field-->
+                            <div class="col-12 mb-3">
+                                <label for="subject" class="form-label">Objet</label>
+                                <input type="text" class="form-control" id="subject" name="subject"
+                                    placeholder="Offre d'emploi" />
+                            </div>
+
                             <!--Message field-->
                             <div class="col-12 mb-3">
                                 <label for="message" class="form-label">Message</label>
@@ -667,7 +700,7 @@
                     <button type="submit" form="contactFormDisplay" class="btn btn-success">
                         Envoyer
                     </button>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
                         Annuler
                     </button>
                 </div>
@@ -678,7 +711,8 @@
     <!-- Import Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

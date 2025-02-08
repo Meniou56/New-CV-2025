@@ -41,9 +41,10 @@ h3 {
     display: none;
 }
 /* Fond du CD*/
-.container-xxl {
+#main-container {
     background: url(../Images/Fond.png);
     background-repeat: repeat-y;
+    background-size: 100%;
 }
 
 /*Changement couleurs*/
