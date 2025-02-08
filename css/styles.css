@@ -21,6 +21,7 @@ h5 {
 }
 
 /* Objets */
+/*Formes des sections Formations/Expériences*/
 .BandeauBleu {
     left: -56px;
     margin: 36px 0;
@@ -35,8 +36,14 @@ h3 {
     border-left: 8px solid transparent;
     width: 7px;
 }
+/*UP button*/
 #btnUP {
     display: none;
+}
+/* Fond du CD*/
+.container-xxl {
+    background: url(../Images/Fond.png);
+    background-repeat: repeat-y;
 }
 
 /*Changement couleurs*/
