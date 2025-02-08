@@ -1,4 +1,5 @@
-/* Appels des polices */
+/** Polices **/
+/*Appels des polices*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
 @font-face {
@@ -7,7 +8,7 @@
          url("../fonts/MorePerfectDOSVGA.ttf") format("truetype");
 }
 
-/* Applications des polices */
+/*Applications des polices*/
 h1, h3, h4, h6, .alegreya {
     font-family: "Alegreya Sans", sans-serif;
 }
@@ -20,7 +21,7 @@ h5 {
     font-family: "MS DOS";
 }
 
-/* Objets */
+/** Objets **/
 /*Formes des sections Formations/Expériences*/
 .BandeauBleu {
     left: -56px;
@@ -42,18 +43,18 @@ h3 {
     width: 40px; 
     height: 40px;
 }
-/* Fond du CD*/
+/*Fond du CD*/
 #main-container {
     background: url(../Images/Fond.png);
     background-repeat: repeat-y;
     background-size: 100%;
 }
 
+/** Couleurs et dimensions **/
 /*Changement couleurs*/
 .marron {
     color: #666666 !important;
 }
-
 /*Positionnement*/
 .z-1080 {
     z-index: 1080;
