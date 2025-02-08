@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Afficher le bouton quand on scrolle vers le bas
     window.addEventListener("scroll", function () {
         if (window.scrollY > 300) {
-            btnUp.style.display = "block";
+            btnUp.style.display = "flex";
         } else {
             btnUp.style.display = "none";
         }

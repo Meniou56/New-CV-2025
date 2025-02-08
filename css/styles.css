@@ -39,6 +39,8 @@ h3 {
 /*UP button*/
 #btnUP {
     display: none;
+    width: 40px; 
+    height: 40px;
 }
 /* Fond du CD*/
 #main-container {
