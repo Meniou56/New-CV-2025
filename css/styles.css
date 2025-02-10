@@ -25,7 +25,6 @@ h5 {
 /*Formes des sections Formations/Expériences*/
 .BandeauBleu {
     left: -56px;
-    margin: 36px 0;
 }
 h3 {
     background-color: #4eb8d2;
@@ -69,10 +68,15 @@ ul.arrowPuce {
 .progress-bar {
     transition: width 2s ease-in-out;
 }
-.arrowPuce>li:hover {
-    transform: translate(2px, 0);
-    transition: transform 0.7s;
+/* Effet sur les liens */
+a {
+    text-decoration: none;
 }
+a:hover {
+    text-decoration: underline;
+    transition: 0.8s;
+}
+
 
 /** Zone à ne pas imprimer si impression du CV **/
 @media print {

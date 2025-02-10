@@ -21,11 +21,11 @@
         <div class="row p-1">
             <div class="col-12">
                 <!--Menu navbar-->
-                <nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top rounded-3 px-3">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top rounded-3 px-3 shadow-sm">
                     <div class="container">
                         <a class="navbar-brand" href="#accueil">
                             <img src="Images/logo/logo_whiter.png"
-                            alt="Logo de Emmanuel Schmitt">
+                                alt="Logo de Emmanuel Schmitt, représentant ses initiales">
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navOpener" aria-controls="navOpener" aria-expanded="false"
@@ -139,7 +139,7 @@
 
             <!-- informations personnelles, compétences et infos complémentaires -->
             <aside class="col-12 col-md-5 p-3" id="sidebar">
-                <article id="bloc-bandeau" class="bg-primary shadow-lg text-light rounded-4 mb-4"
+                <article id="bloc-bandeau" class="bg-primary shadow-sm text-light rounded-4 mb-4"
                     aria-labelledby="bandeau-title">
                     <!-- En-tête avec portrait et identifiant -->
                     <header id="en-tete" class="text-center p-3">
@@ -181,8 +181,8 @@
                             <div class="mb-3">
                                 <p class="fw-bold fs-4 mb-0">E-mail</p>
                                 <p>
-                                    <a class="text-light text-decoration-none" href="mailto:emmanuelschmitt01@gmail.com"
-                                        target="_blank" rel="noopener noreferrer">emmanuelschmitt01@gmail.com</a>
+                                    <a class="text-light text-decoration-none"
+                                        href="mailto:emmanuelschmitt01@gmail.com">emmanuelschmitt01@gmail.com</a>
                                 </p>
                             </div>
                             <div class="mb-3">
@@ -218,7 +218,7 @@
                                             aria-valuemax="100">
                                             <div class="progress-bar rounded m-02" data-target="75">
                                                 75%
-                                            </div>                                                    
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-4">
@@ -425,29 +425,24 @@
                     <header class="row m-0 m-lg-4">
                         <h5 id="machineAecrire" class="col-12 display-5" aria-hidden="polite"></h5>
                         <p class="col-12 fs-5 text-body marron">
-                            Dès 2001, ces mots inauguraient mon aventure en programmation
-                            avec Dark Basic, marquant le début d'une passion durable pour
-                            l'informatique. Cette passion m'a conduit à réaliser divers
-                            projets, dont un jeu de Puissance 4 qui symbolise mes premiers
-                            pas dans ce monde fascinant. Pendant près de deux décennies,
-                            j'ai exploré les domaines du journalisme et du transport, ce qui
-                            a enrichi mon approche du monde technologique avec une
-                            perspective multidisciplinaire. Revenant à mes racines, j'ai
-                            modernisé mon Puissance 4 en JavaScript, enrichi d'une IA et
-                            d'un mode réseau, marquant ainsi mon retour au développement.
-                            Aujourd'hui, je poursuis ma quête de connaissances en explorant
-                            PHP, les bases de données, Git/GitHub, et WordPress, complétée
-                            par des cours MOOCs pour satisfaire ma soif d'apprendre. En
-                            quête d'un stage PMSMP, je suis désireux de plonger plus
-                            profondément dans le développement, d'affiner mes compétences et
-                            d'apporter ma contribution créative à des projets innovants.
+                            Passionné par la programmation depuis 2001, j’ai commencé avec Dark Basic en développant
+                            plusieurs petits jeux. Après une carrière enrichissante en journalisme et en transport, j’ai
+                            choisi de me consacrer pleinement au développement web et web mobile. Pour marquer ce
+                            retour, j’ai conçu un Puissance 4 jouable contre une IA ou en ligne, en multijoueur.
+                            Actuellement en formation à l’ESECADE, je me spécialise dans le développement Full Stack, en
+                            apprenant à utiliser des langages comme HTML, CSS, JavaScript, PHP, SQL et des outils comme
+                            Git et GitHub. J’ai réalisé plusieurs sites web en personnalisant des thèmes et plugins sous
+                            WordPress, et plus récemment en codant en dur ou via Bootstrap pour répondre à des besoins
+                            spécifiques.
+                            À la recherche d’un stage dans le cadre de ma formation, je souhaite mettre en pratique mes
+                            compétences, contribuer à des projets innovants et évoluer au sein d’une équipe dynamique.
                         </p>
                     </header>
-                    <!-- Bouton d'appel à l'action -->
+                    <!-- Bouton d'appel à l'action CTA -->
                     <div id="cta-contact" class="text-center my-4">
                         <a href="#" data-bs-toggle="modal" data-bs-target="#contactFormModal"
-                            class="btn btn-lg btn-secondary py-3 px-4 shadow"
-                            aria-label="Envoyer un message à Emmanuel Schmitt">Me contacter</a>
+                            class="btn btn-lg btn-secondary py-3 px-4 shadow text-decoration-none"
+                            aria-label="Envoyer un message à Emmanuel Schmitt">📩 Proposer un stage</a>
                     </div>
                 </section>
 
@@ -455,50 +450,98 @@
                 <section id="formations" class="mb-4" aria-labelledby="formations-title">
                     <div class="card shadow px-5 pb-4 mb-3">
                         <div class="card-body p-0">
-                            <div class="BandeauBleu position-relative d-flex flex-column">
+                            <div class="BandeauBleu position-relative d-flex flex-column mt-4">
                                 <h3 id="formations-title" class="card-title text-light px-4 py-2 shadow m-0">
                                     Formations
                                 </h3>
                                 <div class="triangle d-inline-block" aria-hidden="true"></div>
                             </div>
-                            <section class="mt-3">
-                                <h6 class="card-subtitle marron fs-4 text-body fw-bold">
-                                    Développeur Full Stack, ESECAD & MOOCs, 2024-2025 à Laval
+                            <!--Section informatique-->
+                            <section>
+                                <h6 class="card-subtitle marron fs-5 text-body fw-bold mt-4">
+                                    Développeur Full Stack, ESECAD & MOOCs, 2024-En cours, à Laval
                                     (53)
                                 </h6>
                                 <p class="card-text">
-                                    HTML, CSS & Sass, JavaScript, SQL, PHP. WordPress & ses
-                                    plugins. Compétences en UX/UI, logiciels Figma, Adobe XD,
-                                    Photoshop et Illustrator. Git et GitHub. Gestion de projet
-                                    en mode agile et collaboratif. Marketing web, SEO et SEA.
-                                    Certification Opquast.
+                                <ul class="list-unstyled ms-3">
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-code-slash" viewBox="0 0 16 16">
+                                            <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
+                                        </svg>
+                                        <p class="d-inline ps-1">HTML, CSS (Sass), Bootstrap</p></li>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-file-code" viewBox="0 0 16 16">
+                                            <path d="M6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708zm2.708 0a.5.5 0 1 0-.708.708L10.293 8 8.646 9.646a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708z"/>
+                                            <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1"/>
+                                        </svg>
+                                        <p class="d-inline ps-1">JavaScript, PHP, SQL, Node.js</p></li>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#3858E9" class="bi bi-wordpress" viewBox="0 0 16 16">
+                                            <path d="M12.633 7.653c0-.848-.305-1.435-.566-1.892l-.08-.13c-.317-.51-.594-.958-.594-1.48 0-.63.478-1.218 1.152-1.218q.03 0 .058.003l.031.003A6.84 6.84 0 0 0 8 1.137 6.86 6.86 0 0 0 2.266 4.23c.16.005.313.009.442.009.717 0 1.828-.087 1.828-.087.37-.022.414.521.044.565 0 0-.371.044-.785.065l2.5 7.434 1.5-4.506-1.07-2.929c-.369-.022-.719-.065-.719-.065-.37-.022-.326-.588.043-.566 0 0 1.134.087 1.808.087.718 0 1.83-.087 1.83-.087.37-.022.413.522.043.566 0 0-.372.043-.785.065l2.48 7.377.684-2.287.054-.173c.27-.86.469-1.495.469-2.046zM1.137 8a6.86 6.86 0 0 0 3.868 6.176L1.73 5.206A6.8 6.8 0 0 0 1.137 8"/>
+                                            <path d="M6.061 14.583 8.121 8.6l2.109 5.78q.02.05.049.094a6.85 6.85 0 0 1-4.218.109m7.96-9.876q.046.328.047.706c0 .696-.13 1.479-.522 2.458l-2.096 6.06a6.86 6.86 0 0 0 2.572-9.224z"/>
+                                            <path fill-rule="evenodd" d="M0 8c0-4.411 3.589-8 8-8s8 3.589 8 8-3.59 8-8 8-8-3.589-8-8m.367 0c0 4.209 3.424 7.633 7.633 7.633S15.632 12.209 15.632 8C15.632 3.79 12.208.367 8 .367 3.79.367.367 3.79.367 8"/>
+                                        </svg>
+                                        <p class="d-inline ps-1">WordPress, thèmes & plugins personnalisés</p></li>
+                                    <li>🎨<p class="d-inline ps-1">UX/UI : Figma, Adobe XD, Photoshop</p></li>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F05134" class="bi bi-git" viewBox="0 0 16 16">
+                                            <path d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.03 1.03 0 0 0 0-1.457"/>
+                                        </svg>
+                                        <p class="d-inline ps-1">Git, GitHub, gestion de projet Agile</p></li>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-search" viewBox="0 0 16 16">
+                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                                        </svg>
+                                        <p class="d-inline ps-1">SEO, Marketing web, Certification Opquast</p>
+                                    </li>
+                                    <li>
+                                        🗣️<p class="d-inline ps-1">Gestion de projet en mode agile et collaboratif</p>
+                                    </li>
+                                </ul>
                                 </p>
+
                             </section>
-                            <section class="mt-3">
-                                <h6 class="card-subtitle marron fs-4 text-body fw-bold">
-                                    Photojournaliste, EMI-CFD, 2014-2015 à Paris (75)
+                            <!--Section Photojournaliste-->
+                            <section>
+                                <h6 class="card-subtitle marron fs-5 text-body fw-bold mt-4">
+                                    Photojournaliste, EMI-CFD, 2014-2015, à Paris (75)
                                 </h6>
                                 <p class="card-text">
-                                    Formation professionnelle à l’Ecole des métiers de
-                                    l’information, RNCP Niv.6 Adobe Lightroom, Photoshop, Final
-                                    cut X. Mise en ligne d'articles et photographies sur les
-                                    sites des médias, création d'un site internet immersif.
-                                    News, portrait, reportage, studio, corporate, editing,
-                                    traitement, vidéo avec reflex, montage, projets multimédias
-                                    audio, vidéo.
+                                <ul class="list-unstyled ms-3">
+                                    <li>📸 Photographie de presse & reportage : news, portrait, studio, corporate
+                                    </li>
+                                    <li>🎥 Vidéo & multimédia : tournage avec reflex, montage sur Final Cut X
+                                    </li>
+                                    <li>🖥 Post-production : Adobe Lightroom & Photoshop (édition et
+                                        retouche)</li>
+                                    <li>🌐 Publication web : mise en ligne d’articles, gestion d'un site immersif
+                                    </li>
+                                    <li>🗣 Réalisation de projets multimédias : photographie, vidéo, son</li>
+                                    <li>
+                                        👨‍🎓 RNCP Niv.6
+                                    </li>
+                                </ul>
                                 </p>
                             </section>
-                            <section class="mt-3">
-                                <h6 class="card-subtitle marron fs-4 text-body fw-bold">
-                                    Journaliste, IUT, 2007-2010 à Lannion (22)
+                            <!--Section journaliste-->
+                            <section>
+                                <h6 class="card-subtitle marron fs-5 text-body fw-bold mt-4">
+                                    Journaliste, IUT, 2007-2010, à Lannion (22)
                                 </h6>
                                 <p class="card-text">
-                                    DUT puis Licence professionnelle, spécialisation presse
-                                    magazine. Rédacteur, secrétaire de rédaction, journaliste
-                                    radio, journaliste reporter d’images et web-journaliste.
-                                    Cours de HTML + CSS ainsi que WordPress, mise en ligne
-                                    d'articles, photographies et vidéos. Cours de mise en page
-                                    avec Adobe InDesign et QuarkXpress.
+                                <ul class="list-unstyled ms-3">
+                                    <li>🖊 Rédaction & édition : presse écrite, web, radio, TV</li>
+                                    <li>📢 Journalisme radio : reportages pour France Bleu Armorique et Virgin
+                                        Radio</li>
+                                    <li>📺 Journalisme photo & reporter d’images</li>
+                                    <li>🖥 Web-journalisme : mise en ligne d’articles, gestion de contenus
+                                        multimédias</li>
+                                    <li>🎨 Mise en page & graphisme : maîtrise d'Adobe InDesign et
+                                        QuarkXPress</li>
+                                    <li>
+                                        👨‍🎓 DUT & Licence professionnelle; spécialisation presse magazine
+                                    </li>
+                                </ul>
                                 </p>
                             </section>
                         </div>
@@ -509,24 +552,28 @@
                 <section id="experiences" aria-labelledby="experiences-title">
                     <div class="card shadow px-5 pb-4 mb-3">
                         <div class="card-body p-0">
-                            <div class="BandeauBleu position-relative d-flex flex-column">
+                            <!--Card Expériences-->
+                            <div class="BandeauBleu position-relative d-flex flex-column mt-4">
                                 <h3 id="experiences-title" class="card-title text-light px-4 py-2 shadow m-0">
                                     Expériences
                                 </h3>
                                 <div class="triangle d-inline-block" aria-hidden="true"></div>
                             </div>
-                            <section class="mt-3" aria-labelledby="informatique-title">
-                                <h6 id="informatique-title" class="card-subtitle marron fs-4 text-body fw-bold">
+                            <!--Section informatique-->
+                            <section aria-labelledby="informatique-title">
+                                <h6 id="informatique-title" class="card-subtitle marron fs-4 text-body fw-bold mt-4 mb-2">
                                     Informatique
                                 </h6>
                                 <ul class="arrowPuce">
                                     <li>
                                         Projet de développement d'un
                                         <a href="https://www.emmanuelschmitt.com/puissance4" target="_blank"
-                                            rel="noopener noreferrer">Puissance 4</a>
+                                            rel="noopener noreferrer">Puissance 4</a> en JavaScript avec une IA et mode
+                                        multijoueur en ligne
                                     </li>
                                     <li>
-                                        Création de sites internet, entre autres :
+                                        Création de sites internet WordPress, avec une personnalisation avancée de
+                                        thèmes et plugins :
                                         <a href="https://www.frederiquelebrun.com" target="_blank"
                                             rel="noopener noreferrer">Frédérique Le Brun - Photojournaliste</a>,
                                         <a href="https://www.bernardschmitt.com" target="_blank"
@@ -535,8 +582,14 @@
                                             rel="noopener noreferrer">Restaurant Le Meskad</a>
                                     </li>
                                     <li>
+                                        Création de sites internet from scratch :
+                                        <a href="https://www.ad-laubedesoi.fr" target="_blank"
+                                            rel="noopener noreferrer">À l'Aube de soi</a>, site professionnel d'Aurore
+                                        Détain, développé avec Bootstrap
+                                    </li>
+                                    <li>
                                         Certifications CSS, HTML, JavaScript, PHP, Sass, Github &
-                                        Git, IA… sur Openclassrooms (2023-2024)
+                                        Git, IA, Bootstrap… sur Openclassrooms (2023-2025)
                                     </li>
                                     <li>
                                         Développement de jeux vidéo et programmes en Dark Basic
@@ -552,8 +605,9 @@
                                     </li>
                                 </ul>
                             </section>
-                            <section class="mt-3" aria-labelledby="medias-title">
-                                <h6 id="medias-title" class="card-subtitle marron fs-4 text-body fw-bold">
+                            <!--Section Médias-->
+                            <section aria-labelledby="medias-title">
+                                <h6 id="medias-title" class="card-subtitle marron fs-4 text-body fw-bold mt-4 mb-2">
                                     Médias
                                 </h6>
                                 <ul class="arrowPuce">
@@ -576,14 +630,15 @@
                                     </li>
                                 </ul>
                             </section>
-                            <section class="mt-3" aria-labelledby="transport-title">
-                                <h6 id="transport-title" class="card-subtitle marron fs-4 text-body fw-bold">
+                            <!--Section transport-->
+                            <section aria-labelledby="transport-title">
+                                <h6 id="transport-title" class="card-subtitle marron fs-4 text-body fw-bold mt-4 mb-2">
                                     Transport
                                 </h6>
-                                <ul  class="arrowPuce">
+                                <ul class="arrowPuce">
                                     <li>
                                         Conducteur poids-lourd et super poids-lourd, de 2018 à
-                                        2023
+                                        2024
                                     </li>
                                     <li>
                                         Exploitant transport pour les Routiers Bretons (septembre
@@ -609,7 +664,8 @@
                         <!--Legals-->
                         <div class="col-6 d-flex justify-content-start">
                             <!--Liens-->
-                            <a class="text-light" href="#" data-bs-toggle="modal" data-bs-target="#legalesMentionsModal">Mentions légales</a>
+                            <a class="text-light" href="#" data-bs-toggle="modal"
+                                data-bs-target="#legalesMentionsModal">Mentions légales</a>
                         </div>
                         <!--Copyright-->
                         <div class="col-6 d-flex justify-content-end">
@@ -619,24 +675,26 @@
                             </a>
                         </div>
 
-                    <!--Fin col/row bootstrap-->    
+                        <!--Fin col/row bootstrap-->
                     </div>
                 </div>
-                
+
             </footer>
         </div>
     </div>
-    
+
     <!--Bouton UP-->
     <div id="nav-button" class="position-fixed end-0 bottom-0 m-5">
         <!--UP button-->
-        <a href="#accueil" id="btnUP" class="btn btn-secondary sticky-bottom rounded-circle shadow z-1080 text-light justify-content-center align-items-center">
+        <a href="#accueil" id="btnUP"
+            class="btn btn-secondary sticky-bottom rounded-circle shadow z-1080 text-light justify-content-center align-items-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                 class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
-                 <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+                class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+                <path
+                    d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
             </svg>
         </a>
-        
+
     </div>
 
     <!--Modals-->
@@ -684,7 +742,7 @@
                             <div class="col-12 mb-3">
                                 <label for="subject" class="form-label">Objet</label>
                                 <input type="text" class="form-control" id="subject" name="subject"
-                                    placeholder="Offre d'emploi" />
+                                    placeholder="Offre de stage" />
                             </div>
 
                             <!--Message field-->
@@ -724,7 +782,8 @@
                         <li><span>PRÉSENTATION DU SITE</span></li>
                     </ol>
                     <span>En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans
-                        l'économie numérique, il est précisé aux utilisateurs du site www.emmanuelschmitt.com l'identité des
+                        l'économie numérique, il est précisé aux utilisateurs du site www.emmanuelschmitt.com l'identité
+                        des
                         différents intervenants dans le cadre de sa réalisation et de son suivi :</span>
 
                     <span>Propriétaire : Emmanuel Schmitt - 34 rue de la Fleuriere 53000 Laval</span>
@@ -740,17 +799,21 @@
                     <ol start="2">
                         <li><span> CONDITIONS GÉNÉRALES D’UTILISATION DU SITE ET DES SERVICES PROPOSÉS</span></li>
                     </ol>
-                    <span>L’utilisation du site www.emmanuelschmitt.com implique l’acceptation pleine et entière des conditions
+                    <span>L’utilisation du site www.emmanuelschmitt.com implique l’acceptation pleine et entière des
+                        conditions
                         générales d’utilisation ci-après décrites. Ces conditions d’utilisation sont susceptibles d’être
-                        modifiées ou complétées à tout moment, les utilisateurs du site www.emmanuelschmitt.com sont donc
+                        modifiées ou complétées à tout moment, les utilisateurs du site www.emmanuelschmitt.com sont
+                        donc
                         invités à les consulter de manière régulière.</span>
 
                     <span>Ce site est normalement accessible à tout moment aux utilisateurs. Une interruption pour
-                        raison de maintenance technique peut être toutefois décidée par Emmanuel Schmitt, qui s’efforcera
+                        raison de maintenance technique peut être toutefois décidée par Emmanuel Schmitt, qui
+                        s’efforcera
                         alors de communiquer préalablement aux utilisateurs les dates et heures de
                         l’intervention.</span>
 
-                    <span>Le site www.emmanuelschmitt.com est mis à jour régulièrement par ses propres soin. De la même façon,
+                    <span>Le site www.emmanuelschmitt.com est mis à jour régulièrement par ses propres soin. De la même
+                        façon,
                         les mentions légales peuvent être modifiées à tout moment : elles s’imposent néanmoins à
                         l’utilisateur qui est invité à s’y référer le plus souvent possible afin d’en prendre
                         connaissance.</span>
@@ -758,17 +821,21 @@
                     <ol start="3">
                         <li><span> DESCRIPTION DES SERVICES FOURNIS</span></li>
                     </ol>
-                    <span>Le site www.emmanuelschmitt.com a pour objet de fournir une information concernant l’ensemble des
+                    <span>Le site www.emmanuelschmitt.com a pour objet de fournir une information concernant l’ensemble
+                        des
                         activités de la société.</span>
 
-                    <span>Emmanuel Schmitt s’efforce de fournir sur le site www.emmanuelschmitt.com des informations aussi
+                    <span>Emmanuel Schmitt s’efforce de fournir sur le site www.emmanuelschmitt.com des informations
+                        aussi
                         précises que possible. Toutefois, il ne pourra être tenu responsable des omissions, des
                         inexactitudes et des carences dans la mise à jour, qu’elles soient de son fait ou du fait des
                         tiers partenaires qui lui fournissent ces informations.</span>
 
-                    <span>Toutes les informations indiquées sur le site www.emmanuelschmitt.com sont données à titre indicatif,
+                    <span>Toutes les informations indiquées sur le site www.emmanuelschmitt.com sont données à titre
+                        indicatif,
                         et sont susceptibles d’évoluer. Par ailleurs, les renseignements figurant sur le site
-                        www.emmanuelschmitt.com ne sont pas exhaustifs. Ils sont donnés sous réserve de modifications ayant été
+                        www.emmanuelschmitt.com ne sont pas exhaustifs. Ils sont donnés sous réserve de modifications
+                        ayant été
                         apportées depuis leur mise en ligne.</span>
                     <br><br>
                     <ol start="4">
@@ -814,13 +881,15 @@
                         1978, la loi n° 2004-801 du 6 août 2004, l'article L. 226-13 du Code pénal et la Directive
                         Européenne du 24 octobre 1995.</span>
 
-                    <span>A l'occasion de l'utilisation du site www.emmanuelschmitt.com, peuvent êtres recueillies : l'URL des
+                    <span>A l'occasion de l'utilisation du site www.emmanuelschmitt.com, peuvent êtres recueillies :
+                        l'URL des
                         liens par l'intermédiaire desquels l'utilisateur a accédé au site www.emmanuelschmitt.com, le
                         fournisseur d'accès de l'utilisateur, l'adresse de protocole Internet (IP) de
                         l'utilisateur.</span>
 
                     <span>En tout état de cause Emmanuel Schmitt ne collecte des informations personnelles relatives à
-                        l'utilisateur que pour le besoin de certains services proposés par le site www.emmanuelschmitt.com.
+                        l'utilisateur que pour le besoin de certains services proposés par le site
+                        www.emmanuelschmitt.com.
                         L'utilisateur fournit ces informations en toute connaissance de cause, notamment lorsqu'il
                         procède par lui-même à leur saisie. Il est alors précisé à l'utilisateur du site
                         www.emmanuelschmitt.com l’obligation ou non de fournir ces informations.</span>
@@ -831,9 +900,11 @@
                         sa demande écrite et signée, accompagnée d’une copie du titre d’identité avec signature du
                         titulaire de la pièce, en précisant l’adresse à laquelle la réponse doit être envoyée.</span>
 
-                    <span>Aucune information personnelle de l'utilisateur du site www.emmanuelschmitt.com n'est publiée à
+                    <span>Aucune information personnelle de l'utilisateur du site www.emmanuelschmitt.com n'est publiée
+                        à
                         l'insu de l'utilisateur, échangée, transférée, cédée ou vendue sur un support quelconque à des
-                        tiers. Seule l'hypothèse du rachat de Emmanuel Schmitt et de ses droits permettrait la transmission
+                        tiers. Seule l'hypothèse du rachat de Emmanuel Schmitt et de ses droits permettrait la
+                        transmission
                         des dites informations à l'éventuel acquéreur qui serait à son tour tenu de la même obligation
                         de conservation et de modification des données vis à vis de l'utilisateur du site
                         www.emmanuelschmitt.com.</span>
@@ -848,12 +919,14 @@
                     <ol start="8">
                         <li><span> LIENS HYPERTEXTES ET COOKIES</span></li>
                     </ol>
-                    <span>Le site www.emmanuelschmitt.com contient un certain nombre de liens hypertextes vers d’autres sites,
+                    <span>Le site www.emmanuelschmitt.com contient un certain nombre de liens hypertextes vers d’autres
+                        sites,
                         mis en place avec l’autorisation de Emmanuel Schmitt. Cependant, Emmanuel Schmitt n’a pas la
                         possibilité de vérifier le contenu des sites ainsi visités, et n’assumera en conséquence aucune
                         responsabilité de ce fait.</span>
 
-                    <span>La navigation sur le site www.emmanuelschmitt.com est susceptible de provoquer l’installation de
+                    <span>La navigation sur le site www.emmanuelschmitt.com est susceptible de provoquer l’installation
+                        de
                         cookie(s) sur l’ordinateur de l’utilisateur. Un cookie est un fichier de petite taille, qui ne
                         permet pas l’identification de l’utilisateur, mais qui enregistre des informations relatives à
                         la navigation d’un ordinateur sur un site. Les données ainsi obtenues visent à faciliter la
@@ -918,9 +991,8 @@
 
     <!-- Import Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
