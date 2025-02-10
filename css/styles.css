@@ -43,11 +43,15 @@ h3 {
     width: 40px; 
     height: 40px;
 }
-/*Fond du CD*/
+/*Fond du site*/
 #main-container {
     background: url(../Images/Fond.png);
     background-repeat: repeat-y;
     background-size: 100%;
+}
+/*Style des puces*/
+ul.arrowPuce {
+    list-style-image: url("../Images/puce.png");
 }
 
 /** Couleurs et dimensions **/
@@ -60,10 +64,14 @@ h3 {
     z-index: 1080;
 }
 
-/** Animation **/
+/** Animations **/
 /*Animation des progress-bar*/
 .progress-bar {
     transition: width 2s ease-in-out;
+}
+.arrowPuce>li:hover {
+    transform: translate(2px, 0);
+    transition: transform 0.7s;
 }
 
 /** Zone à ne pas imprimer si impression du CV **/
