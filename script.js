@@ -46,7 +46,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 100);
     }
     
-
     // Générateur aléatoire pour l'effet machine à écrire
     function getRandomInt(min, max) {
         min = Math.ceil(min)
@@ -64,4 +63,14 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.progress-bar').forEach(bar => {
         observer.observe(bar)
     })
-})
+
+    // Bouton de scroll UP
+    const btnUp = document.getElementById("btnUP");
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 300) {
+            btnUp.style.display = "block";
+        } else {
+            btnUp.style.display = "none";
+        }
+    });
+});
