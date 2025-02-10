@@ -8,6 +8,13 @@
     <meta name="author" content="Emmanuel Schmitt" />
     <title>Emmanuel Schmitt - Apprenti développeur Full Stack</title>
 
+    <!--Securite-->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline';">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none';">
+    
+
+
     <!-- Import Bootstrap CSS et custom CSS -->
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -713,42 +720,43 @@
                 <!--Main contact form-->
                 <div id="form" class="p-3">
                     <div class="container">
-                        <form id="contactFormDisplay" class="row text-secondary fw-bold" action="traitement.php"
-                            method="post">
-                            <!--a changer en post plus tard-->
+                        
+                        <!-- Formulaire avec validation Bootstrap -->
+                        <form id="contactForm" class="needs-validation row" novalidate action="traitement.php" method="post">
 
-                            <!--lastname field-->
-                            <div class="col-12 col-sm-6 mb-3">
+                            <!-- Nom -->
+                            <div class="mb-3 col-sm-6">
                                 <label for="lastname" class="form-label">Nom</label>
-                                <input type="text" class="form-control" id="lastname" name="lastname"
-                                    placeholder="Dupond" />
+                                <input type="text" class="form-control" id="lastname" name="lastname" required maxlength="50" pattern="[A-Za-zÀ-ÿ\s\-]+">
+                                <div class="invalid-feedback">Veuillez entrer un nom valide (lettres uniquement).</div>
                             </div>
 
-                            <!--firstname field-->
-                            <div class="col-12 col-sm-6 mb-3">
+                            <!-- Prénom -->
+                            <div class="mb-3 col-sm-6">
                                 <label for="firstname" class="form-label">Prénom</label>
-                                <input type="text" class="form-control" id="firstname" name="firstname"
-                                    placeholder="Martin" />
+                                <input type="text" class="form-control" id="firstname" name="firstname" required maxlength="50" pattern="[A-Za-zÀ-ÿ\s\-]+">
+                                <div class="invalid-feedback">Veuillez entrer un prénom valide.</div>
                             </div>
 
-                            <!--Email field-->
-                            <div class="col-12 mb-3">
-                                <label for="email" class="form-label">Adresse e-mail</label>
-                                <input type="email" class="form-control" id="email" name="email"
-                                    placeholder="name@example.com" />
+                            <!-- Email -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                                <div class="invalid-feedback">Veuillez entrer une adresse email valide.</div>
                             </div>
 
-                            <!--Subject field-->
-                            <div class="col-12 mb-3">
+                            <!-- Objet -->
+                            <div class="mb-3">
                                 <label for="subject" class="form-label">Objet</label>
-                                <input type="text" class="form-control" id="subject" name="subject"
-                                    placeholder="Offre de stage" />
+                                <input type="text" class="form-control" id="subject" name="subject" required maxlength="100">
+                                <div class="invalid-feedback">Veuillez renseigner un objet valide.</div>
                             </div>
 
-                            <!--Message field-->
-                            <div class="col-12 mb-3">
+                            <!-- Message -->
+                            <div class="mb-3">
                                 <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                                <textarea class="form-control" id="message" name="message" rows="3" required minlength="10"></textarea>
+                                <div class="invalid-feedback">Votre message doit contenir au moins 10 caractères.</div>
                             </div>
                         </form>
                     </div>
@@ -756,10 +764,10 @@
 
                 <!--Footer contact form-->
                 <div class="modal-footer">
-                    <button type="submit" form="contactFormDisplay" class="btn btn-success">
+                    <button type="submit" form="contactForm" class="btn btn-success">
                         Envoyer
                     </button>
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                    <button type="button" form="contactForm" class="btn btn-danger" data-bs-dismiss="modal">
                         Annuler
                     </button>
                 </div>

@@ -74,3 +74,19 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+/* Formulaire de contact */
+(function () {
+    'use strict';
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.getElementById('contactForm');
+
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault();  // Empêche l'envoi si invalide
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated'); // Active les styles Bootstrap
+      }, false);
+    });
+  })();
