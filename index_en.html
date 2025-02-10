@@ -1,25 +1,23 @@
 <!DOCTYPE html>
-<html lang="fr" id="accueil">
+<html lang="en" id="accueil">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="CV de Emmanuel Schmitt, apprenti développeur full stack" />
+    <meta name="description" content="CV of Emmanuel Schmitt, Apprentice Full Stack Developer" />
     <meta name="author" content="Emmanuel Schmitt" />
-    <title>Emmanuel Schmitt - Apprenti développeur Full Stack</title>
+    <title>Emmanuel Schmitt - Apprentice Full Stack Developer</title>
 
-    <!--Securite-->
+    <!-- Security -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline';">
     <meta http-equiv="X-Frame-Options" content="DENY">
     <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none';">
-    
 
-
-    <!-- Import Bootstrap CSS et custom CSS -->
+    <!-- Import Bootstrap CSS and custom CSS -->
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/styles.css" />
 
-    <!-- Import script JS -->
+    <!-- Import JS script -->
     <script src="script.js" defer></script>
 </head>
 
@@ -27,12 +25,11 @@
     <div class="container-xxl" id="main-container">
         <div class="row p-1">
             <div class="col-12">
-                <!--Menu navbar-->
+                <!-- Navbar menu -->
                 <nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top rounded-3 px-3 shadow-sm">
                     <div class="container">
                         <a class="navbar-brand" href="#accueil">
-                            <img src="Images/logo/logo_whiter.png"
-                                alt="Logo de Emmanuel Schmitt, représentant ses initiales">
+                            <img src="Images/logo/logo_whiter.png" alt="Emmanuel Schmitt logo representing his initials">
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navOpener" aria-controls="navOpener" aria-expanded="false"
@@ -40,7 +37,7 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse d-lg-flex justify-content-lg-between" id="navOpener">
-                            <!--Menu principal-->
+                            <!-- Main menu -->
                             <ul class="navbar-nav">
                                 <li class="nav-item">
                                     <a class="nav-link" aria-current="page" href="#introduction">Introduction</a>
@@ -48,33 +45,32 @@
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="dropdownInformations" role="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
-                                        Informations
+                                        Information
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownInformations">
                                         <li>
-                                            <a class="dropdown-item" href="#info_perso">Informations personnelles</a>
+                                            <a class="dropdown-item" href="#info_perso">Personal Information</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="#competences">Compétences numériques</a>
+                                            <a class="dropdown-item" href="#competences">Digital Skills</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="#infos-complementaires">Informations
-                                                complémentaires</a>
+                                            <a class="dropdown-item" href="#infos-complementaires">Additional Information</a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#formations">Formations</a>
+                                    <a class="nav-link" href="#formations">Education</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#experiences">Expériences</a>
+                                    <a class="nav-link" href="#experiences">Experience</a>
                                 </li>
                             </ul>
-                            <!--Choix de langue-->
+                            <!-- Language selection -->
                             <ul class="navbar-nav">
-                                <!--French-->
+                                <!-- French -->
                                 <li class="nav-item">
-                                    <a class="nav-link disabled w-40px" aria-disabled="true">
+                                    <a href="index.html" class="nav-link w-40px" >
                                         <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
                                             text-rendering="geometricPrecision" image-rendering="optimizeQuality"
                                             fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 356.18">
@@ -87,9 +83,9 @@
                                         </svg>
                                     </a>
                                 </li>
-                                <!--English-->
+                                <!-- English -->
                                 <li class="nav-item">
-                                    <a class="nav-link w-40px" href="index_en.html">
+                                    <a class="nav-link w-40px" aria-disabled="true">
                                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                             viewBox="0 0 55.2 38.4" style="enable-background: new 0 0 55.2 38.4"
@@ -98,11 +94,9 @@
                                                 .st0 {
                                                     fill: #fefefe;
                                                 }
-
                                                 .st1 {
                                                     fill: #c8102e;
                                                 }
-
                                                 .st2 {
                                                     fill: #012169;
                                                 }
@@ -144,84 +138,80 @@
                 </nav>
             </div>
 
-            <!-- informations personnelles, compétences et infos complémentaires -->
+            <!-- Personal information, skills and additional information -->
             <aside class="col-12 col-md-5 p-3" id="sidebar">
                 <article id="bloc-bandeau" class="bg-primary shadow-sm text-light rounded-4 mb-4"
                     aria-labelledby="bandeau-title">
-                    <!-- En-tête avec portrait et identifiant -->
+                    <!-- Header with portrait and identification -->
                     <header id="en-tete" class="text-center p-3">
                         <img class="rounded-circle shadow w-75" src="Images/eschmitt.jpg" srcset="
                   Images/eschmitt_large.webp 266w,
                   Images/eschmitt_small.webp 125w
-                " sizes="(max-width: 768px) 80vw, 25vw" alt="Portrait d'Emmanuel Schmitt" />
+                " sizes="(max-width: 768px) 80vw, 25vw" alt="Portrait of Emmanuel Schmitt" />
                         <div class="py-4">
                             <h1 id="bandeau-title" class="fw-bold">Emmanuel Schmitt</h1>
-                            <h2 class="fw-bold">Développeur Full Stack</h2>
+                            <h2 class="fw-bold">Full Stack Developer</h2>
                         </div>
                     </header>
 
-                    <!-- Informations personnelles -->
+                    <!-- Personal Information -->
                     <section id="info_perso" aria-labelledby="info-perso-title">
                         <div class="bg-secondary py-2 text-center">
                             <h4 id="info-perso-title" class="fw-bold m-2">
-                                Informations personnelles
+                                Personal Information
                             </h4>
                         </div>
                         <div class="m-4">
-                            <!--Adresse-->
+                            <!-- Address -->
                             <div class="mb-3">
-                                <p class="fw-bold fs-4 mb-0">Adresse</p>
+                                <p class="fw-bold fs-4 mb-0">Address</p>
                                 <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-                                    <span itemprop="streetAddress">34 rue de la Fleurière, Résidence Rosa
-                                        Alba</span><br />
+                                    <span itemprop="streetAddress">34 rue de la Fleurière, Résidence Rosa Alba</span><br />
                                     <span itemprop="postalCode">53000</span>
                                     <span itemprop="addressLocality">Laval</span>
                                 </address>
                             </div>
                             <div class="mb-3">
-                                <p class="fw-bold fs-4 mb-0">Téléphone</p>
+                                <p class="fw-bold fs-4 mb-0">Phone</p>
                                 <p>
-                                    <a href="tel:+33698639996" class="text-light text-decoration-none">+33 6 98 63 99
-                                        96</a>
+                                    <a href="tel:+33698639996" class="text-light text-decoration-none">+33 6 98 63 99 96</a>
                                 </p>
                             </div>
                             <div class="mb-3">
-                                <p class="fw-bold fs-4 mb-0">E-mail</p>
+                                <p class="fw-bold fs-4 mb-0">Email</p>
                                 <p>
-                                    <a class="text-light text-decoration-none"
-                                        href="mailto:emmanuelschmitt01@gmail.com">emmanuelschmitt01@gmail.com</a>
+                                    <a class="text-light text-decoration-none" href="mailto:emmanuelschmitt01@gmail.com">emmanuelschmitt01@gmail.com</a>
                                 </p>
                             </div>
                             <div class="mb-3">
                                 <p class="fw-bold fs-4 mb-0">GitHub</p>
                                 <p>
-                                    <a class="text-light text-decoration-none" href="https://github.com/Meniou56"
-                                        target="_blank" rel="noopener noreferrer">Meniou56</a>
+                                    <a class="text-light text-decoration-none" href="https://github.com/Meniou56" target="_blank" rel="noopener noreferrer">Meniou56</a>
                                 </p>
                             </div>
                             <div>
-                                <p class="fw-bold fs-4 mb-0">Permis</p>
-                                <p>Permis B/C/CE et motorisé</p>
+                                <p class="fw-bold fs-4 mb-0">Driver's License</p>
+                                <p>Categories B/C/CE and motorized</p>
                             </div>
                         </div>
                     </section>
 
-                    <!-- Compétences numériques -->
+                    <!-- Digital Skills -->
                     <section id="competences" aria-labelledby="competences-title">
                         <div class="bg-secondary text-center py-2">
                             <h4 id="competences-title" class="fw-bold m-2">
-                                Compétences numériques
+                                Digital Skills
                             </h4>
                         </div>
                         <div class="m-4">
-                            <!-- Rubrique Développement -->
+                            <!-- Development Section -->
                             <section aria-labelledby="dev-title" class="mb-4">
-                                <h4 id="dev-title" class="fw-bold">Développement</h4>
+                                <h4 id="dev-title" class="fw-bold">Development</h4>
                                 <div class="row">
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/html.png" alt="Logo HTML" />
+                                        <img class="img-fluid" src="images/competences/html.png" alt="HTML Logo" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
-                                            aria-label="Maîtrise du HTML" aria-valuenow="75" aria-valuemin="0"
+                                            aria-label="HTML Proficiency" aria-valuenow="75" aria-valuemin="0"
                                             aria-valuemax="100">
                                             <div class="progress-bar rounded m-02" data-target="75">
                                                 75%
@@ -229,9 +219,9 @@
                                         </div>
                                     </div>
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/css.png" alt="Logo CSS" />
+                                        <img class="img-fluid" src="images/competences/css.png" alt="CSS Logo" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
-                                            aria-label="Maîtrise du CSS" aria-valuenow="70" aria-valuemin="0"
+                                            aria-label="CSS Proficiency" aria-valuenow="70" aria-valuemin="0"
                                             aria-valuemax="100">
                                             <div class="progress-bar rounded m-02" data-target="70">
                                                 70%
@@ -239,9 +229,9 @@
                                         </div>
                                     </div>
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/JS.png" alt="Logo JavaScript" />
+                                        <img class="img-fluid" src="images/competences/JS.png" alt="JavaScript Logo" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
-                                            aria-label="Maîtrise du JavaScript" aria-valuenow="40" aria-valuemin="0"
+                                            aria-label="JavaScript Proficiency" aria-valuenow="40" aria-valuemin="0"
                                             aria-valuemax="100">
                                             <div class="progress-bar rounded m-02" data-target="40">
                                                 40%
@@ -251,9 +241,9 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/php.png" alt="Logo PHP" />
+                                        <img class="img-fluid" src="images/competences/php.png" alt="PHP Logo" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
-                                            aria-label="Maîtrise du PHP" aria-valuenow="25" aria-valuemin="0"
+                                            aria-label="PHP Proficiency" aria-valuenow="25" aria-valuemin="0"
                                             aria-valuemax="100">
                                             <div class="progress-bar rounded m-02" data-target="25">
                                                 25%
@@ -261,9 +251,9 @@
                                         </div>
                                     </div>
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/git.png" alt="Logo Git" />
+                                        <img class="img-fluid" src="images/competences/git.png" alt="Git Logo" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
-                                            aria-label="Maîtrise de Git" aria-valuenow="50" aria-valuemin="0"
+                                            aria-label="Git Proficiency" aria-valuenow="50" aria-valuemin="0"
                                             aria-valuemax="100">
                                             <div class="progress-bar rounded m-02" data-target="50">
                                                 50%
@@ -271,9 +261,9 @@
                                         </div>
                                     </div>
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/github.png" alt="Logo GitHub" />
+                                        <img class="img-fluid" src="images/competences/github.png" alt="GitHub Logo" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
-                                            aria-label="Maîtrise de GitHub" aria-valuenow="55" aria-valuemin="0"
+                                            aria-label="GitHub Proficiency" aria-valuenow="55" aria-valuemin="0"
                                             aria-valuemax="100">
                                             <div class="progress-bar rounded m-02" data-target="55">
                                                 55%
@@ -283,14 +273,14 @@
                                 </div>
                             </section>
 
-                            <!-- Rubrique Maquettage -->
+                            <!-- Prototyping Section -->
                             <section aria-labelledby="maquettage-title" class="mb-4">
-                                <h4 id="maquettage-title" class="fw-bold">Maquettage</h4>
+                                <h4 id="maquettage-title" class="fw-bold">Prototyping</h4>
                                 <div class="row">
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/xd.png" alt="Logo Adobe XD" />
+                                        <img class="img-fluid" src="images/competences/xd.png" alt="Adobe XD Logo" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
-                                            aria-label="Maîtrise d'Adobe XD" aria-valuenow="40" aria-valuemin="0"
+                                            aria-label="Adobe XD Proficiency" aria-valuenow="40" aria-valuemin="0"
                                             aria-valuemax="100">
                                             <div class="progress-bar rounded m-02" data-target="40">
                                                 40%
@@ -298,9 +288,9 @@
                                         </div>
                                     </div>
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/Figma.png" alt="Logo Figma" />
+                                        <img class="img-fluid" src="images/competences/Figma.png" alt="Figma Logo" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
-                                            aria-label="Maîtrise de Figma" aria-valuenow="40" aria-valuemin="0"
+                                            aria-label="Figma Proficiency" aria-valuenow="40" aria-valuemin="0"
                                             aria-valuemax="100">
                                             <div class="progress-bar rounded m-02" data-target="40">
                                                 40%
@@ -308,10 +298,9 @@
                                         </div>
                                     </div>
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/Id.png"
-                                            alt="Logo Adobe InDesign" />
+                                        <img class="img-fluid" src="images/competences/Id.png" alt="Adobe InDesign Logo" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
-                                            aria-label="Maîtrise d'InDesign" aria-valuenow="35" aria-valuemin="0"
+                                            aria-label="InDesign Proficiency" aria-valuenow="35" aria-valuemin="0"
                                             aria-valuemax="100">
                                             <div class="progress-bar rounded m-02" data-target="35">
                                                 35%
@@ -321,15 +310,14 @@
                                 </div>
                             </section>
 
-                            <!-- Rubrique Visuels -->
+                            <!-- Visuals Section -->
                             <section aria-labelledby="visuels-title" class="mb-4">
-                                <h4 id="visuels-title" class="fw-bold">Visuels</h4>
+                                <h4 id="visuels-title" class="fw-bold">Visuals</h4>
                                 <div class="row">
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/lr.png"
-                                            alt="Logo Adobe Lightroom" />
+                                        <img class="img-fluid" src="images/competences/lr.png" alt="Adobe Lightroom Logo" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
-                                            aria-label="Maîtrise de Lightroom" aria-valuenow="90" aria-valuemin="0"
+                                            aria-label="Lightroom Proficiency" aria-valuenow="90" aria-valuemin="0"
                                             aria-valuemax="100">
                                             <div class="progress-bar rounded m-02" data-target="90">
                                                 90%
@@ -337,10 +325,9 @@
                                         </div>
                                     </div>
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/ps.png"
-                                            alt="Logo Adobe Photoshop" />
+                                        <img class="img-fluid" src="images/competences/ps.png" alt="Adobe Photoshop Logo" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
-                                            aria-label="Maîtrise de Photoshop" aria-valuenow="45" aria-valuemin="0"
+                                            aria-label="Photoshop Proficiency" aria-valuenow="45" aria-valuemin="0"
                                             aria-valuemax="100">
                                             <div class="progress-bar rounded m-02" data-target="45">
                                                 45%
@@ -348,10 +335,9 @@
                                         </div>
                                     </div>
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/Ai.png"
-                                            alt="Logo Adobe Illustrator" />
+                                        <img class="img-fluid" src="images/competences/Ai.png" alt="Adobe Illustrator Logo" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
-                                            aria-label="Maîtrise d'Illustrator" aria-valuenow="20" aria-valuemin="0"
+                                            aria-label="Illustrator Proficiency" aria-valuenow="20" aria-valuemin="0"
                                             aria-valuemax="100">
                                             <div class="progress-bar rounded m-02" data-target="20">
                                                 20%
@@ -361,15 +347,14 @@
                                 </div>
                             </section>
 
-                            <!-- Rubrique Autres -->
+                            <!-- Others Section -->
                             <section aria-labelledby="autres-title">
-                                <h4 id="autres-title" class="fw-bold">Autres</h4>
+                                <h4 id="autres-title" class="fw-bold">Others</h4>
                                 <div class="row">
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/Pr.png"
-                                            alt="Logo Adobe Première" />
+                                        <img class="img-fluid" src="images/competences/Pr.png" alt="Adobe Premiere Pro Logo" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
-                                            aria-label="Maîtrise de Première Pro" aria-valuenow="65" aria-valuemin="0"
+                                            aria-label="Premiere Pro Proficiency" aria-valuenow="65" aria-valuemin="0"
                                             aria-valuemax="100">
                                             <div class="progress-bar rounded m-02" data-target="65">
                                                 65%
@@ -377,9 +362,9 @@
                                         </div>
                                     </div>
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/WP.png" alt="Logo WordPress" />
+                                        <img class="img-fluid" src="images/competences/WP.png" alt="WordPress Logo" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
-                                            aria-label="Maîtrise de WordPress" aria-valuenow="75" aria-valuemin="0"
+                                            aria-label="WordPress Proficiency" aria-valuenow="75" aria-valuemin="0"
                                             aria-valuemax="100">
                                             <div class="progress-bar rounded m-02" data-target="75">
                                                 75%
@@ -392,32 +377,32 @@
                         </div>
                     </section>
 
-                    <!-- Informations complémentaires -->
+                    <!-- Additional Information -->
                     <section id="infos-complementaires" aria-labelledby="infos-complementaires-title">
                         <div class="bg-secondary text-center py-2">
                             <h4 id="infos-complementaires-title" class="fw-bold m-2">
-                                Informations complémentaires
+                                Additional Information
                             </h4>
                         </div>
                         <div class="container">
                             <div class="row m-4 text-center">
                                 <div class="col-6">
-                                    <img class="img-fluid" src="images/autres/anglais.png" alt="Anglais B1" />
-                                    <p>Anglais niveau B1</p>
+                                    <img class="img-fluid" src="images/autres/anglais.png" alt="English B1" />
+                                    <p>English level B1</p>
                                 </div>
                                 <div class="col-6">
-                                    <img class="img-fluid" src="images/autres/Voyage.png" alt="Voyages" />
-                                    <p>Goût pour les voyages</p>
+                                    <img class="img-fluid" src="images/autres/Voyage.png" alt="Travel" />
+                                    <p>Passion for travel</p>
                                 </div>
                             </div>
                             <div class="row m-4 text-center">
                                 <div class="col-6">
-                                    <img class="img-fluid" src="images/autres/sport.png" alt="Sport" />
-                                    <p>Pratique sportive régulière</p>
+                                    <img class="img-fluid" src="images/autres/sport.png" alt="Sports" />
+                                    <p>Regular sports practice</p>
                                 </div>
                                 <div class="col-6">
-                                    <img class="img-fluid" src="images/autres/photo.png" alt="Photographie" />
-                                    <p>Goût pour la photographie</p>
+                                    <img class="img-fluid" src="images/autres/photo.png" alt="Photography" />
+                                    <p>Passion for photography</p>
                                 </div>
                             </div>
                         </div>
@@ -425,49 +410,43 @@
                 </article>
             </aside>
 
-            <!-- Contenu principal -->
+            <!-- Main Content -->
             <main class="col-12 col-md-7 p-3" id="corps" role="main">
                 <!-- Introduction -->
                 <section id="introduction">
                     <header class="row m-0 m-lg-4">
                         <h5 id="machineAecrire" class="col-12 display-5" aria-hidden="polite"></h5>
                         <p class="col-12 fs-5 text-body marron">
-                            Passionné par la programmation depuis 2001, j’ai commencé avec Dark Basic en développant
-                            plusieurs petits jeux. Après une carrière enrichissante en journalisme et en transport, j’ai
-                            choisi de me consacrer pleinement au développement web et web mobile. Pour marquer ce
-                            retour, j’ai conçu un Puissance 4 jouable contre une IA ou en ligne, en multijoueur.
-                            Actuellement en formation à l’ESECADE, je me spécialise dans le développement Full Stack, en
-                            apprenant à utiliser des langages comme HTML, CSS, JavaScript, PHP, SQL et des outils comme
-                            Git et GitHub. J’ai réalisé plusieurs sites web en personnalisant des thèmes et plugins sous
-                            WordPress, et plus récemment en codant en dur ou via Bootstrap pour répondre à des besoins
-                            spécifiques.
-                            À la recherche d’un stage dans le cadre de ma formation, je souhaite mettre en pratique mes
-                            compétences, contribuer à des projets innovants et évoluer au sein d’une équipe dynamique.
+                            Passionate about programming since 2001, I started with Dark Basic by developing several small games.
+                            After a rewarding career in journalism and transportation, I decided to fully devote myself to web and mobile development.
+                            To mark this return, I designed a Connect Four game playable against an AI or online in multiplayer mode.
+                            Currently training at ESECADE, I am specializing in Full Stack development, learning to use languages such as HTML, CSS, JavaScript, PHP, SQL, and tools like Git and GitHub.
+                            I have built several websites by customizing WordPress themes and plugins, and more recently by coding from scratch or using Bootstrap to meet specific needs.
+                            In search of an internship as part of my training, I aim to apply my skills, contribute to innovative projects, and grow within a dynamic team.
                         </p>
                     </header>
-                    <!-- Bouton d'appel à l'action CTA -->
+                    <!-- Call-to-action button -->
                     <div id="cta-contact" class="text-center my-4">
                         <a href="#" data-bs-toggle="modal" data-bs-target="#contactFormModal"
                             class="btn btn-lg btn-secondary py-3 px-4 shadow text-decoration-none"
-                            aria-label="Envoyer un message à Emmanuel Schmitt">📩 Proposer un stage</a>
+                            aria-label="Send a message to Emmanuel Schmitt">📩 Propose an Internship</a>
                     </div>
                 </section>
 
-                <!-- Formations -->
+                <!-- Education -->
                 <section id="formations" class="mb-4" aria-labelledby="formations-title">
                     <div class="card shadow px-5 pb-4 mb-3">
                         <div class="card-body p-0">
                             <div class="BandeauBleu position-relative d-flex flex-column mt-4">
                                 <h3 id="formations-title" class="card-title text-light px-4 py-2 shadow m-0">
-                                    Formations
+                                    Education
                                 </h3>
                                 <div class="triangle d-inline-block" aria-hidden="true"></div>
                             </div>
-                            <!--Section informatique-->
+                            <!-- IT Section -->
                             <section>
                                 <h6 class="card-subtitle marron fs-5 text-body fw-bold mt-4">
-                                    Développeur Full Stack, ESECAD & MOOCs, 2024-En cours, à Laval
-                                    (53)
+                                    Full Stack Developer, ESECAD & MOOCs, 2024 – Ongoing, in Laval (53)
                                 </h6>
                                 <p class="card-text">
                                 <ul class="list-unstyled ms-3">
@@ -475,78 +454,76 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-code-slash" viewBox="0 0 16 16">
                                             <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
                                         </svg>
-                                        <p class="d-inline ps-1">HTML, CSS (Sass), Bootstrap</p></li>
+                                        <p class="d-inline ps-1">HTML, CSS (Sass), Bootstrap</p>
+                                    </li>
                                     <li>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-file-code" viewBox="0 0 16 16">
                                             <path d="M6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708zm2.708 0a.5.5 0 1 0-.708.708L10.293 8 8.646 9.646a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708z"/>
                                             <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1"/>
                                         </svg>
-                                        <p class="d-inline ps-1">JavaScript, PHP, SQL, Node.js</p></li>
+                                        <p class="d-inline ps-1">JavaScript, PHP, SQL, Node.js</p>
+                                    </li>
                                     <li>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#3858E9" class="bi bi-wordpress" viewBox="0 0 16 16">
                                             <path d="M12.633 7.653c0-.848-.305-1.435-.566-1.892l-.08-.13c-.317-.51-.594-.958-.594-1.48 0-.63.478-1.218 1.152-1.218q.03 0 .058.003l.031.003A6.84 6.84 0 0 0 8 1.137 6.86 6.86 0 0 0 2.266 4.23c.16.005.313.009.442.009.717 0 1.828-.087 1.828-.087.37-.022.414.521.044.565 0 0-.371.044-.785.065l2.5 7.434 1.5-4.506-1.07-2.929c-.369-.022-.719-.065-.719-.065-.37-.022-.326-.588.043-.566 0 0 1.134.087 1.808.087.718 0 1.83-.087 1.83-.087.37-.022.413.522.043.566 0 0-.372.043-.785.065l2.48 7.377.684-2.287.054-.173c.27-.86.469-1.495.469-2.046zM1.137 8a6.86 6.86 0 0 0 3.868 6.176L1.73 5.206A6.8 6.8 0 0 0 1.137 8"/>
                                             <path d="M6.061 14.583 8.121 8.6l2.109 5.78q.02.05.049.094a6.85 6.85 0 0 1-4.218.109m7.96-9.876q.046.328.047.706c0 .696-.13 1.479-.522 2.458l-2.096 6.06a6.86 6.86 0 0 0 2.572-9.224z"/>
                                             <path fill-rule="evenodd" d="M0 8c0-4.411 3.589-8 8-8s8 3.589 8 8-3.59 8-8 8-8-3.589-8-8m.367 0c0 4.209 3.424 7.633 7.633 7.633S15.632 12.209 15.632 8C15.632 3.79 12.208.367 8 .367 3.79.367.367 3.79.367 8"/>
                                         </svg>
-                                        <p class="d-inline ps-1">WordPress, thèmes & plugins personnalisés</p></li>
-                                    <li>🎨<p class="d-inline ps-1">UX/UI : Figma, Adobe XD, Photoshop</p></li>
+                                        <p class="d-inline ps-1">WordPress, Custom Themes & Plugins</p>
+                                    </li>
+                                    <li>
+                                        🎨<p class="d-inline ps-1">UX/UI: Figma, Adobe XD, Photoshop</p>
+                                    </li>
                                     <li>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F05134" class="bi bi-git" viewBox="0 0 16 16">
                                             <path d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.03 1.03 0 0 0 0-1.457"/>
                                         </svg>
-                                        <p class="d-inline ps-1">Git, GitHub, gestion de projet Agile</p></li>
+                                        <p class="d-inline ps-1">Git, GitHub, Agile Project Management</p>
+                                    </li>
                                     <li>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-search" viewBox="0 0 16 16">
                                             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
                                         </svg>
-                                        <p class="d-inline ps-1">SEO, Marketing web, Certification Opquast</p>
+                                        <p class="d-inline ps-1">SEO, Web Marketing, Opquast Certification</p>
                                     </li>
                                     <li>
-                                        🗣️<p class="d-inline ps-1">Gestion de projet en mode agile et collaboratif</p>
-                                    </li>
-                                </ul>
-                                </p>
-
-                            </section>
-                            <!--Section Photojournaliste-->
-                            <section>
-                                <h6 class="card-subtitle marron fs-5 text-body fw-bold mt-4">
-                                    Photojournaliste, EMI-CFD, 2014-2015, à Paris (75)
-                                </h6>
-                                <p class="card-text">
-                                <ul class="list-unstyled ms-3">
-                                    <li>📸 Photographie de presse & reportage : news, portrait, studio, corporate
-                                    </li>
-                                    <li>🎥 Vidéo & multimédia : tournage avec reflex, montage sur Final Cut X
-                                    </li>
-                                    <li>🖥 Post-production : Adobe Lightroom & Photoshop (édition et
-                                        retouche)</li>
-                                    <li>🌐 Publication web : mise en ligne d’articles, gestion d'un site immersif
-                                    </li>
-                                    <li>🗣 Réalisation de projets multimédias : photographie, vidéo, son</li>
-                                    <li>
-                                        👨‍🎓 RNCP Niv.6
+                                        🗣️<p class="d-inline ps-1">Agile and Collaborative Project Management</p>
                                     </li>
                                 </ul>
                                 </p>
                             </section>
-                            <!--Section journaliste-->
+                            <!-- Photojournalism Section -->
                             <section>
                                 <h6 class="card-subtitle marron fs-5 text-body fw-bold mt-4">
-                                    Journaliste, IUT, 2007-2010, à Lannion (22)
+                                    Photojournalist, EMI-CFD, 2014–2015, in Paris (75)
                                 </h6>
                                 <p class="card-text">
                                 <ul class="list-unstyled ms-3">
-                                    <li>🖊 Rédaction & édition : presse écrite, web, radio, TV</li>
-                                    <li>📢 Journalisme radio : reportages pour France Bleu Armorique et Virgin
-                                        Radio</li>
-                                    <li>📺 Journalisme photo & reporter d’images</li>
-                                    <li>🖥 Web-journalisme : mise en ligne d’articles, gestion de contenus
-                                        multimédias</li>
-                                    <li>🎨 Mise en page & graphisme : maîtrise d'Adobe InDesign et
-                                        QuarkXPress</li>
+                                    <li>📸 Press Photography & Reporting: news, portraits, studio, corporate</li>
+                                    <li>🎥 Video & Multimedia: filming with DSLR, editing on Final Cut X</li>
+                                    <li>🖥 Post-production: Adobe Lightroom & Photoshop (editing and retouching)</li>
+                                    <li>🌐 Web Publishing: posting articles, managing an immersive website</li>
+                                    <li>🗣 Multimedia Project Production: photography, video, audio</li>
                                     <li>
-                                        👨‍🎓 DUT & Licence professionnelle; spécialisation presse magazine
+                                        👨‍🎓 RNCP Level 6
+                                    </li>
+                                </ul>
+                                </p>
+                            </section>
+                            <!-- Journalism Section -->
+                            <section>
+                                <h6 class="card-subtitle marron fs-5 text-body fw-bold mt-4">
+                                    Journalist, IUT, 2007–2010, in Lannion (22)
+                                </h6>
+                                <p class="card-text">
+                                <ul class="list-unstyled ms-3">
+                                    <li>🖊 Writing & Editing: print, web, radio, TV</li>
+                                    <li>📢 Radio Journalism: reports for France Bleu Armorique and Virgin Radio</li>
+                                    <li>📺 Photo Journalism & Image Reporting</li>
+                                    <li>🖥 Web Journalism: posting articles, managing multimedia content</li>
+                                    <li>🎨 Layout & Graphic Design: proficiency in Adobe InDesign and QuarkXPress</li>
+                                    <li>
+                                        👨‍🎓 DUT & Professional License; specialization in magazine journalism
                                     </li>
                                 </ul>
                                 </p>
@@ -555,104 +532,83 @@
                     </div>
                 </section>
 
-                <!-- Expériences -->
+                <!-- Experience -->
                 <section id="experiences" aria-labelledby="experiences-title">
                     <div class="card shadow px-5 pb-4 mb-3">
                         <div class="card-body p-0">
-                            <!--Card Expériences-->
+                            <!-- Experience Card -->
                             <div class="BandeauBleu position-relative d-flex flex-column mt-4">
                                 <h3 id="experiences-title" class="card-title text-light px-4 py-2 shadow m-0">
-                                    Expériences
+                                    Experience
                                 </h3>
                                 <div class="triangle d-inline-block" aria-hidden="true"></div>
                             </div>
-                            <!--Section informatique-->
+                            <!-- IT Section -->
                             <section aria-labelledby="informatique-title">
                                 <h6 id="informatique-title" class="card-subtitle marron fs-4 text-body fw-bold mt-4 mb-2">
-                                    Informatique
+                                    IT
                                 </h6>
                                 <ul class="arrowPuce">
                                     <li>
-                                        Projet de développement d'un
-                                        <a href="https://www.emmanuelschmitt.com/puissance4" target="_blank"
-                                            rel="noopener noreferrer">Puissance 4</a> en JavaScript avec une IA et mode
-                                        multijoueur en ligne
+                                        Development project of a <a href="https://www.emmanuelschmitt.com/puissance4" target="_blank" rel="noopener noreferrer">Connect Four</a> game in JavaScript with an AI and online multiplayer mode
                                     </li>
                                     <li>
-                                        Création de sites internet WordPress, avec une personnalisation avancée de
-                                        thèmes et plugins :
-                                        <a href="https://www.frederiquelebrun.com" target="_blank"
-                                            rel="noopener noreferrer">Frédérique Le Brun - Photojournaliste</a>,
-                                        <a href="https://www.bernardschmitt.com" target="_blank"
-                                            rel="noopener noreferrer">Bernard Schmitt - Photographe</a>,
-                                        <a href="https://www.meskad.fr" target="_blank"
-                                            rel="noopener noreferrer">Restaurant Le Meskad</a>
+                                        Creation of WordPress websites with advanced customization of themes and plugins:
+                                        <a href="https://www.frederiquelebrun.com" target="_blank" rel="noopener noreferrer">Frédérique Le Brun – Photojournalist</a>,
+                                        <a href="https://www.bernardschmitt.com" target="_blank" rel="noopener noreferrer">Bernard Schmitt – Photographer</a>,
+                                        <a href="https://www.meskad.fr" target="_blank" rel="noopener noreferrer">Restaurant Le Meskad</a>
                                     </li>
                                     <li>
-                                        Création de sites internet from scratch :
-                                        <a href="https://www.ad-laubedesoi.fr" target="_blank"
-                                            rel="noopener noreferrer">À l'Aube de soi</a>, site professionnel d'Aurore
-                                        Détain, développé avec Bootstrap
+                                        Creation of websites from scratch: <a href="https://www.ad-laubedesoi.fr" target="_blank" rel="noopener noreferrer">À l'Aube de soi</a>, a professional site for Aurore Détain, developed with Bootstrap
                                     </li>
                                     <li>
-                                        Certifications CSS, HTML, JavaScript, PHP, Sass, Github &
-                                        Git, IA, Bootstrap… sur Openclassrooms (2023-2025)
+                                        Certifications in CSS, HTML, JavaScript, PHP, Sass, GitHub & Git, AI, Bootstrap… on OpenClassrooms (2023–2025)
                                     </li>
                                     <li>
-                                        Développement de jeux vidéo et programmes en Dark Basic
-                                        Pro (2001-2005)
+                                        Development of video games and programs in Dark Basic Pro (2001–2005)
                                     </li>
                                     <li>
-                                        Forte appétence pour le développement (JS, HTML, CSS) et
-                                        le web design
+                                        Strong passion for development (JS, HTML, CSS) and web design
                                     </li>
                                     <li>
-                                        Montages/réparations basiques hardware & software (Depuis
-                                        1999)
+                                        Basic hardware & software assembly/repairs (Since 1999)
                                     </li>
                                 </ul>
                             </section>
-                            <!--Section Médias-->
+                            <!-- Media Section -->
                             <section aria-labelledby="medias-title">
                                 <h6 id="medias-title" class="card-subtitle marron fs-4 text-body fw-bold mt-4 mb-2">
-                                    Médias
+                                    Media
                                 </h6>
                                 <ul class="arrowPuce">
                                     <li>
-                                        Photographe/Vidéaste de presse, corporate et événementiel
-                                        (Depuis 2012)
+                                        Press/Corporate/Event Photographer & Videographer (Since 2012)
                                     </li>
                                     <li>
-                                        Co-gérant et directeur photo de l'entreprise DHLS
-                                        Editions, éditrice du magazine Brest Mag' (2011 et 2012)
+                                        Co-manager and Photo Director at DHLS Editions, publisher of Brest Mag' (2011 and 2012)
                                     </li>
                                     <li>
-                                        Journaliste et photoreporter pour la presse quotidienne
-                                        (Ouest-France, Le Télégramme, Aujourd'hui en France, La
-                                        Nouvelle République, Paris Normandie – de 2008 à 2015)
+                                        Journalist and photo-reporter for daily newspapers (Ouest-France, Le Télégramme, Aujourd'hui en France, La Nouvelle République, Paris Normandie – 2008 to 2015)
                                     </li>
                                     <li>
-                                        Jeune expérience en journalisme radio (France Bleu
-                                        Armorique, Virgin radio) et dans la presse associative
+                                        Brief experience in radio journalism (France Bleu Armorique, Virgin Radio) and in community press
                                     </li>
                                 </ul>
                             </section>
-                            <!--Section transport-->
+                            <!-- Transport Section -->
                             <section aria-labelledby="transport-title">
                                 <h6 id="transport-title" class="card-subtitle marron fs-4 text-body fw-bold mt-4 mb-2">
                                     Transport
                                 </h6>
                                 <ul class="arrowPuce">
                                     <li>
-                                        Conducteur poids-lourd et super poids-lourd, de 2018 à
-                                        2024
+                                        Truck and articulated truck driver, from 2018 to 2024
                                     </li>
                                     <li>
-                                        Exploitant transport pour les Routiers Bretons (septembre
-                                        2019 à mars 2020)
+                                        Transport operator for Routiers Bretons (September 2019 to March 2020)
                                     </li>
                                     <li>
-                                        Chauffeur-livreur en CDD puis intérim de 2015 à 2017
+                                        Delivery driver on fixed-term contracts and temporary assignments from 2015 to 2017
                                     </li>
                                 </ul>
                             </section>
@@ -661,38 +617,30 @@
                 </section>
             </main>
 
-            <!--Footer-->
+            <!-- Footer -->
             <footer class="col-12 p-1" id="footer" role="contentinfo">
-
-                <!--Structure bootstrap-->
                 <div class="container-fluid">
                     <div class="row bg-secondary p-3 rounded-4 shadow">
-
-                        <!--Legals-->
+                        <!-- Legal -->
                         <div class="col-6 d-flex justify-content-start">
-                            <!--Liens-->
                             <a class="text-light" href="#" data-bs-toggle="modal"
-                                data-bs-target="#legalesMentionsModal">Mentions légales</a>
+                                data-bs-target="#legalesMentionsModal">Legal Notice</a>
                         </div>
-                        <!--Copyright-->
+                        <!-- Copyright -->
                         <div class="col-6 d-flex justify-content-end">
                             <a class="text-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                                href="https://www.emmanuelschmitt.com">
+                                href="https://www.emmanuelschmitt.com" rel="noopener noreferrer">
                                 &copy; Emmanuel Schmitt - 2025
                             </a>
                         </div>
-
-                        <!--Fin col/row bootstrap-->
                     </div>
                 </div>
-
             </footer>
         </div>
     </div>
 
-    <!--Bouton UP-->
+    <!-- UP Button -->
     <div id="nav-button" class="position-fixed end-0 bottom-0 m-5">
-        <!--UP button-->
         <a href="#accueil" id="btnUP"
             class="btn btn-secondary sticky-bottom rounded-circle shadow z-1080 text-light justify-content-center align-items-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -701,298 +649,213 @@
                     d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
             </svg>
         </a>
-
     </div>
 
-    <!--Modals-->
-    <!--Modal Contact form-->
+    <!-- Modals -->
+    <!-- Contact Form Modal -->
     <div class="modal fade modal-lg" id="contactFormModal" tabindex="-1" aria-labelledby="formModal" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <!--Header du contact form-->
+                <!-- Contact Form Header -->
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="formModal">
-                        Formulaire de contact
+                        Contact Form
                     </h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
-                <!--Main contact form-->
+                <!-- Main Contact Form -->
                 <div id="form" class="p-3">
                     <div class="container">
-                        
-                        <!-- Formulaire avec validation Bootstrap -->
+                        <!-- Bootstrap validation form -->
                         <form id="contactForm" class="needs-validation row" novalidate action="traitement.php" method="post">
-
-                            <!-- Nom -->
+                            <!-- Last Name -->
                             <div class="mb-3 col-sm-6">
-                                <label for="lastname" class="form-label">Nom</label>
-                                <input type="text" class="form-control" id="lastname" name="lastname" required maxlength="50" pattern="[A-Za-zÀ-ÿ\s\-]+" placeholder="Dupond">
-                                <div class="invalid-feedback">Veuillez entrer un nom valide (lettres uniquement).</div>
+                                <label for="lastname" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastname" name="lastname" required maxlength="50" pattern="[A-Za-zÀ-ÿ\s\-]+" placeholder="Doe">
+                                <div class="invalid-feedback">Please enter a valid last name (letters only).</div>
                             </div>
 
-                            <!-- Prénom -->
+                            <!-- First Name -->
                             <div class="mb-3 col-sm-6">
-                                <label for="firstname" class="form-label">Prénom</label>
-                                <input type="text" class="form-control" id="firstname" name="firstname" required maxlength="50" pattern="[A-Za-zÀ-ÿ\s\-]+" placeholder="Jean">
-                                <div class="invalid-feedback">Veuillez entrer un prénom valide.</div>
+                                <label for="firstname" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstname" name="firstname" required maxlength="50" pattern="[A-Za-zÀ-ÿ\s\-]+" placeholder="John">
+                                <div class="invalid-feedback">Please enter a valid first name.</div>
                             </div>
 
                             <!-- Email -->
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" name="email" required placeholder="exemple@email.fr">
-                                <div class="invalid-feedback">Veuillez entrer une adresse email valide.</div>
+                                <input type="email" class="form-control" id="email" name="email" required placeholder="example@email.com">
+                                <div class="invalid-feedback">Please enter a valid email address.</div>
                             </div>
 
-                            <!-- Objet -->
+                            <!-- Subject -->
                             <div class="mb-3">
-                                <label for="subject" class="form-label">Objet</label>
+                                <label for="subject" class="form-label">Subject</label>
                                 <input type="text" class="form-control" id="subject" name="subject" required maxlength="100">
-                                <div class="invalid-feedback">Veuillez renseigner un objet valide.</div>
+                                <div class="invalid-feedback">Please provide a valid subject.</div>
                             </div>
 
                             <!-- Message -->
                             <div class="mb-3">
                                 <label for="message" class="form-label">Message</label>
                                 <textarea class="form-control" id="message" name="message" rows="3" required minlength="10" placeholder="Your message..."></textarea>
-                                <div class="invalid-feedback">Votre message doit contenir au moins 10 caractères.</div>
+                                <div class="invalid-feedback">Your message must contain at least 10 characters.</div>
                             </div>
-
                         </form>
                     </div>
                 </div>
 
-                <!--Footer contact form-->
+                <!-- Contact Form Footer -->
                 <div class="modal-footer">
                     <button type="submit" form="contactForm" class="btn btn-success">
-                        Envoyer
+                        Send
                     </button>
                     <button type="button" form="contactForm" class="btn btn-danger" data-bs-dismiss="modal">
-                        Annuler
+                        Cancel
                     </button>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Modal "mentions légales"-->
+    <!-- Legal Notice Modal -->
     <div class="modal fade modal-lg" id="legalesMentionsModal" tabindex="-1" aria-labelledby="legalesModal"
         aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="legalesModal">Mentions légales</h1>
+                    <h1 class="modal-title fs-5" id="legalesModal">Legal Notice</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
-                <!--Legal content-->
+                <!-- Legal Content -->
                 <div class="modal-body" id="mentionsLegales">
                     <ol start="1">
-                        <li><span>PRÉSENTATION DU SITE</span></li>
+                        <li><span>SITE PRESENTATION</span></li>
                     </ol>
-                    <span>En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans
-                        l'économie numérique, il est précisé aux utilisateurs du site www.emmanuelschmitt.com l'identité
-                        des
-                        différents intervenants dans le cadre de sa réalisation et de son suivi :</span>
+                    <span>Under Article 6 of Law No. 2004-575 of 21 June 2004 on Confidence in the Digital Economy, the identities of the various parties involved in the creation and maintenance of the site www.emmanuelschmitt.com are provided to users:</span>
 
-                    <span>Propriétaire : Emmanuel Schmitt - 34 rue de la Fleuriere 53000 Laval</span>
+                    <span>Owner: Emmanuel Schmitt – 34 rue de la Fleuriere, 53000 Laval</span>
 
-                    <span>Créateur : Emmanuel Schmitt</span>
+                    <span>Creator: Emmanuel Schmitt</span>
 
-                    <span>Responsable publication : Emmanuel Schmitt</span>
+                    <span>Publication Manager: Emmanuel Schmitt</span>
 
-                    <span>Le responsable publication est une personne physique</span>
+                    <span>The publication manager is a natural person</span>
 
-                    <span>Hébergeur : LWS</span>
+                    <span>Host: LWS</span>
                     <br><br>
                     <ol start="2">
-                        <li><span> CONDITIONS GÉNÉRALES D’UTILISATION DU SITE ET DES SERVICES PROPOSÉS</span></li>
+                        <li><span>GENERAL TERMS OF USE OF THE SITE AND SERVICES OFFERED</span></li>
                     </ol>
-                    <span>L’utilisation du site www.emmanuelschmitt.com implique l’acceptation pleine et entière des
-                        conditions
-                        générales d’utilisation ci-après décrites. Ces conditions d’utilisation sont susceptibles d’être
-                        modifiées ou complétées à tout moment, les utilisateurs du site www.emmanuelschmitt.com sont
-                        donc
-                        invités à les consulter de manière régulière.</span>
+                    <span>The use of the site www.emmanuelschmitt.com implies full acceptance of the following general terms of use.
+                    These terms may be modified or supplemented at any time; users are encouraged to review them regularly.</span>
 
-                    <span>Ce site est normalement accessible à tout moment aux utilisateurs. Une interruption pour
-                        raison de maintenance technique peut être toutefois décidée par Emmanuel Schmitt, qui
-                        s’efforcera
-                        alors de communiquer préalablement aux utilisateurs les dates et heures de
-                        l’intervention.</span>
+                    <span>This site is normally accessible to users at all times. However, Emmanuel Schmitt may decide to interrupt access for technical maintenance, and will endeavor to communicate the dates and times of such interventions in advance.</span>
 
-                    <span>Le site www.emmanuelschmitt.com est mis à jour régulièrement par ses propres soin. De la même
-                        façon,
-                        les mentions légales peuvent être modifiées à tout moment : elles s’imposent néanmoins à
-                        l’utilisateur qui est invité à s’y référer le plus souvent possible afin d’en prendre
-                        connaissance.</span>
+                    <span>The site www.emmanuelschmitt.com is updated regularly by its owner. Likewise, the legal notice may be modified at any time; users are advised to refer to it frequently to stay informed.</span>
                     <br><br>
                     <ol start="3">
-                        <li><span> DESCRIPTION DES SERVICES FOURNIS</span></li>
+                        <li><span>DESCRIPTION OF THE SERVICES PROVIDED</span></li>
                     </ol>
-                    <span>Le site www.emmanuelschmitt.com a pour objet de fournir une information concernant l’ensemble
-                        des
-                        activités de la société.</span>
+                    <span>The site www.emmanuelschmitt.com is intended to provide information regarding all the activities of the company.</span>
 
-                    <span>Emmanuel Schmitt s’efforce de fournir sur le site www.emmanuelschmitt.com des informations
-                        aussi
-                        précises que possible. Toutefois, il ne pourra être tenu responsable des omissions, des
-                        inexactitudes et des carences dans la mise à jour, qu’elles soient de son fait ou du fait des
-                        tiers partenaires qui lui fournissent ces informations.</span>
+                    <span>Emmanuel Schmitt strives to provide as accurate information as possible on the site.
+                    However, he cannot be held responsible for omissions, inaccuracies, or deficiencies in updates, whether on his part or that of third-party partners.</span>
 
-                    <span>Toutes les informations indiquées sur le site www.emmanuelschmitt.com sont données à titre
-                        indicatif,
-                        et sont susceptibles d’évoluer. Par ailleurs, les renseignements figurant sur le site
-                        www.emmanuelschmitt.com ne sont pas exhaustifs. Ils sont donnés sous réserve de modifications
-                        ayant été
-                        apportées depuis leur mise en ligne.</span>
+                    <span>All information provided on the site www.emmanuelschmitt.com is for informational purposes only and may change.
+                    Furthermore, the information provided is not exhaustive and is subject to modifications made after publication.</span>
                     <br><br>
                     <ol start="4">
-                        <li><span> LIMITATIONS CONTRACTUELLES SUR LES DONNÉES TECHNIQUES</span></li>
+                        <li><span>CONTRACTUAL LIMITATIONS ON TECHNICAL DATA</span></li>
                     </ol>
-                    <span>Le site utilise la technologie JavaScript.</span>
+                    <span>The site uses JavaScript technology.</span>
 
-                    <span>Le site Internet ne pourra être tenu responsable de dommages matériels liés à l’utilisation du
-                        site. De plus, l’utilisateur du site s’engage à accéder au site en utilisant un matériel récent,
-                        ne contenant pas de virus et avec un navigateur de dernière génération mis-à-jour</span>
+                    <span>The website cannot be held responsible for any material damages related to its use.
+                    Furthermore, users agree to access the site using up-to-date hardware free of viruses and with a modern, updated browser.</span>
                     <br><br>
                     <ol start="5">
-                        <li><span> PROPRIÉTÉ INTELLECTUELLE ET CONTREFAÇONS</span></li>
+                        <li><span>INTELLECTUAL PROPERTY AND COUNTERFEITING</span></li>
                     </ol>
-                    <span>Emmanuel Schmitt est propriétaire des droits de propriété intellectuelle ou détient les droits
-                        d’usage sur tous les éléments accessibles sur le site, notamment les textes, images, graphismes,
-                        logo, icônes, sons, logiciels.</span>
+                    <span>Emmanuel Schmitt owns the intellectual property rights or holds the usage rights on all elements available on the site, including texts, images, graphics, logos, icons, sounds, and software.</span>
 
-                    <span>Toute reproduction, représentation, modification, publication, adaptation de tout ou partie
-                        des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf
-                        autorisation écrite préalable de : Emmanuel Schmitt.</span>
+                    <span>Any reproduction, representation, modification, publication, or adaptation of all or part of the site's elements, regardless of the method or process used, is prohibited without prior written permission from Emmanuel Schmitt.</span>
 
-                    <span>Toute exploitation non autorisée du site ou de l’un quelconque des éléments qu’il contient
-                        sera considérée comme constitutive d’une contrefaçon et poursuivie conformément aux dispositions
-                        des articles L.335-2 et suivants du Code de Propriété Intellectuelle.</span>
+                    <span>Any unauthorized use of the site or any of its elements will be considered a breach of intellectual property rights and will be prosecuted in accordance with Articles L.335-2 and following of the Intellectual Property Code.</span>
                     <br><br>
                     <ol start="6">
-                        <li><span> LIMITATIONS DE RESPONSABILITÉ</span></li>
+                        <li><span>LIMITATION OF LIABILITY</span></li>
                     </ol>
-                    <span>Emmanuel Schmitt ne pourra être tenue responsable des dommages directs et indirects causés au
-                        matériel de l’utilisateur, lors de l’accès au site www.emmanuelschmitt.com, et résultant soit de
-                        l’utilisation d’un matériel ne répondant pas aux spécifications indiquées au point 4, soit de
-                        l’apparition d’un bug ou d’une incompatibilité.</span>
+                    <span>Emmanuel Schmitt cannot be held responsible for direct or indirect damages caused to the user's equipment when accessing the site www.emmanuelschmitt.com, whether resulting from the use of hardware that does not meet the specifications indicated in point 4, or from the occurrence of a bug or incompatibility.</span>
 
-                    <span>Emmanuel Schmitt ne pourra également être tenu responsable des dommages indirects (tels par
-                        exemple qu’une perte de marché ou perte d’une chance) consécutifs à l’utilisation du site
-                        www.emmanuelschmitt.com.</span>
+                    <span>Emmanuel Schmitt will also not be liable for indirect damages (such as loss of market or loss of opportunity) resulting from the use of the site.</span>
                     <br><br>
                     <ol start="7">
-                        <li><span> GESTION DES DONNÉES PERSONNELLES</span></li>
+                        <li><span>MANAGEMENT OF PERSONAL DATA</span></li>
                     </ol>
-                    <span>En France, les données personnelles sont notamment protégées par la loi n° 78-87 du 6 janvier
-                        1978, la loi n° 2004-801 du 6 août 2004, l'article L. 226-13 du Code pénal et la Directive
-                        Européenne du 24 octobre 1995.</span>
+                    <span>In France, personal data is protected by Law No. 78-87 of 6 January 1978, Law No. 2004-801 of 6 August 2004, Article L. 226-13 of the Penal Code, and the European Directive of 24 October 1995.</span>
 
-                    <span>A l'occasion de l'utilisation du site www.emmanuelschmitt.com, peuvent êtres recueillies :
-                        l'URL des
-                        liens par l'intermédiaire desquels l'utilisateur a accédé au site www.emmanuelschmitt.com, le
-                        fournisseur d'accès de l'utilisateur, l'adresse de protocole Internet (IP) de
-                        l'utilisateur.</span>
+                    <span>When using the site www.emmanuelschmitt.com, the following may be collected: the URL of the links through which the user accessed the site, the user's internet service provider, and the user's IP address.</span>
 
-                    <span>En tout état de cause Emmanuel Schmitt ne collecte des informations personnelles relatives à
-                        l'utilisateur que pour le besoin de certains services proposés par le site
-                        www.emmanuelschmitt.com.
-                        L'utilisateur fournit ces informations en toute connaissance de cause, notamment lorsqu'il
-                        procède par lui-même à leur saisie. Il est alors précisé à l'utilisateur du site
-                        www.emmanuelschmitt.com l’obligation ou non de fournir ces informations.</span>
+                    <span>In any case, Emmanuel Schmitt collects personal information only as needed for certain services offered on the site.
+                    The user provides this information knowingly, particularly when entering it themselves.
+                    The user is informed whether providing this information is mandatory or not.</span>
 
-                    <span>Conformément aux dispositions des articles 38 et suivants de la loi 78-17 du 6 janvier 1978
-                        relative à l’informatique, aux fichiers et aux libertés, tout utilisateur dispose d’un droit
-                        d’accès, de rectification et d’opposition aux données personnelles le concernant, en effectuant
-                        sa demande écrite et signée, accompagnée d’une copie du titre d’identité avec signature du
-                        titulaire de la pièce, en précisant l’adresse à laquelle la réponse doit être envoyée.</span>
+                    <span>In accordance with Articles 38 and following of Law No. 78-17 of 6 January 1978 on Data Processing, Files and Freedoms, every user has the right to access, rectify, and oppose personal data concerning them by submitting a written and signed request along with a copy of their identity document (with signature), specifying the address to which the response should be sent.</span>
 
-                    <span>Aucune information personnelle de l'utilisateur du site www.emmanuelschmitt.com n'est publiée
-                        à
-                        l'insu de l'utilisateur, échangée, transférée, cédée ou vendue sur un support quelconque à des
-                        tiers. Seule l'hypothèse du rachat de Emmanuel Schmitt et de ses droits permettrait la
-                        transmission
-                        des dites informations à l'éventuel acquéreur qui serait à son tour tenu de la même obligation
-                        de conservation et de modification des données vis à vis de l'utilisateur du site
-                        www.emmanuelschmitt.com.</span>
+                    <span>No personal information of the user of www.emmanuelschmitt.com is published without the user's knowledge, exchanged, transferred, assigned, or sold to any third party.
+                    Only in the event of the acquisition of Emmanuel Schmitt and his rights would such information be transmitted to the potential buyer, who would in turn be obliged to maintain and modify the data under the same conditions for the user.</span>
 
-                    <span>Le site n'est pas déclaré à la CNIL car il ne recueille pas d'informations
-                        personnelles.</span>
+                    <span>The site is not registered with the CNIL as it does not collect personal information.</span>
 
-                    <span>Les bases de données sont protégées par les dispositions de la loi du 1er juillet 1998
-                        transposant la directive 96/9 du 11 mars 1996 relative à la protection juridique des bases de
-                        données.</span>
+                    <span>Databases are protected under the provisions of the Law of 1 July 1998 transposing Directive 96/9 of 11 March 1996 on the legal protection of databases.</span>
                     <br><br>
                     <ol start="8">
-                        <li><span> LIENS HYPERTEXTES ET COOKIES</span></li>
+                        <li><span>HYPERTEXT LINKS AND COOKIES</span></li>
                     </ol>
-                    <span>Le site www.emmanuelschmitt.com contient un certain nombre de liens hypertextes vers d’autres
-                        sites,
-                        mis en place avec l’autorisation de Emmanuel Schmitt. Cependant, Emmanuel Schmitt n’a pas la
-                        possibilité de vérifier le contenu des sites ainsi visités, et n’assumera en conséquence aucune
-                        responsabilité de ce fait.</span>
+                    <span>The site www.emmanuelschmitt.com contains a number of hyperlinks to other sites, which have been established with the permission of Emmanuel Schmitt.
+                    However, Emmanuel Schmitt does not have the ability to verify the content of these linked sites and therefore assumes no responsibility for them.</span>
 
-                    <span>La navigation sur le site www.emmanuelschmitt.com est susceptible de provoquer l’installation
-                        de
-                        cookie(s) sur l’ordinateur de l’utilisateur. Un cookie est un fichier de petite taille, qui ne
-                        permet pas l’identification de l’utilisateur, mais qui enregistre des informations relatives à
-                        la navigation d’un ordinateur sur un site. Les données ainsi obtenues visent à faciliter la
-                        navigation ultérieure sur le site, et ont également vocation à permettre diverses mesures de
-                        fréquentation.</span>
+                    <span>Browsing www.emmanuelschmitt.com may result in the installation of cookie(s) on the user's computer.
+                    A cookie is a small file that does not allow identification of the user, but records information related to the user's navigation on the site.
+                    The data obtained is intended to facilitate future navigation on the site and to enable various tracking measures.</span>
 
-                    <span>Le refus d’installation d’un cookie peut entraîner l’impossibilité d’accéder à certains
-                        services. L’utilisateur peut toutefois configurer son ordinateur de la manière suivante, pour
-                        refuser l’installation des cookies :</span>
+                    <span>Refusing the installation of cookies may result in the inability to access certain services.
+                    However, the user can configure their computer as follows to refuse cookies:</span>
 
-                    <span>Sous Internet Explorer : onglet outil (pictogramme en forme de rouage en haut a droite) /
-                        options internet. Cliquez sur Confidentialité et choisissez Bloquer tous les cookies. Validez
-                        sur Ok.</span>
+                    <span>In Internet Explorer: Go to the Tools menu (gear icon at the top right) / Internet Options. Click on Privacy and choose "Block all cookies". Then click OK.</span>
 
-                    <span>Sous Firefox : en haut de la fenêtre du navigateur, cliquez sur le bouton Firefox, puis aller
-                        dans l'onglet Options. Cliquer sur l'onglet Vie privée. Paramétrez les Règles de conservation
-                        sur : utiliser les paramètres personnalisés pour l'historique. Enfin décochez-la pour désactiver
-                        les cookies.</span>
+                    <span>In Firefox: Click the Firefox button at the top of the browser window, then select Options. Click on the Privacy tab. Set the history settings to "Use custom settings for history". Finally, uncheck the box to disable cookies.</span>
 
-                    <span>Sous Safari : Cliquez en haut à droite du navigateur sur le pictogramme de menu (symbolisé par
-                        un rouage). Sélectionnez Paramètres. Cliquez sur Afficher les paramètres avancés. Dans la
-                        section "Confidentialité", cliquez sur Paramètres de contenu. Dans la section "Cookies", vous
-                        pouvez bloquer les cookies.</span>
+                    <span>In Safari: Click on the menu icon (gear symbol) at the top right of the browser. Select Settings. Click on "Show Advanced Settings". In the Privacy section, click on "Content Settings". In the Cookies section, you can block cookies.</span>
 
-                    <span>Sous Chrome : Cliquez en haut à droite du navigateur sur le pictogramme de menu (symbolisé par
-                        trois lignes horizontales). Sélectionnez Paramètres. Cliquez sur Afficher les paramètres
-                        avancés. Dans la section "Confidentialité", cliquez sur préférences. Dans l'onglet
-                        "Confidentialité", vous pouvez bloquer les cookies.</span>
+                    <span>In Chrome: Click on the menu icon (three horizontal lines) at the top right of the browser. Select Settings. Click on "Show advanced settings". In the Privacy section, click on Preferences. In the Privacy tab, you can block cookies.</span>
                     <br><br>
                     <ol start="9">
-                        <li><span> DROIT APPLICABLE ET ATTRIBUTION DE JURIDICTION</span></li>
+                        <li><span>APPLICABLE LAW AND JURISDICTION</span></li>
                     </ol>
-                    <span>Tout litige en relation avec l’utilisation du site www.emmanuelschmitt.com est soumis au droit
-                        français. Il est fait attribution exclusive de juridiction aux tribunaux compétents de
-                        Paris.</span>
+                    <span>Any dispute related to the use of the site www.emmanuelschmitt.com is subject to French law.
+                    Exclusive jurisdiction is granted to the competent courts of Paris.</span>
                     <br><br>
                     <ol start="10">
-                        <li><span> LES PRINCIPALES LOIS CONCERNÉES</span></li>
+                        <li><span>THE MAIN APPLICABLE LAWS</span></li>
                     </ol>
-                    <span>Loi n° 78-87 du 6 janvier 1978, notamment modifiée par la loi n° 2004-801 du 6 août 2004
-                        relative à l'informatique, aux fichiers et aux libertés.</span>
+                    <span>Law No. 78-87 of 6 January 1978, as amended by Law No. 2004-801 of 6 August 2004 on Data Processing, Files and Freedoms.</span>
 
-                    <span>Loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique.</span>
+                    <span>Law No. 2004-575 of 21 June 2004 on Confidence in the Digital Economy.</span>
                     <br><br>
                     <ol start="11">
-                        <li><span> LEXIQUE</span></li>
+                        <li><span>GLOSSARY</span></li>
                     </ol>
-                    <span>Utilisateur : Internaute se connectant, utilisant le site susnommé.</span>
+                    <span>User: An internet user accessing and using the aforementioned site.</span>
 
-                    <span>Informations personnelles : « les informations qui permettent, sous quelque forme que ce soit,
-                        directement ou non, l'identification des personnes physiques auxquelles elles s'appliquent »
-                        (article 4 de la loi n° 78-17 du 6 janvier 1978).</span>
+                    <span>Personal information: "information that allows, in any form whatsoever, directly or not, the identification of natural persons to whom it applies" (Article 4 of Law No. 78-17 of 6 January 1978).</span>
 
                     &nbsp;
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -1001,7 +864,7 @@
     <!-- Import Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-        </script>
+    </script>
 </body>
 
 </html>
