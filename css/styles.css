@@ -60,6 +60,12 @@ h3 {
     z-index: 1080;
 }
 
+/** Animation **/
+/*Animation des progress-bar*/
+.progress-bar {
+    transition: width 2s ease-in-out;
+}
+
 /** Zone à ne pas imprimer si impression du CV **/
 @media print {
     nav, footer {

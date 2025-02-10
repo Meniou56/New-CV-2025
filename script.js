@@ -1,11 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Observer les changements de visibilité
+    // Observer les changements de visibilité pour différents éléments
     let observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 // Si l'élément est la machine à écrire
                 if (entry.target.id === "machineAecrire") {
                     machineAEcrire(entry.target)
+                }
+                // Si l'élément est une barre de progression
+                else if (entry.target.classList.contains("progress-bar")) {
+                    animateBarresProgress(entry.target)
                 }
                 // Désinscrit l'élément après l'animation pour ne pas répéter
                 observer.unobserve(entry.target)
@@ -32,6 +36,17 @@ document.addEventListener('DOMContentLoaded', function () {
         typeWriter()
     }
 
+    // Animer les barres de progression
+    function animateBarresProgress(barre) {
+        barre.style.width = "0"; 
+    
+        setTimeout(() => {
+            const widthPercent = barre.dataset.target + "%";
+            barre.style.width = widthPercent;
+        }, 100);
+    }
+    
+
     // Générateur aléatoire pour l'effet machine à écrire
     function getRandomInt(min, max) {
         min = Math.ceil(min)
@@ -44,18 +59,9 @@ document.addEventListener('DOMContentLoaded', function () {
     if (elemMachineAecrire) {
         observer.observe(elemMachineAecrire)
     }
+
+    // Observer chaque barre de progression
+    document.querySelectorAll('.progress-bar').forEach(bar => {
+        observer.observe(bar)
+    })
 })
-
-//Bouton de scroll UP
-document.addEventListener("DOMContentLoaded", function () {
-    const btnUp = document.getElementById("btnUP");
-
-    // Afficher le bouton quand on scrolle vers le bas
-    window.addEventListener("scroll", function () {
-        if (window.scrollY > 300) {
-            btnUp.style.display = "flex";
-        } else {
-            btnUp.style.display = "none";
-        }
-    });
-});
