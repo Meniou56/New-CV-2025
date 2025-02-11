@@ -670,6 +670,7 @@
                     <div class="container">
                         <!-- Bootstrap validation form -->
                         <form id="contactForm" class="needs-validation row" novalidate action="traitement.php" method="post">
+                            
                             <!-- Last Name -->
                             <div class="mb-3 col-sm-6">
                                 <label for="lastname" class="form-label">Last Name</label>
@@ -701,7 +702,7 @@
                             <!-- Message -->
                             <div class="mb-3">
                                 <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" id="message" name="message" rows="3" required minlength="10" placeholder="Your message..."></textarea>
+                                <textarea class="form-control" id="message" name="message" rows="3" required minlength="10" maxlength="2000" placeholder="Your message..."></textarea>
                                 <div class="invalid-feedback">Your message must contain at least 10 characters.</div>
                             </div>
                         </form>
