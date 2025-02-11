@@ -24,7 +24,7 @@ $email_subject = substr("Nouveau message du formulaire de contact : " . $subject
 $message = substr($message, 0, 2000);
 
 // Définir les informations d'envoi
-$to = "contact@emmanuelschmitt.com"; // Adresse de réception des messages
+$to = "emmanuelschmitt01@gmail.com"; // Adresse de réception des messages
 $from = "contact@emmanuelschmitt.com"; // Adresse LWS pour éviter le blocage
 $headers  = "From: " . $from . "\r\n";
 $headers .= "Reply-To: " . $email . "\r\n";
