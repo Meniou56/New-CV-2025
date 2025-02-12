@@ -9,18 +9,19 @@
     <title>Emmanuel Schmitt - Apprenti développeur Full Stack</title>
 
     <!--Securite-->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline';">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src 'self' data:; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline';">
     <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none';">
-    
+
 
 
     <!-- Import Bootstrap CSS et custom CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.mini.css">
 
     <!-- Import script JS -->
     <script src="script.js" defer></script>
-    
+
 </head>
 
 <body>
@@ -32,7 +33,8 @@
                     <div class="container">
                         <a class="navbar-brand" href="#accueil">
                             <img src="images/logo/logo_whiter.webp"
-                                alt="Logo de Emmanuel Schmitt, représentant ses initiales">
+                            width="30" height="33"
+                            alt="Logo de Emmanuel Schmitt, représentant ses initiales">
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navOpener" aria-controls="navOpener" aria-expanded="false"
@@ -152,8 +154,10 @@
                     <header id="en-tete" class="p-3">
                         <picture>
                             <source srcset="images/eschmitt_small.webp" media="(max-width: 320px)">
-                            <img class="rounded-circle shadow max-w-280" src="images/eschmitt_large.webp" alt="Portrait d'Emmanuel Schmitt">
-                          </picture>
+                            <img class="rounded-circle shadow max-w-280" src="images/eschmitt_large.webp"
+                                width="266" height="266"
+                                alt="Portrait d'Emmanuel Schmitt">
+                        </picture>
                         <div class="py-4">
                             <h1 id="bandeau-title" class="fw-bold">Emmanuel Schmitt</h1>
                             <h2 class="fw-bold">Développeur Full Stack</h2>
@@ -219,13 +223,9 @@
                                 <h4 id="dev-title" class="fw-bold">Développement</h4>
                                 <div class="row">
                                     <div class="col-4">
-                                        <img 
-                                        class="img-fluid" 
-                                        src="images/competences/html.png" 
-                                        srcset="images/competences/html_63.webp 63w,
+                                        <img class="img-fluid" src="images/competences/html.png" srcset="images/competences/html_63.webp 63w,
                                                 images/competences/html_98.webp 98w"
-                                        sizes="(max-width: 320px) 63px, 98px"
-                                        alt="Logo HTML" />                                    
+                                            sizes="(max-width: 320px) 63px, 98px" width="98" height="87" alt="Logo HTML" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
                                             aria-label="Maîtrise du HTML" aria-valuenow="75" aria-valuemin="0"
                                             aria-valuemax="100">
@@ -235,11 +235,9 @@
                                         </div>
                                     </div>
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/css.png"
-                                        srcset="images/competences/css_63.webp 63w,
-                                        images/competences/css_98.webp 98w"
-                                        sizes="(max-width: 320px) 63px, 98px"
-                                        alt="Logo CSS" />
+                                        <img class="img-fluid" src="images/competences/css.png" srcset="images/competences/css_63.webp 63w,
+                                        images/competences/css_98.webp 98w" sizes="(max-width: 320px) 63px, 98px" width="98" height="87"
+                                            alt="Logo CSS" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
                                             aria-label="Maîtrise du CSS" aria-valuenow="70" aria-valuemin="0"
                                             aria-valuemax="100">
@@ -249,11 +247,9 @@
                                         </div>
                                     </div>
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/JS.png" 
-                                        srcset="images/competences/JS_63.webp 63w,
-                                        images/competences/JS_98.webp 98w"
-                                        sizes="(max-width: 320px) 63px, 98px"
-                                        alt="Logo JavaScript" />
+                                        <img class="img-fluid" src="images/competences/JS.png" srcset="images/competences/JS_63.webp 63w,
+                                        images/competences/JS_98.webp 98w" sizes="(max-width: 320px) 63px, 98px" width="98" height="87"
+                                            alt="Logo JavaScript" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
                                             aria-label="Maîtrise du JavaScript" aria-valuenow="40" aria-valuemin="0"
                                             aria-valuemax="100">
@@ -265,11 +261,9 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/php.png" 
-                                        srcset="images/competences/php_63.webp 63w,
-                                        images/competences/php_98.webp 98w"
-                                        sizes="(max-width: 320px) 63px, 98px"
-                                        alt="Logo PHP" />
+                                        <img class="img-fluid" src="images/competences/PHP.png" srcset="images/competences/PHP_63.webp 63w,
+                                        images/competences/PHP_98.webp 98w" sizes="(max-width: 320px) 63px, 98px" width="98" height="87"
+                                            alt="Logo PHP" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
                                             aria-label="Maîtrise du PHP" aria-valuenow="25" aria-valuemin="0"
                                             aria-valuemax="100">
@@ -279,11 +273,9 @@
                                         </div>
                                     </div>
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/git.png" 
-                                        srcset="images/competences/git_63.webp 63w,
-                                        images/competences/git_98.webp 98w"
-                                        sizes="(max-width: 320px) 63px, 98px"
-                                        alt="Logo Git" />
+                                        <img class="img-fluid" src="images/competences/git.png" srcset="images/competences/git_63.webp 63w,
+                                        images/competences/git_98.webp 98w" sizes="(max-width: 320px) 63px, 98px" width="98" height="87"
+                                            alt="Logo Git" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
                                             aria-label="Maîtrise de Git" aria-valuenow="50" aria-valuemin="0"
                                             aria-valuemax="100">
@@ -293,11 +285,9 @@
                                         </div>
                                     </div>
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/github.png" 
-                                        srcset="images/competences/github_63.webp 63w,
-                                        images/competences/github_98.webp 98w"
-                                        sizes="(max-width: 320px) 63px, 98px"
-                                        alt="Logo GitHub" />
+                                        <img class="img-fluid" src="images/competences/github.png" srcset="images/competences/github_63.webp 63w,
+                                        images/competences/github_98.webp 98w" sizes="(max-width: 320px) 63px, 98px" width="98" height="87"
+                                            alt="Logo GitHub" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
                                             aria-label="Maîtrise de GitHub" aria-valuenow="55" aria-valuemin="0"
                                             aria-valuemax="100">
@@ -314,11 +304,9 @@
                                 <h4 id="maquettage-title" class="fw-bold">Maquettage</h4>
                                 <div class="row">
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/xd.png"
-                                        srcset="images/competences/xd_63.webp 63w,
-                                        images/competences/xd_98.webp 98w"
-                                        sizes="(max-width: 320px) 63px, 98px"
-                                        alt="Logo Adobe XD" />
+                                        <img class="img-fluid" src="images/competences/xd.png" srcset="images/competences/xd_63.webp 63w,
+                                        images/competences/xd_98.webp 98w" sizes="(max-width: 320px) 63px, 98px" width="98" height="80"
+                                            alt="Logo Adobe XD" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
                                             aria-label="Maîtrise d'Adobe XD" aria-valuenow="40" aria-valuemin="0"
                                             aria-valuemax="100">
@@ -328,11 +316,9 @@
                                         </div>
                                     </div>
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/Figma.png"
-                                        srcset="images/competences/Figma_63.webp 63w,
-                                        images/competences/Figma_98.webp 98w"
-                                        sizes="(max-width: 320px) 63px, 98px"
-                                        alt="Logo Figma" />
+                                        <img class="img-fluid" src="images/competences/Figma.png" srcset="images/competences/Figma_63.webp 63w,
+                                        images/competences/Figma_98.webp 98w" sizes="(max-width: 320px) 63px, 98px" width="98" height="80"
+                                            alt="Logo Figma" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
                                             aria-label="Maîtrise de Figma" aria-valuenow="40" aria-valuemin="0"
                                             aria-valuemax="100">
@@ -342,10 +328,8 @@
                                         </div>
                                     </div>
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/Id.png"
-                                        srcset="images/competences/Id_63.webp 63w,
-                                        images/competences/Id_98.webp 98w"
-                                        sizes="(max-width: 320px) 63px, 98px"
+                                        <img class="img-fluid" src="images/competences/Id.png" srcset="images/competences/Id_63.webp 63w,
+                                        images/competences/Id_98.webp 98w" sizes="(max-width: 320px) 63px, 98px" width="98" height="80"
                                             alt="Logo Adobe InDesign" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
                                             aria-label="Maîtrise d'InDesign" aria-valuenow="35" aria-valuemin="0"
@@ -363,10 +347,8 @@
                                 <h4 id="visuels-title" class="fw-bold">Visuels</h4>
                                 <div class="row">
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/lr.png"
-                                        srcset="images/competences/lr_63.webp 63w,
-                                        images/competences/lr_98.webp 98w"
-                                        sizes="(max-width: 320px) 63px, 98px"
+                                        <img class="img-fluid" src="images/competences/lr.png" srcset="images/competences/lr_63.webp 63w,
+                                        images/competences/lr_98.webp 98w" sizes="(max-width: 320px) 63px, 98px" width="98" height="80"
                                             alt="Logo Adobe Lightroom" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
                                             aria-label="Maîtrise de Lightroom" aria-valuenow="90" aria-valuemin="0"
@@ -377,10 +359,8 @@
                                         </div>
                                     </div>
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/ps.png"
-                                        srcset="images/competences/ps_63.webp 63w,
-                                        images/competences/ps_98.webp 98w"
-                                        sizes="(max-width: 320px) 63px, 98px"
+                                        <img class="img-fluid" src="images/competences/ps.png" srcset="images/competences/ps_63.webp 63w,
+                                        images/competences/ps_98.webp 98w" sizes="(max-width: 320px) 63px, 98px" width="98" height="80"
                                             alt="Logo Adobe Photoshop" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
                                             aria-label="Maîtrise de Photoshop" aria-valuenow="45" aria-valuemin="0"
@@ -391,10 +371,8 @@
                                         </div>
                                     </div>
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/Ai.png"
-                                        srcset="images/competences/Ai_63.webp 63w,
-                                        images/competences/Ai_98.webp 98w"
-                                        sizes="(max-width: 320px) 63px, 98px"
+                                        <img class="img-fluid" src="images/competences/Ai.png" srcset="images/competences/Ai_63.webp 63w,
+                                        images/competences/Ai_98.webp 98w" sizes="(max-width: 320px) 63px, 98px" width="98" height="80"
                                             alt="Logo Adobe Illustrator" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
                                             aria-label="Maîtrise d'Illustrator" aria-valuenow="20" aria-valuemin="0"
@@ -412,10 +390,8 @@
                                 <h4 id="autres-title" class="fw-bold">Autres</h4>
                                 <div class="row">
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/Pr.png"
-                                        srcset="images/competences/Pr_63.webp 63w,
-                                        images/competences/Pr_98.webp 98w"
-                                        sizes="(max-width: 320px) 63px, 98px"
+                                        <img class="img-fluid" src="images/competences/Pr.png" srcset="images/competences/Pr_63.webp 63w,
+                                        images/competences/Pr_98.webp 98w" sizes="(max-width: 320px) 63px, 98px" width="98" height="80"
                                             alt="Logo Adobe Première" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
                                             aria-label="Maîtrise de Première Pro" aria-valuenow="65" aria-valuemin="0"
@@ -426,11 +402,9 @@
                                         </div>
                                     </div>
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/WP.png"
-                                        srcset="images/competences/WP_63.webp 63w,
-                                        images/competences/WP_98.webp 98w"
-                                        sizes="(max-width: 320px) 63px, 98px"
-                                        alt="Logo WordPress" />
+                                        <img class="img-fluid" src="images/competences/WP.png" srcset="images/competences/WP_63.webp 63w,
+                                        images/competences/WP_98.webp 98w" sizes="(max-width: 320px) 63px, 98px" width="98" height="80"
+                                            alt="Logo WordPress" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
                                             aria-label="Maîtrise de WordPress" aria-valuenow="75" aria-valuemin="0"
                                             aria-valuemax="100">
@@ -455,21 +429,21 @@
                         <div class="container">
                             <div class="row m-4 text-center">
                                 <div class="col-6">
-                                    <img class="img-fluid" src="images/autres/anglais.webp" alt="Anglais B1" />
+                                    <img class="img-fluid" src="images/autres/anglais.webp" width="65" height="59" alt="Anglais B1" />
                                     <p>Anglais niveau B1</p>
                                 </div>
                                 <div class="col-6">
-                                    <img class="img-fluid" src="images/autres/voyage.webp" alt="Voyages" />
+                                    <img class="img-fluid" src="images/autres/voyage.webp" width="65" height="59" alt="Voyages" />
                                     <p>Goût pour les voyages</p>
                                 </div>
                             </div>
                             <div class="row m-4 text-center">
                                 <div class="col-6">
-                                    <img class="img-fluid" src="images/autres/sport.webp" alt="Sport" />
+                                    <img class="img-fluid" src="images/autres/sport.webp" width="65" height="59" alt="Sport" />
                                     <p>Pratique sportive régulière</p>
                                 </div>
                                 <div class="col-6">
-                                    <img class="img-fluid" src="images/autres/photo.webp" alt="Photographie" />
+                                    <img class="img-fluid" src="images/autres/photo.webp" width="65" height="59" alt="Photographie" />
                                     <p>Goût pour la photographie</p>
                                 </div>
                             </div>
@@ -525,32 +499,50 @@
                                 <p class="card-text">
                                 <ul class="list-unstyled ms-3">
                                     <li>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-code-slash" viewBox="0 0 16 16">
-                                            <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green"
+                                            class="bi bi-code-slash" viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0" />
                                         </svg>
-                                        <p class="d-inline ps-1">HTML, CSS (Sass), Bootstrap</p></li>
+                                        <p class="d-inline ps-1">HTML, CSS (Sass), Bootstrap</p>
+                                    </li>
                                     <li>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-file-code" viewBox="0 0 16 16">
-                                            <path d="M6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708zm2.708 0a.5.5 0 1 0-.708.708L10.293 8 8.646 9.646a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708z"/>
-                                            <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1"/>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red"
+                                            class="bi bi-file-code" viewBox="0 0 16 16">
+                                            <path
+                                                d="M6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708zm2.708 0a.5.5 0 1 0-.708.708L10.293 8 8.646 9.646a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708z" />
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1" />
                                         </svg>
-                                        <p class="d-inline ps-1">JavaScript, PHP, SQL, Node.js</p></li>
+                                        <p class="d-inline ps-1">JavaScript, PHP, SQL, Node.js</p>
+                                    </li>
                                     <li>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#3858E9" class="bi bi-wordpress" viewBox="0 0 16 16">
-                                            <path d="M12.633 7.653c0-.848-.305-1.435-.566-1.892l-.08-.13c-.317-.51-.594-.958-.594-1.48 0-.63.478-1.218 1.152-1.218q.03 0 .058.003l.031.003A6.84 6.84 0 0 0 8 1.137 6.86 6.86 0 0 0 2.266 4.23c.16.005.313.009.442.009.717 0 1.828-.087 1.828-.087.37-.022.414.521.044.565 0 0-.371.044-.785.065l2.5 7.434 1.5-4.506-1.07-2.929c-.369-.022-.719-.065-.719-.065-.37-.022-.326-.588.043-.566 0 0 1.134.087 1.808.087.718 0 1.83-.087 1.83-.087.37-.022.413.522.043.566 0 0-.372.043-.785.065l2.48 7.377.684-2.287.054-.173c.27-.86.469-1.495.469-2.046zM1.137 8a6.86 6.86 0 0 0 3.868 6.176L1.73 5.206A6.8 6.8 0 0 0 1.137 8"/>
-                                            <path d="M6.061 14.583 8.121 8.6l2.109 5.78q.02.05.049.094a6.85 6.85 0 0 1-4.218.109m7.96-9.876q.046.328.047.706c0 .696-.13 1.479-.522 2.458l-2.096 6.06a6.86 6.86 0 0 0 2.572-9.224z"/>
-                                            <path fill-rule="evenodd" d="M0 8c0-4.411 3.589-8 8-8s8 3.589 8 8-3.59 8-8 8-8-3.589-8-8m.367 0c0 4.209 3.424 7.633 7.633 7.633S15.632 12.209 15.632 8C15.632 3.79 12.208.367 8 .367 3.79.367.367 3.79.367 8"/>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#3858E9"
+                                            class="bi bi-wordpress" viewBox="0 0 16 16">
+                                            <path
+                                                d="M12.633 7.653c0-.848-.305-1.435-.566-1.892l-.08-.13c-.317-.51-.594-.958-.594-1.48 0-.63.478-1.218 1.152-1.218q.03 0 .058.003l.031.003A6.84 6.84 0 0 0 8 1.137 6.86 6.86 0 0 0 2.266 4.23c.16.005.313.009.442.009.717 0 1.828-.087 1.828-.087.37-.022.414.521.044.565 0 0-.371.044-.785.065l2.5 7.434 1.5-4.506-1.07-2.929c-.369-.022-.719-.065-.719-.065-.37-.022-.326-.588.043-.566 0 0 1.134.087 1.808.087.718 0 1.83-.087 1.83-.087.37-.022.413.522.043.566 0 0-.372.043-.785.065l2.48 7.377.684-2.287.054-.173c.27-.86.469-1.495.469-2.046zM1.137 8a6.86 6.86 0 0 0 3.868 6.176L1.73 5.206A6.8 6.8 0 0 0 1.137 8" />
+                                            <path
+                                                d="M6.061 14.583 8.121 8.6l2.109 5.78q.02.05.049.094a6.85 6.85 0 0 1-4.218.109m7.96-9.876q.046.328.047.706c0 .696-.13 1.479-.522 2.458l-2.096 6.06a6.86 6.86 0 0 0 2.572-9.224z" />
+                                            <path fill-rule="evenodd"
+                                                d="M0 8c0-4.411 3.589-8 8-8s8 3.589 8 8-3.59 8-8 8-8-3.589-8-8m.367 0c0 4.209 3.424 7.633 7.633 7.633S15.632 12.209 15.632 8C15.632 3.79 12.208.367 8 .367 3.79.367.367 3.79.367 8" />
                                         </svg>
-                                        <p class="d-inline ps-1">WordPress, thèmes & plugins personnalisés</p></li>
-                                    <li>🎨<p class="d-inline ps-1">UX/UI : Figma, Adobe XD, Photoshop</p></li>
+                                        <p class="d-inline ps-1">WordPress, thèmes & plugins personnalisés</p>
+                                    </li>
+                                    <li>🎨<p class="d-inline ps-1">UX/UI : Figma, Adobe XD, Photoshop</p>
+                                    </li>
                                     <li>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F05134" class="bi bi-git" viewBox="0 0 16 16">
-                                            <path d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.03 1.03 0 0 0 0-1.457"/>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F05134"
+                                            class="bi bi-git" viewBox="0 0 16 16">
+                                            <path
+                                                d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.03 1.03 0 0 0 0-1.457" />
                                         </svg>
-                                        <p class="d-inline ps-1">Git, GitHub, gestion de projet Agile</p></li>
+                                        <p class="d-inline ps-1">Git, GitHub, gestion de projet Agile</p>
+                                    </li>
                                     <li>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-search" viewBox="0 0 16 16">
-                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange"
+                                            class="bi bi-search" viewBox="0 0 16 16">
+                                            <path
+                                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
                                         </svg>
                                         <p class="d-inline ps-1">SEO, Marketing web, Certification Opquast</p>
                                     </li>
@@ -621,7 +613,8 @@
                             </div>
                             <!--Section informatique-->
                             <section aria-labelledby="informatique-title">
-                                <h6 id="informatique-title" class="card-subtitle marron fs-4 text-body fw-bold mt-4 mb-2">
+                                <h6 id="informatique-title"
+                                    class="card-subtitle marron fs-4 text-body fw-bold mt-4 mb-2">
                                     Informatique
                                 </h6>
                                 <ul class="arrowPuce">
@@ -773,42 +766,48 @@
                 <!--Main contact form-->
                 <div id="form" class="p-3">
                     <div class="container">
-                        
+
                         <!-- Formulaire avec validation Bootstrap -->
-                        <form id="contactForm" class="needs-validation row" novalidate action="php/traitement.php" method="post">
-                            
+                        <form id="contactForm" class="needs-validation row" novalidate action="php/traitement.php"
+                            method="post">
+
                             <!-- Nom -->
                             <div class="mb-3 col-sm-6">
                                 <label for="lastname" class="form-label">Nom</label>
-                                <input type="text" class="form-control" id="lastname" name="lastname" required maxlength="50" pattern="[A-Za-zÀ-ÿ\s\-]+" placeholder="Dupond">
+                                <input type="text" class="form-control" id="lastname" name="lastname" required
+                                    maxlength="50" pattern="[A-Za-zÀ-ÿ\s\-]+" placeholder="Dupond">
                                 <div class="invalid-feedback">Veuillez entrer un nom valide (lettres uniquement).</div>
                             </div>
 
                             <!-- Prénom -->
                             <div class="mb-3 col-sm-6">
                                 <label for="firstname" class="form-label">Prénom</label>
-                                <input type="text" class="form-control" id="firstname" name="firstname" required maxlength="50" pattern="[A-Za-zÀ-ÿ\s\-]+" placeholder="Jean">
+                                <input type="text" class="form-control" id="firstname" name="firstname" required
+                                    maxlength="50" pattern="[A-Za-zÀ-ÿ\s\-]+" placeholder="Jean">
                                 <div class="invalid-feedback">Veuillez entrer un prénom valide.</div>
                             </div>
 
                             <!-- Email -->
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" name="email" required placeholder="exemple@email.fr">
+                                <input type="email" class="form-control" id="email" name="email" required
+                                    placeholder="exemple@email.fr">
                                 <div class="invalid-feedback">Veuillez entrer une adresse email valide.</div>
                             </div>
 
                             <!-- Objet -->
                             <div class="mb-3">
                                 <label for="subject" class="form-label">Objet</label>
-                                <input type="text" class="form-control" id="subject" name="subject" required maxlength="100">
+                                <input type="text" class="form-control" id="subject" name="subject" required
+                                    maxlength="100">
                                 <div class="invalid-feedback">Veuillez renseigner un objet valide.</div>
                             </div>
 
                             <!-- Message -->
                             <div class="mb-3">
                                 <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" id="message" name="message" rows="3" required minlength="10" maxlength="2000" placeholder="Votre message..."></textarea>
+                                <textarea class="form-control" id="message" name="message" rows="3" required
+                                    minlength="10" maxlength="2000" placeholder="Votre message..."></textarea>
                                 <div class="invalid-feedback">Votre message doit contenir au moins 10 caractères.</div>
                             </div>
 

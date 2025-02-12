@@ -9,12 +9,13 @@
     <title>Emmanuel Schmitt - Apprentice Full Stack Developer</title>
 
     <!-- Security -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline';">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src 'self' data:; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline';">
     <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none';">
 
     <!-- Import Bootstrap CSS and custom CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.mini.css">
 
     <!-- Import JS script -->
     <script src="script.js" defer></script>
@@ -28,7 +29,9 @@
                 <nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top rounded-3 px-3 shadow-sm">
                     <div class="container">
                         <a class="navbar-brand" href="#accueil">
-                            <img src="images/logo/logo_whiter.webp" alt="Emmanuel Schmitt logo representing his initials">
+                            <img src="images/logo/logo_whiter.webp"
+                            width="30" height="33"
+                            alt="Emmanuel Schmitt logo representing his initials">
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navOpener" aria-controls="navOpener" aria-expanded="false"
@@ -54,7 +57,8 @@
                                             <a class="dropdown-item" href="#competences">Digital Skills</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="#infos-complementaires">Additional Information</a>
+                                            <a class="dropdown-item" href="#infos-complementaires">Additional
+                                                Information</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -69,7 +73,7 @@
                             <ul class="navbar-nav">
                                 <!-- French -->
                                 <li class="nav-item">
-                                    <a href="index.html" class="nav-link w-40px" >
+                                    <a href="index.html" class="nav-link w-40px">
                                         <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
                                             text-rendering="geometricPrecision" image-rendering="optimizeQuality"
                                             fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 356.18">
@@ -93,9 +97,11 @@
                                                 .st0 {
                                                     fill: #fefefe;
                                                 }
+
                                                 .st1 {
                                                     fill: #c8102e;
                                                 }
+
                                                 .st2 {
                                                     fill: #012169;
                                                 }
@@ -143,13 +149,16 @@
                     aria-labelledby="bandeau-title">
                     <!-- Header with portrait and identification -->
                     <header id="en-tete" class="text-center p-3">
-                    <picture>
-                        <source srcset="images/eschmitt_small.webp" media="(max-width: 320px)">
-                        <img class="rounded-circle shadow max-w-280" src="images/eschmitt_large.webp" alt="Portrait d'Emmanuel Schmitt">
-                    </picture>                        <div class="py-4">
-                        <h1 id="bandeau-title" class="fw-bold">Emmanuel Schmitt</h1>
-                        <h2 class="fw-bold">Full Stack Developer</h2>
-                    </div>
+                        <picture>
+                            <source srcset="images/eschmitt_small.webp" media="(max-width: 320px)">
+                            <img class="rounded-circle shadow max-w-280" src="images/eschmitt_large.webp"
+                                width="266" height="266"
+                                alt="Portrait d'Emmanuel Schmitt">
+                        </picture>
+                        <div class="py-4">
+                            <h1 id="bandeau-title" class="fw-bold">Emmanuel Schmitt</h1>
+                            <h2 class="fw-bold">Full Stack Developer</h2>
+                        </div>
                     </header>
 
                     <!-- Personal Information -->
@@ -164,7 +173,8 @@
                             <div class="mb-3">
                                 <p class="fw-bold fs-4 mb-0">Address</p>
                                 <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-                                    <span itemprop="streetAddress">34 rue de la Fleurière, Résidence Rosa Alba</span><br />
+                                    <span itemprop="streetAddress">34 rue de la Fleurière, Résidence Rosa
+                                        Alba</span><br />
                                     <span itemprop="postalCode">53000</span>
                                     <span itemprop="addressLocality">Laval</span><br>
                                     <span itemprop="addressCountry">France</span>
@@ -173,19 +183,22 @@
                             <div class="mb-3">
                                 <p class="fw-bold fs-4 mb-0">Phone</p>
                                 <p>
-                                    <a href="tel:+33698639996" class="text-light text-decoration-none">+33 6 98 63 99 96</a>
+                                    <a href="tel:+33698639996" class="text-light text-decoration-none">+33 6 98 63 99
+                                        96</a>
                                 </p>
                             </div>
                             <div class="mb-3">
                                 <p class="fw-bold fs-4 mb-0">Email</p>
                                 <p>
-                                    <a class="text-light text-decoration-none" href="mailto:emmanuelschmitt01@gmail.com">emmanuelschmitt01@gmail.com</a>
+                                    <a class="text-light text-decoration-none"
+                                        href="mailto:emmanuelschmitt01@gmail.com">emmanuelschmitt01@gmail.com</a>
                                 </p>
                             </div>
                             <div class="mb-3">
                                 <p class="fw-bold fs-4 mb-0">GitHub</p>
                                 <p>
-                                    <a class="text-light text-decoration-none" href="https://github.com/Meniou56" target="_blank" rel="noopener noreferrer">Meniou56</a>
+                                    <a class="text-light text-decoration-none" href="https://github.com/Meniou56"
+                                        target="_blank" rel="noopener noreferrer">Meniou56</a>
                                 </p>
                             </div>
                             <div>
@@ -208,13 +221,9 @@
                                 <h4 id="dev-title" class="fw-bold">Development</h4>
                                 <div class="row">
                                     <div class="col-4">
-                                        <img 
-                                        class="img-fluid" 
-                                        src="images/competences/html.png" 
-                                        srcset="images/competences/html_63.webp 63w,
+                                        <img class="img-fluid" src="images/competences/html.png" srcset="images/competences/html_63.webp 63w,
                                                 images/competences/html_98.webp 98w"
-                                        sizes="(max-width: 320px) 63px, 98px"
-                                        alt="HTML Logo" />
+                                            sizes="(max-width: 320px) 63px, 98px" width="98" height="87" alt="HTML Logo" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
                                             aria-label="HTML Proficiency" aria-valuenow="75" aria-valuemin="0"
                                             aria-valuemax="100">
@@ -224,11 +233,9 @@
                                         </div>
                                     </div>
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/css.png"
-                                        srcset="images/competences/css_63.webp 63w,
-                                        images/competences/css_98.webp 98w"
-                                        sizes="(max-width: 320px) 63px, 98px"
-                                       alt="CSS Logo" />
+                                        <img class="img-fluid" src="images/competences/css.png" srcset="images/competences/css_63.webp 63w,
+                                        images/competences/css_98.webp 98w" sizes="(max-width: 320px) 63px, 98px" width="98" height="87"
+                                            alt="CSS Logo" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
                                             aria-label="CSS Proficiency" aria-valuenow="70" aria-valuemin="0"
                                             aria-valuemax="100">
@@ -238,11 +245,9 @@
                                         </div>
                                     </div>
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/JS.png" 
-                                        srcset="images/competences/JS_63.webp 63w,
-                                        images/competences/JS_98.webp 98w"
-                                        sizes="(max-width: 320px) 63px, 98px"
-                                        alt="JavaScript Logo" />
+                                        <img class="img-fluid" src="images/competences/JS.png" srcset="images/competences/JS_63.webp 63w,
+                                        images/competences/JS_98.webp 98w" sizes="(max-width: 320px) 63px, 98px" width="98" height="87"
+                                            alt="JavaScript Logo" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
                                             aria-label="JavaScript Proficiency" aria-valuenow="40" aria-valuemin="0"
                                             aria-valuemax="100">
@@ -254,11 +259,9 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/php.png" 
-                                        srcset="images/competences/php_63.webp 63w,
-                                        images/competences/php_98.webp 98w"
-                                        sizes="(max-width: 320px) 63px, 98px"
-                                        alt="PHP Logo" />
+                                        <img class="img-fluid" src="images/competences/PHP.png" srcset="images/competences/PHP_63.webp 63w,
+                                        images/competences/PHP_98.webp 98w" sizes="(max-width: 320px) 63px, 98px" width="98" height="87"
+                                            alt="PHP Logo" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
                                             aria-label="PHP Proficiency" aria-valuenow="25" aria-valuemin="0"
                                             aria-valuemax="100">
@@ -268,11 +271,9 @@
                                         </div>
                                     </div>
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/git.png"
-                                        srcset="images/competences/git_63.webp 63w,
-                                        images/competences/git_98.webp 98w"
-                                        sizes="(max-width: 320px) 63px, 98px"
-                                        alt="Git Logo" />
+                                        <img class="img-fluid" src="images/competences/git.png" srcset="images/competences/git_63.webp 63w,
+                                        images/competences/git_98.webp 98w" sizes="(max-width: 320px) 63px, 98px" width="98" height="87"
+                                            alt="Git Logo" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
                                             aria-label="Git Proficiency" aria-valuenow="50" aria-valuemin="0"
                                             aria-valuemax="100">
@@ -282,11 +283,9 @@
                                         </div>
                                     </div>
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/github.png"
-                                        srcset="images/competences/github_63.webp 63w,
-                                        images/competences/github_98.webp 98w"
-                                        sizes="(max-width: 320px) 63px, 98px"
-                                        alt="GitHub Logo" />
+                                        <img class="img-fluid" src="images/competences/github.png" srcset="images/competences/github_63.webp 63w,
+                                        images/competences/github_98.webp 98w" sizes="(max-width: 320px) 63px, 98px" width="98" height="87"
+                                            alt="GitHub Logo" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
                                             aria-label="GitHub Proficiency" aria-valuenow="55" aria-valuemin="0"
                                             aria-valuemax="100">
@@ -303,11 +302,9 @@
                                 <h4 id="maquettage-title" class="fw-bold">Prototyping</h4>
                                 <div class="row">
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/xd.png"
-                                        srcset="images/competences/xd_63.webp 63w,
-                                        images/competences/xd_98.webp 98w"
-                                        sizes="(max-width: 320px) 63px, 98px"
-                                        alt="Adobe XD Logo" />
+                                        <img class="img-fluid" src="images/competences/xd.png" srcset="images/competences/xd_63.webp 63w,
+                                        images/competences/xd_98.webp 98w" sizes="(max-width: 320px) 63px, 98px" width="98" height="80"
+                                            alt="Adobe XD Logo" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
                                             aria-label="Adobe XD Proficiency" aria-valuenow="40" aria-valuemin="0"
                                             aria-valuemax="100">
@@ -317,11 +314,9 @@
                                         </div>
                                     </div>
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/Figma.png"
-                                        srcset="images/competences/Figma_63.webp 63w,
-                                        images/competences/Figma_98.webp 98w"
-                                        sizes="(max-width: 320px) 63px, 98px"
-                                        alt="Figma Logo" />
+                                        <img class="img-fluid" src="images/competences/Figma.png" srcset="images/competences/Figma_63.webp 63w,
+                                        images/competences/Figma_98.webp 98w" sizes="(max-width: 320px) 63px, 98px" width="98" height="80"
+                                            alt="Figma Logo" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
                                             aria-label="Figma Proficiency" aria-valuenow="40" aria-valuemin="0"
                                             aria-valuemax="100">
@@ -331,11 +326,9 @@
                                         </div>
                                     </div>
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/Id.png"
-                                        srcset="images/competences/Id_63.webp 63w,
-                                        images/competences/Id_98.webp 98w"
-                                        sizes="(max-width: 320px) 63px, 98px"
-                                        alt="Adobe InDesign Logo" />
+                                        <img class="img-fluid" src="images/competences/Id.png" srcset="images/competences/Id_63.webp 63w,
+                                        images/competences/Id_98.webp 98w" sizes="(max-width: 320px) 63px, 98px" width="98" height="80"
+                                            alt="Adobe InDesign Logo" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
                                             aria-label="InDesign Proficiency" aria-valuenow="35" aria-valuemin="0"
                                             aria-valuemax="100">
@@ -352,11 +345,9 @@
                                 <h4 id="visuels-title" class="fw-bold">Visuals</h4>
                                 <div class="row">
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/lr.png"
-                                        srcset="images/competences/lr_63.webp 63w,
-                                        images/competences/lr_98.webp 98w"
-                                        sizes="(max-width: 320px) 63px, 98px"
-                                        alt="Adobe Lightroom Logo" />
+                                        <img class="img-fluid" src="images/competences/lr.png" srcset="images/competences/lr_63.webp 63w,
+                                        images/competences/lr_98.webp 98w" sizes="(max-width: 320px) 63px, 98px" width="98" height="80"
+                                            alt="Adobe Lightroom Logo" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
                                             aria-label="Lightroom Proficiency" aria-valuenow="90" aria-valuemin="0"
                                             aria-valuemax="100">
@@ -366,11 +357,9 @@
                                         </div>
                                     </div>
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/ps.png"
-                                        srcset="images/competences/ps_63.webp 63w,
-                                        images/competences/ps_98.webp 98w"
-                                        sizes="(max-width: 320px) 63px, 98px"
-                                        alt="Adobe Photoshop Logo" />
+                                        <img class="img-fluid" src="images/competences/ps.png" srcset="images/competences/ps_63.webp 63w,
+                                        images/competences/ps_98.webp 98w" sizes="(max-width: 320px) 63px, 98px" width="98" height="80"
+                                            alt="Adobe Photoshop Logo" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
                                             aria-label="Photoshop Proficiency" aria-valuenow="45" aria-valuemin="0"
                                             aria-valuemax="100">
@@ -380,11 +369,9 @@
                                         </div>
                                     </div>
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/Ai.png"
-                                        srcset="images/competences/Ai_63.webp 63w,
-                                        images/competences/Ai_98.webp 98w"
-                                        sizes="(max-width: 320px) 63px, 98px"
-                                        alt="Adobe Illustrator Logo" />
+                                        <img class="img-fluid" src="images/competences/Ai.png" srcset="images/competences/Ai_63.webp 63w,
+                                        images/competences/Ai_98.webp 98w" sizes="(max-width: 320px) 63px, 98px" width="98" height="80"
+                                            alt="Adobe Illustrator Logo" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
                                             aria-label="Illustrator Proficiency" aria-valuenow="20" aria-valuemin="0"
                                             aria-valuemax="100">
@@ -401,11 +388,9 @@
                                 <h4 id="autres-title" class="fw-bold">Others</h4>
                                 <div class="row">
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/Pr.png"
-                                        srcset="images/competences/Pr_63.webp 63w,
-                                        images/competences/Pr_98.webp 98w"
-                                        sizes="(max-width: 320px) 63px, 98px"
-                                        alt="Adobe Premiere Pro Logo" />
+                                        <img class="img-fluid" src="images/competences/Pr.png" srcset="images/competences/Pr_63.webp 63w,
+                                        images/competences/Pr_98.webp 98w" sizes="(max-width: 320px) 63px, 98px" width="98" height="80"
+                                            alt="Adobe Premiere Pro Logo" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
                                             aria-label="Premiere Pro Proficiency" aria-valuenow="65" aria-valuemin="0"
                                             aria-valuemax="100">
@@ -415,11 +400,9 @@
                                         </div>
                                     </div>
                                     <div class="col-4">
-                                        <img class="img-fluid" src="images/competences/WP.png"
-                                        srcset="images/competences/WP_63.webp 63w,
-                                        images/competences/WP_98.webp 98w"
-                                        sizes="(max-width: 320px) 63px, 98px"
-                            webpalt="WordPress Logo" />
+                                        <img class="img-fluid" src="images/competences/WP.png" srcset="images/competences/WP_63.webp 63w,
+                                        images/competences/WP_98.webp 98w" sizes="(max-width: 320px) 63px, 98px" width="98" height="80"
+                                            webpalt="WordPress Logo" />
                                         <div class="progress bg-secondary mt-1 mb-2" role="progressbar"
                                             aria-label="WordPress Proficiency" aria-valuenow="75" aria-valuemin="0"
                                             aria-valuemax="100">
@@ -444,21 +427,21 @@
                         <div class="container">
                             <div class="row m-4 text-center">
                                 <div class="col-6">
-                                    <img class="img-fluid" src="images/autres/anglais.webp" alt="English B1" />
+                                    <img class="img-fluid" src="images/autres/anglais.webp" width="65" height="59" alt="English B1" />
                                     <p>English level B1</p>
                                 </div>
                                 <div class="col-6">
-                                    <img class="img-fluid" src="images/autres/voyage.webp" alt="Travel" />
+                                    <img class="img-fluid" src="images/autres/voyage.webp" width="65" height="59" alt="Travel" />
                                     <p>Passion for travel</p>
                                 </div>
                             </div>
                             <div class="row m-4 text-center">
                                 <div class="col-6">
-                                    <img class="img-fluid" src="images/autres/sport.webp" alt="Sports" />
+                                    <img class="img-fluid" src="images/autres/sport.webp" width="65" height="59" alt="Sports" />
                                     <p>Regular sports practice</p>
                                 </div>
                                 <div class="col-6">
-                                    <img class="img-fluid" src="images/autres/photo.webp" alt="Photography" />
+                                    <img class="img-fluid" src="images/autres/photo.webp" width="65" height="59" alt="Photography" />
                                     <p>Passion for photography</p>
                                 </div>
                             </div>
@@ -474,12 +457,18 @@
                     <header class="row m-0 m-lg-4">
                         <h5 id="machineAecrire" class="col-12 display-5"></h5>
                         <p class="col-12 fs-5 text-body marron">
-                            Passionate about programming since 2001, I started with Dark Basic by developing several small games.
-                            After a rewarding career in journalism and transportation, I decided to fully devote myself to web and mobile development.
-                            To mark this return, I designed a Connect Four game playable against an AI or online in multiplayer mode.
-                            Currently training at ESECADE, I am specializing in Full Stack development, learning to use languages such as HTML, CSS, JavaScript, PHP, SQL, and tools like Git and GitHub.
-                            I have built several websites by customizing WordPress themes and plugins, and more recently by coding from scratch or using Bootstrap to meet specific needs.
-                            In search of an internship as part of my training, I aim to apply my skills, contribute to innovative projects, and grow within a dynamic team.
+                            Passionate about programming since 2001, I started with Dark Basic by developing several
+                            small games.
+                            After a rewarding career in journalism and transportation, I decided to fully devote myself
+                            to web and mobile development.
+                            To mark this return, I designed a Connect Four game playable against an AI or online in
+                            multiplayer mode.
+                            Currently training at ESECADE, I am specializing in Full Stack development, learning to use
+                            languages such as HTML, CSS, JavaScript, PHP, SQL, and tools like Git and GitHub.
+                            I have built several websites by customizing WordPress themes and plugins, and more recently
+                            by coding from scratch or using Bootstrap to meet specific needs.
+                            In search of an internship as part of my training, I aim to apply my skills, contribute to
+                            innovative projects, and grow within a dynamic team.
                         </p>
                     </header>
                     <!-- Call-to-action button -->
@@ -508,23 +497,32 @@
                                 <p class="card-text">
                                 <ul class="list-unstyled ms-3">
                                     <li>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-code-slash" viewBox="0 0 16 16">
-                                            <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green"
+                                            class="bi bi-code-slash" viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0" />
                                         </svg>
                                         <p class="d-inline ps-1">HTML, CSS (Sass), Bootstrap</p>
                                     </li>
                                     <li>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-file-code" viewBox="0 0 16 16">
-                                            <path d="M6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708zm2.708 0a.5.5 0 1 0-.708.708L10.293 8 8.646 9.646a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708z"/>
-                                            <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1"/>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red"
+                                            class="bi bi-file-code" viewBox="0 0 16 16">
+                                            <path
+                                                d="M6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708zm2.708 0a.5.5 0 1 0-.708.708L10.293 8 8.646 9.646a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708z" />
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1" />
                                         </svg>
                                         <p class="d-inline ps-1">JavaScript, PHP, SQL, Node.js</p>
                                     </li>
                                     <li>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#3858E9" class="bi bi-wordpress" viewBox="0 0 16 16">
-                                            <path d="M12.633 7.653c0-.848-.305-1.435-.566-1.892l-.08-.13c-.317-.51-.594-.958-.594-1.48 0-.63.478-1.218 1.152-1.218q.03 0 .058.003l.031.003A6.84 6.84 0 0 0 8 1.137 6.86 6.86 0 0 0 2.266 4.23c.16.005.313.009.442.009.717 0 1.828-.087 1.828-.087.37-.022.414.521.044.565 0 0-.371.044-.785.065l2.5 7.434 1.5-4.506-1.07-2.929c-.369-.022-.719-.065-.719-.065-.37-.022-.326-.588.043-.566 0 0 1.134.087 1.808.087.718 0 1.83-.087 1.83-.087.37-.022.413.522.043.566 0 0-.372.043-.785.065l2.48 7.377.684-2.287.054-.173c.27-.86.469-1.495.469-2.046zM1.137 8a6.86 6.86 0 0 0 3.868 6.176L1.73 5.206A6.8 6.8 0 0 0 1.137 8"/>
-                                            <path d="M6.061 14.583 8.121 8.6l2.109 5.78q.02.05.049.094a6.85 6.85 0 0 1-4.218.109m7.96-9.876q.046.328.047.706c0 .696-.13 1.479-.522 2.458l-2.096 6.06a6.86 6.86 0 0 0 2.572-9.224z"/>
-                                            <path fill-rule="evenodd" d="M0 8c0-4.411 3.589-8 8-8s8 3.589 8 8-3.59 8-8 8-8-3.589-8-8m.367 0c0 4.209 3.424 7.633 7.633 7.633S15.632 12.209 15.632 8C15.632 3.79 12.208.367 8 .367 3.79.367.367 3.79.367 8"/>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#3858E9"
+                                            class="bi bi-wordpress" viewBox="0 0 16 16">
+                                            <path
+                                                d="M12.633 7.653c0-.848-.305-1.435-.566-1.892l-.08-.13c-.317-.51-.594-.958-.594-1.48 0-.63.478-1.218 1.152-1.218q.03 0 .058.003l.031.003A6.84 6.84 0 0 0 8 1.137 6.86 6.86 0 0 0 2.266 4.23c.16.005.313.009.442.009.717 0 1.828-.087 1.828-.087.37-.022.414.521.044.565 0 0-.371.044-.785.065l2.5 7.434 1.5-4.506-1.07-2.929c-.369-.022-.719-.065-.719-.065-.37-.022-.326-.588.043-.566 0 0 1.134.087 1.808.087.718 0 1.83-.087 1.83-.087.37-.022.413.522.043.566 0 0-.372.043-.785.065l2.48 7.377.684-2.287.054-.173c.27-.86.469-1.495.469-2.046zM1.137 8a6.86 6.86 0 0 0 3.868 6.176L1.73 5.206A6.8 6.8 0 0 0 1.137 8" />
+                                            <path
+                                                d="M6.061 14.583 8.121 8.6l2.109 5.78q.02.05.049.094a6.85 6.85 0 0 1-4.218.109m7.96-9.876q.046.328.047.706c0 .696-.13 1.479-.522 2.458l-2.096 6.06a6.86 6.86 0 0 0 2.572-9.224z" />
+                                            <path fill-rule="evenodd"
+                                                d="M0 8c0-4.411 3.589-8 8-8s8 3.589 8 8-3.59 8-8 8-8-3.589-8-8m.367 0c0 4.209 3.424 7.633 7.633 7.633S15.632 12.209 15.632 8C15.632 3.79 12.208.367 8 .367 3.79.367.367 3.79.367 8" />
                                         </svg>
                                         <p class="d-inline ps-1">WordPress, Custom Themes & Plugins</p>
                                     </li>
@@ -532,14 +530,18 @@
                                         🎨<p class="d-inline ps-1">UX/UI: Figma, Adobe XD, Photoshop</p>
                                     </li>
                                     <li>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F05134" class="bi bi-git" viewBox="0 0 16 16">
-                                            <path d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.03 1.03 0 0 0 0-1.457"/>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F05134"
+                                            class="bi bi-git" viewBox="0 0 16 16">
+                                            <path
+                                                d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.03 1.03 0 0 0 0-1.457" />
                                         </svg>
                                         <p class="d-inline ps-1">Git, GitHub, Agile Project Management</p>
                                     </li>
                                     <li>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-search" viewBox="0 0 16 16">
-                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange"
+                                            class="bi bi-search" viewBox="0 0 16 16">
+                                            <path
+                                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
                                         </svg>
                                         <p class="d-inline ps-1">SEO, Web Marketing, Opquast Certification</p>
                                     </li>
@@ -555,16 +557,16 @@
                                     Photojournalist, EMI-CFD, 2014–2015, in Paris (75)
                                 </h6>
                                 <p class="card-text">
-                                    <ul class="list-unstyled ms-3">
-                                        <li>📸 Press Photography & Reporting: news, portraits, studio, corporate</li>
-                                        <li>🎥 Video & Multimedia: filming with DSLR, editing on Final Cut X</li>
-                                        <li>🖥 Post-production: Adobe Lightroom & Photoshop (editing and retouching)</li>
-                                        <li>🌐 Web Publishing: posting articles, managing an immersive website</li>
-                                        <li>🗣 Multimedia Project Production: photography, video, audio</li>
-                                        <li>
-                                            👨‍🎓 RNCP Level 6
-                                        </li>
-                                    </ul>
+                                <ul class="list-unstyled ms-3">
+                                    <li>📸 Press Photography & Reporting: news, portraits, studio, corporate</li>
+                                    <li>🎥 Video & Multimedia: filming with DSLR, editing on Final Cut X</li>
+                                    <li>🖥 Post-production: Adobe Lightroom & Photoshop (editing and retouching)</li>
+                                    <li>🌐 Web Publishing: posting articles, managing an immersive website</li>
+                                    <li>🗣 Multimedia Project Production: photography, video, audio</li>
+                                    <li>
+                                        👨‍🎓 RNCP Level 6
+                                    </li>
+                                </ul>
                                 </p>
                             </section>
                             <!-- Journalism Section -->
@@ -573,16 +575,16 @@
                                     Journalist, IUT, 2007–2010, in Lannion (22)
                                 </h6>
                                 <p class="card-text">
-                                    <ul class="list-unstyled ms-3">
-                                        <li>🖊 Writing & Editing: print, web, radio, TV</li>
-                                        <li>📢 Radio Journalism: reports for France Bleu Armorique and Virgin Radio</li>
-                                        <li>📺 Photo Journalism & Image Reporting</li>
-                                        <li>🖥 Web Journalism: posting articles, managing multimedia content</li>
-                                        <li>🎨 Layout & Graphic Design: proficiency in Adobe InDesign and QuarkXPress</li>
-                                        <li>
-                                            👨‍🎓 DUT & Professional License; specialization in magazine journalism
-                                        </li>
-                                    </ul>
+                                <ul class="list-unstyled ms-3">
+                                    <li>🖊 Writing & Editing: print, web, radio, TV</li>
+                                    <li>📢 Radio Journalism: reports for France Bleu Armorique and Virgin Radio</li>
+                                    <li>📺 Photo Journalism & Image Reporting</li>
+                                    <li>🖥 Web Journalism: posting articles, managing multimedia content</li>
+                                    <li>🎨 Layout & Graphic Design: proficiency in Adobe InDesign and QuarkXPress</li>
+                                    <li>
+                                        👨‍🎓 DUT & Professional License; specialization in magazine journalism
+                                    </li>
+                                </ul>
                                 </p>
                             </section>
                         </div>
@@ -602,24 +604,34 @@
                             </div>
                             <!-- IT Section -->
                             <section aria-labelledby="informatique-title">
-                                <h6 id="informatique-title" class="card-subtitle marron fs-4 text-body fw-bold mt-4 mb-2">
+                                <h6 id="informatique-title"
+                                    class="card-subtitle marron fs-4 text-body fw-bold mt-4 mb-2">
                                     IT
                                 </h6>
                                 <ul class="arrowPuce">
                                     <li>
-                                        Development project of a <a href="https://www.emmanuelschmitt.com/puissance4" target="_blank" rel="noopener noreferrer">Connect Four</a> game in JavaScript with an AI and online multiplayer mode
+                                        Development project of a <a href="https://www.emmanuelschmitt.com/puissance4"
+                                            target="_blank" rel="noopener noreferrer">Connect Four</a> game in
+                                        JavaScript with an AI and online multiplayer mode
                                     </li>
                                     <li>
-                                        Creation of WordPress websites with advanced customization of themes and plugins:
-                                        <a href="https://www.frederiquelebrun.com" target="_blank" rel="noopener noreferrer">Frédérique Le Brun – Photojournalist</a>,
-                                        <a href="https://www.bernardschmitt.com" target="_blank" rel="noopener noreferrer">Bernard Schmitt – Photographer</a>,
-                                        <a href="https://www.meskad.fr" target="_blank" rel="noopener noreferrer">Restaurant Le Meskad</a>
+                                        Creation of WordPress websites with advanced customization of themes and
+                                        plugins:
+                                        <a href="https://www.frederiquelebrun.com" target="_blank"
+                                            rel="noopener noreferrer">Frédérique Le Brun – Photojournalist</a>,
+                                        <a href="https://www.bernardschmitt.com" target="_blank"
+                                            rel="noopener noreferrer">Bernard Schmitt – Photographer</a>,
+                                        <a href="https://www.meskad.fr" target="_blank"
+                                            rel="noopener noreferrer">Restaurant Le Meskad</a>
                                     </li>
                                     <li>
-                                        Creation of websites from scratch: <a href="https://www.ad-laubedesoi.fr" target="_blank" rel="noopener noreferrer">À l'Aube de soi</a>, a professional site for Aurore Détain, developed with Bootstrap
+                                        Creation of websites from scratch: <a href="https://www.ad-laubedesoi.fr"
+                                            target="_blank" rel="noopener noreferrer">À l'Aube de soi</a>, a
+                                        professional site for Aurore Détain, developed with Bootstrap
                                     </li>
                                     <li>
-                                        Certifications in CSS, HTML, JavaScript, PHP, Sass, GitHub & Git, AI, Bootstrap… on OpenClassrooms (2023–2025)
+                                        Certifications in CSS, HTML, JavaScript, PHP, Sass, GitHub & Git, AI, Bootstrap…
+                                        on OpenClassrooms (2023–2025)
                                     </li>
                                     <li>
                                         Development of video games and programs in Dark Basic Pro (2001–2005)
@@ -642,13 +654,16 @@
                                         Press/Corporate/Event Photographer & Videographer (Since 2012)
                                     </li>
                                     <li>
-                                        Co-manager and Photo Director at DHLS Editions, publisher of Brest Mag' (2011 and 2012)
+                                        Co-manager and Photo Director at DHLS Editions, publisher of Brest Mag' (2011
+                                        and 2012)
                                     </li>
                                     <li>
-                                        Journalist and photo-reporter for daily newspapers (Ouest-France, Le Télégramme, Aujourd'hui en France, La Nouvelle République, Paris Normandie – 2008 to 2015)
+                                        Journalist and photo-reporter for daily newspapers (Ouest-France, Le Télégramme,
+                                        Aujourd'hui en France, La Nouvelle République, Paris Normandie – 2008 to 2015)
                                     </li>
                                     <li>
-                                        Brief experience in radio journalism (France Bleu Armorique, Virgin Radio) and in community press
+                                        Brief experience in radio journalism (France Bleu Armorique, Virgin Radio) and
+                                        in community press
                                     </li>
                                 </ul>
                             </section>
@@ -665,7 +680,8 @@
                                         Transport operator for Routiers Bretons (September 2019 to March 2020)
                                     </li>
                                     <li>
-                                        Delivery driver on fixed-term contracts and temporary assignments from 2015 to 2017
+                                        Delivery driver on fixed-term contracts and temporary assignments from 2015 to
+                                        2017
                                     </li>
                                 </ul>
                             </section>
@@ -725,40 +741,46 @@
                 <div id="form" class="p-3">
                     <div class="container">
                         <!-- Bootstrap validation form -->
-                        <form id="contactForm" class="needs-validation row" novalidate action="php/traitement.php" method="post">
-                            
+                        <form id="contactForm" class="needs-validation row" novalidate action="php/traitement.php"
+                            method="post">
+
                             <!-- Last Name -->
                             <div class="mb-3 col-sm-6">
                                 <label for="lastname" class="form-label">Last Name</label>
-                                <input type="text" class="form-control" id="lastname" name="lastname" required maxlength="50" pattern="[A-Za-zÀ-ÿ\s\-]+" placeholder="Doe">
+                                <input type="text" class="form-control" id="lastname" name="lastname" required
+                                    maxlength="50" pattern="[A-Za-zÀ-ÿ\s\-]+" placeholder="Doe">
                                 <div class="invalid-feedback">Please enter a valid last name (letters only).</div>
                             </div>
 
                             <!-- First Name -->
                             <div class="mb-3 col-sm-6">
                                 <label for="firstname" class="form-label">First Name</label>
-                                <input type="text" class="form-control" id="firstname" name="firstname" required maxlength="50" pattern="[A-Za-zÀ-ÿ\s\-]+" placeholder="John">
+                                <input type="text" class="form-control" id="firstname" name="firstname" required
+                                    maxlength="50" pattern="[A-Za-zÀ-ÿ\s\-]+" placeholder="John">
                                 <div class="invalid-feedback">Please enter a valid first name.</div>
                             </div>
 
                             <!-- Email -->
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" name="email" required placeholder="example@email.com">
+                                <input type="email" class="form-control" id="email" name="email" required
+                                    placeholder="example@email.com">
                                 <div class="invalid-feedback">Please enter a valid email address.</div>
                             </div>
 
                             <!-- Subject -->
                             <div class="mb-3">
                                 <label for="subject" class="form-label">Subject</label>
-                                <input type="text" class="form-control" id="subject" name="subject" required maxlength="100">
+                                <input type="text" class="form-control" id="subject" name="subject" required
+                                    maxlength="100">
                                 <div class="invalid-feedback">Please provide a valid subject.</div>
                             </div>
 
                             <!-- Message -->
                             <div class="mb-3">
                                 <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" id="message" name="message" rows="3" required minlength="10" maxlength="2000" placeholder="Your message..."></textarea>
+                                <textarea class="form-control" id="message" name="message" rows="3" required
+                                    minlength="10" maxlength="2000" placeholder="Your message..."></textarea>
                                 <div class="invalid-feedback">Your message must contain at least 10 characters.</div>
                             </div>
                         </form>
@@ -792,7 +814,9 @@
                     <ol start="1">
                         <li><span>SITE PRESENTATION</span></li>
                     </ol>
-                    <span>Under Article 6 of Law No. 2004-575 of 21 June 2004 on Confidence in the Digital Economy, the identities of the various parties involved in the creation and maintenance of the site www.emmanuelschmitt.com are provided to users:</span>
+                    <span>Under Article 6 of Law No. 2004-575 of 21 June 2004 on Confidence in the Digital Economy, the
+                        identities of the various parties involved in the creation and maintenance of the site
+                        www.emmanuelschmitt.com are provided to users:</span>
 
                     <span>Owner: Emmanuel Schmitt – 34 rue de la Fleuriere, 53000 Laval</span>
 
@@ -807,23 +831,33 @@
                     <ol start="2">
                         <li><span>GENERAL TERMS OF USE OF THE SITE AND SERVICES OFFERED</span></li>
                     </ol>
-                    <span>The use of the site www.emmanuelschmitt.com implies full acceptance of the following general terms of use.
-                    These terms may be modified or supplemented at any time; users are encouraged to review them regularly.</span>
+                    <span>The use of the site www.emmanuelschmitt.com implies full acceptance of the following general
+                        terms of use.
+                        These terms may be modified or supplemented at any time; users are encouraged to review them
+                        regularly.</span>
 
-                    <span>This site is normally accessible to users at all times. However, Emmanuel Schmitt may decide to interrupt access for technical maintenance, and will endeavor to communicate the dates and times of such interventions in advance.</span>
+                    <span>This site is normally accessible to users at all times. However, Emmanuel Schmitt may decide
+                        to interrupt access for technical maintenance, and will endeavor to communicate the dates and
+                        times of such interventions in advance.</span>
 
-                    <span>The site www.emmanuelschmitt.com is updated regularly by its owner. Likewise, the legal notice may be modified at any time; users are advised to refer to it frequently to stay informed.</span>
+                    <span>The site www.emmanuelschmitt.com is updated regularly by its owner. Likewise, the legal notice
+                        may be modified at any time; users are advised to refer to it frequently to stay
+                        informed.</span>
                     <br><br>
                     <ol start="3">
                         <li><span>DESCRIPTION OF THE SERVICES PROVIDED</span></li>
                     </ol>
-                    <span>The site www.emmanuelschmitt.com is intended to provide information regarding all the activities of the company.</span>
+                    <span>The site www.emmanuelschmitt.com is intended to provide information regarding all the
+                        activities of the company.</span>
 
                     <span>Emmanuel Schmitt strives to provide as accurate information as possible on the site.
-                    However, he cannot be held responsible for omissions, inaccuracies, or deficiencies in updates, whether on his part or that of third-party partners.</span>
+                        However, he cannot be held responsible for omissions, inaccuracies, or deficiencies in updates,
+                        whether on his part or that of third-party partners.</span>
 
-                    <span>All information provided on the site www.emmanuelschmitt.com is for informational purposes only and may change.
-                    Furthermore, the information provided is not exhaustive and is subject to modifications made after publication.</span>
+                    <span>All information provided on the site www.emmanuelschmitt.com is for informational purposes
+                        only and may change.
+                        Furthermore, the information provided is not exhaustive and is subject to modifications made
+                        after publication.</span>
                     <br><br>
                     <ol start="4">
                         <li><span>CONTRACTUAL LIMITATIONS ON TECHNICAL DATA</span></li>
@@ -831,75 +865,112 @@
                     <span>The site uses JavaScript technology.</span>
 
                     <span>The website cannot be held responsible for any material damages related to its use.
-                    Furthermore, users agree to access the site using up-to-date hardware free of viruses and with a modern, updated browser.</span>
+                        Furthermore, users agree to access the site using up-to-date hardware free of viruses and with a
+                        modern, updated browser.</span>
                     <br><br>
                     <ol start="5">
                         <li><span>INTELLECTUAL PROPERTY AND COUNTERFEITING</span></li>
                     </ol>
-                    <span>Emmanuel Schmitt owns the intellectual property rights or holds the usage rights on all elements available on the site, including texts, images, graphics, logos, icons, sounds, and software.</span>
+                    <span>Emmanuel Schmitt owns the intellectual property rights or holds the usage rights on all
+                        elements available on the site, including texts, images, graphics, logos, icons, sounds, and
+                        software.</span>
 
-                    <span>Any reproduction, representation, modification, publication, or adaptation of all or part of the site's elements, regardless of the method or process used, is prohibited without prior written permission from Emmanuel Schmitt.</span>
+                    <span>Any reproduction, representation, modification, publication, or adaptation of all or part of
+                        the site's elements, regardless of the method or process used, is prohibited without prior
+                        written permission from Emmanuel Schmitt.</span>
 
-                    <span>Any unauthorized use of the site or any of its elements will be considered a breach of intellectual property rights and will be prosecuted in accordance with Articles L.335-2 and following of the Intellectual Property Code.</span>
+                    <span>Any unauthorized use of the site or any of its elements will be considered a breach of
+                        intellectual property rights and will be prosecuted in accordance with Articles L.335-2 and
+                        following of the Intellectual Property Code.</span>
                     <br><br>
                     <ol start="6">
                         <li><span>LIMITATION OF LIABILITY</span></li>
                     </ol>
-                    <span>Emmanuel Schmitt cannot be held responsible for direct or indirect damages caused to the user's equipment when accessing the site www.emmanuelschmitt.com, whether resulting from the use of hardware that does not meet the specifications indicated in point 4, or from the occurrence of a bug or incompatibility.</span>
+                    <span>Emmanuel Schmitt cannot be held responsible for direct or indirect damages caused to the
+                        user's equipment when accessing the site www.emmanuelschmitt.com, whether resulting from the use
+                        of hardware that does not meet the specifications indicated in point 4, or from the occurrence
+                        of a bug or incompatibility.</span>
 
-                    <span>Emmanuel Schmitt will also not be liable for indirect damages (such as loss of market or loss of opportunity) resulting from the use of the site.</span>
+                    <span>Emmanuel Schmitt will also not be liable for indirect damages (such as loss of market or loss
+                        of opportunity) resulting from the use of the site.</span>
                     <br><br>
                     <ol start="7">
                         <li><span>MANAGEMENT OF PERSONAL DATA</span></li>
                     </ol>
-                    <span>In France, personal data is protected by Law No. 78-87 of 6 January 1978, Law No. 2004-801 of 6 August 2004, Article L. 226-13 of the Penal Code, and the European Directive of 24 October 1995.</span>
+                    <span>In France, personal data is protected by Law No. 78-87 of 6 January 1978, Law No. 2004-801 of
+                        6 August 2004, Article L. 226-13 of the Penal Code, and the European Directive of 24 October
+                        1995.</span>
 
-                    <span>When using the site www.emmanuelschmitt.com, the following may be collected: the URL of the links through which the user accessed the site, the user's internet service provider, and the user's IP address.</span>
+                    <span>When using the site www.emmanuelschmitt.com, the following may be collected: the URL of the
+                        links through which the user accessed the site, the user's internet service provider, and the
+                        user's IP address.</span>
 
-                    <span>In any case, Emmanuel Schmitt collects personal information only as needed for certain services offered on the site.
-                    The user provides this information knowingly, particularly when entering it themselves.
-                    The user is informed whether providing this information is mandatory or not.</span>
+                    <span>In any case, Emmanuel Schmitt collects personal information only as needed for certain
+                        services offered on the site.
+                        The user provides this information knowingly, particularly when entering it themselves.
+                        The user is informed whether providing this information is mandatory or not.</span>
 
-                    <span>In accordance with Articles 38 and following of Law No. 78-17 of 6 January 1978 on Data Processing, Files and Freedoms, every user has the right to access, rectify, and oppose personal data concerning them by submitting a written and signed request along with a copy of their identity document (with signature), specifying the address to which the response should be sent.</span>
+                    <span>In accordance with Articles 38 and following of Law No. 78-17 of 6 January 1978 on Data
+                        Processing, Files and Freedoms, every user has the right to access, rectify, and oppose personal
+                        data concerning them by submitting a written and signed request along with a copy of their
+                        identity document (with signature), specifying the address to which the response should be
+                        sent.</span>
 
-                    <span>No personal information of the user of www.emmanuelschmitt.com is published without the user's knowledge, exchanged, transferred, assigned, or sold to any third party.
-                    Only in the event of the acquisition of Emmanuel Schmitt and his rights would such information be transmitted to the potential buyer, who would in turn be obliged to maintain and modify the data under the same conditions for the user.</span>
+                    <span>No personal information of the user of www.emmanuelschmitt.com is published without the user's
+                        knowledge, exchanged, transferred, assigned, or sold to any third party.
+                        Only in the event of the acquisition of Emmanuel Schmitt and his rights would such information
+                        be transmitted to the potential buyer, who would in turn be obliged to maintain and modify the
+                        data under the same conditions for the user.</span>
 
                     <span>The site is not registered with the CNIL as it does not collect personal information.</span>
 
-                    <span>Databases are protected under the provisions of the Law of 1 July 1998 transposing Directive 96/9 of 11 March 1996 on the legal protection of databases.</span>
+                    <span>Databases are protected under the provisions of the Law of 1 July 1998 transposing Directive
+                        96/9 of 11 March 1996 on the legal protection of databases.</span>
                     <br><br>
                     <ol start="8">
                         <li><span>HYPERTEXT LINKS AND COOKIES</span></li>
                     </ol>
-                    <span>The site www.emmanuelschmitt.com contains a number of hyperlinks to other sites, which have been established with the permission of Emmanuel Schmitt.
-                    However, Emmanuel Schmitt does not have the ability to verify the content of these linked sites and therefore assumes no responsibility for them.</span>
+                    <span>The site www.emmanuelschmitt.com contains a number of hyperlinks to other sites, which have
+                        been established with the permission of Emmanuel Schmitt.
+                        However, Emmanuel Schmitt does not have the ability to verify the content of these linked sites
+                        and therefore assumes no responsibility for them.</span>
 
-                    <span>Browsing www.emmanuelschmitt.com may result in the installation of cookie(s) on the user's computer.
-                    A cookie is a small file that does not allow identification of the user, but records information related to the user's navigation on the site.
-                    The data obtained is intended to facilitate future navigation on the site and to enable various tracking measures.</span>
+                    <span>Browsing www.emmanuelschmitt.com may result in the installation of cookie(s) on the user's
+                        computer.
+                        A cookie is a small file that does not allow identification of the user, but records information
+                        related to the user's navigation on the site.
+                        The data obtained is intended to facilitate future navigation on the site and to enable various
+                        tracking measures.</span>
 
                     <span>Refusing the installation of cookies may result in the inability to access certain services.
-                    However, the user can configure their computer as follows to refuse cookies:</span>
+                        However, the user can configure their computer as follows to refuse cookies:</span>
 
-                    <span>In Internet Explorer: Go to the Tools menu (gear icon at the top right) / Internet Options. Click on Privacy and choose "Block all cookies". Then click OK.</span>
+                    <span>In Internet Explorer: Go to the Tools menu (gear icon at the top right) / Internet Options.
+                        Click on Privacy and choose "Block all cookies". Then click OK.</span>
 
-                    <span>In Firefox: Click the Firefox button at the top of the browser window, then select Options. Click on the Privacy tab. Set the history settings to "Use custom settings for history". Finally, uncheck the box to disable cookies.</span>
+                    <span>In Firefox: Click the Firefox button at the top of the browser window, then select Options.
+                        Click on the Privacy tab. Set the history settings to "Use custom settings for history".
+                        Finally, uncheck the box to disable cookies.</span>
 
-                    <span>In Safari: Click on the menu icon (gear symbol) at the top right of the browser. Select Settings. Click on "Show Advanced Settings". In the Privacy section, click on "Content Settings". In the Cookies section, you can block cookies.</span>
+                    <span>In Safari: Click on the menu icon (gear symbol) at the top right of the browser. Select
+                        Settings. Click on "Show Advanced Settings". In the Privacy section, click on "Content
+                        Settings". In the Cookies section, you can block cookies.</span>
 
-                    <span>In Chrome: Click on the menu icon (three horizontal lines) at the top right of the browser. Select Settings. Click on "Show advanced settings". In the Privacy section, click on Preferences. In the Privacy tab, you can block cookies.</span>
+                    <span>In Chrome: Click on the menu icon (three horizontal lines) at the top right of the browser.
+                        Select Settings. Click on "Show advanced settings". In the Privacy section, click on
+                        Preferences. In the Privacy tab, you can block cookies.</span>
                     <br><br>
                     <ol start="9">
                         <li><span>APPLICABLE LAW AND JURISDICTION</span></li>
                     </ol>
                     <span>Any dispute related to the use of the site www.emmanuelschmitt.com is subject to French law.
-                    Exclusive jurisdiction is granted to the competent courts of Paris.</span>
+                        Exclusive jurisdiction is granted to the competent courts of Paris.</span>
                     <br><br>
                     <ol start="10">
                         <li><span>THE MAIN APPLICABLE LAWS</span></li>
                     </ol>
-                    <span>Law No. 78-87 of 6 January 1978, as amended by Law No. 2004-801 of 6 August 2004 on Data Processing, Files and Freedoms.</span>
+                    <span>Law No. 78-87 of 6 January 1978, as amended by Law No. 2004-801 of 6 August 2004 on Data
+                        Processing, Files and Freedoms.</span>
 
                     <span>Law No. 2004-575 of 21 June 2004 on Confidence in the Digital Economy.</span>
                     <br><br>
@@ -908,7 +979,9 @@
                     </ol>
                     <span>User: An internet user accessing and using the aforementioned site.</span>
 
-                    <span>Personal information: "information that allows, in any form whatsoever, directly or not, the identification of natural persons to whom it applies" (Article 4 of Law No. 78-17 of 6 January 1978).</span>
+                    <span>Personal information: "information that allows, in any form whatsoever, directly or not, the
+                        identification of natural persons to whom it applies" (Article 4 of Law No. 78-17 of 6 January
+                        1978).</span>
 
                     &nbsp;
                 </div>
@@ -922,7 +995,7 @@
     <!-- Import Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
+        </script>
 </body>
 
 </html>
