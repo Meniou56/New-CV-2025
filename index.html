@@ -150,10 +150,10 @@
                     aria-labelledby="bandeau-title">
                     <!-- En-tête avec portrait et identifiant -->
                     <header id="en-tete" class="p-3">
-                        <img class="rounded-circle shadow w-75 max-w-280" src="images/eschmitt.jpg" srcset="
-                  images/eschmitt_large.webp 266w,
-                  images/eschmitt_small.webp 125w
-                " sizes="(max-width: 768px) 80vw, 25vw" alt="Portrait d'Emmanuel Schmitt" />
+                        <picture>
+                            <source srcset="images/eschmitt_small.webp" media="(max-width: 320px)">
+                            <img class="rounded-circle shadow max-w-280" src="images/eschmitt_large.webp" alt="Portrait d'Emmanuel Schmitt">
+                          </picture>
                         <div class="py-4">
                             <h1 id="bandeau-title" class="fw-bold">Emmanuel Schmitt</h1>
                             <h2 class="fw-bold">Développeur Full Stack</h2>
