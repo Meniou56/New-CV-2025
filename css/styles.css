@@ -44,13 +44,13 @@ h3 {
 }
 /*Fond du site*/
 #main-container {
-    background: url("../images/Fond.png");
+    background: url("../images/Fond_1296.webp");
     background-repeat: repeat-y;
     background-size: 100%;
 }
 /*Style des puces*/
 ul.arrowPuce {
-    list-style-image: url("../images/puce.png");
+    list-style-image: url("../images/puce.webp");
 }
 
 /** Couleurs et dimensions **/
