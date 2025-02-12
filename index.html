@@ -9,19 +9,14 @@
     <title>Emmanuel Schmitt - Apprenti développeur Full Stack</title>
 
     <!--Securite-->
-    <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; img-src 'self' data:; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline';">
-    <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none';">
-
-
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;">
 
     <!-- Import Bootstrap CSS et custom CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.mini.css">
+    <link rel="stylesheet" href="css/styles.css">
 
     <!-- Import script JS -->
     <script src="script.js" defer></script>
-
 </head>
 
 <body>
@@ -30,9 +25,9 @@
             <div class="col-12">
                 <!--Menu navbar-->
                 <nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top rounded-3 px-3 shadow-sm">
-                    <div class="container">
+                    <div class="container text-start">
                         <a class="navbar-brand" href="#accueil">
-                            <img src="images/logo/logo_whiter.webp"
+                            <img class="img-fluid" src="images/logo/logo_whiter.webp"
                             width="30" height="33"
                             alt="Logo de Emmanuel Schmitt, représentant ses initiales">
                         </a>
@@ -152,12 +147,12 @@
                     aria-labelledby="bandeau-title">
                     <!-- En-tête avec portrait et identifiant -->
                     <header id="en-tete" class="p-3">
-                        <picture>
-                            <source srcset="images/eschmitt_small.webp" media="(max-width: 320px)">
-                            <img class="rounded-circle shadow max-w-280" src="images/eschmitt_large.webp"
-                                width="266" height="266"
-                                alt="Portrait d'Emmanuel Schmitt">
-                        </picture>
+                        <img class="img-fluid rounded-circle shadow"
+                        src="images/eschmitt_large.webp"
+                        srcset="images/eschmitt_small.webp 186w, images/eschmitt_large.webp 266w"
+                        sizes="(max-width: 320px) 186px, 266px"
+                        width="266" height="266"
+                        alt="Portrait d'Emmanuel Schmitt">                   
                         <div class="py-4">
                             <h1 id="bandeau-title" class="fw-bold">Emmanuel Schmitt</h1>
                             <h2 class="fw-bold">Développeur Full Stack</h2>
@@ -220,7 +215,7 @@
                         <div class="m-4">
                             <!-- Rubrique Développement -->
                             <section aria-labelledby="dev-title" class="mb-4">
-                                <h4 id="dev-title" class="fw-bold">Développement</h4>
+                                <h4 id="dev-title" class="fw-bold text-start">Développement</h4>
                                 <div class="row">
                                     <div class="col-4">
                                         <img class="img-fluid" src="images/competences/html.png" srcset="images/competences/html_63.webp 63w,
@@ -301,7 +296,7 @@
 
                             <!-- Rubrique Maquettage -->
                             <section aria-labelledby="maquettage-title" class="mb-4">
-                                <h4 id="maquettage-title" class="fw-bold">Maquettage</h4>
+                                <h4 id="maquettage-title" class="fw-bold text-start">Maquettage</h4>
                                 <div class="row">
                                     <div class="col-4">
                                         <img class="img-fluid" src="images/competences/xd.png" srcset="images/competences/xd_63.webp 63w,
@@ -344,7 +339,7 @@
 
                             <!-- Rubrique Visuels -->
                             <section aria-labelledby="visuels-title" class="mb-4">
-                                <h4 id="visuels-title" class="fw-bold">Visuels</h4>
+                                <h4 id="visuels-title" class="fw-bold text-start">Visuels</h4>
                                 <div class="row">
                                     <div class="col-4">
                                         <img class="img-fluid" src="images/competences/lr.png" srcset="images/competences/lr_63.webp 63w,
@@ -387,7 +382,7 @@
 
                             <!-- Rubrique Autres -->
                             <section aria-labelledby="autres-title">
-                                <h4 id="autres-title" class="fw-bold">Autres</h4>
+                                <h4 id="autres-title" class="fw-bold text-start">Autres</h4>
                                 <div class="row">
                                     <div class="col-4">
                                         <img class="img-fluid" src="images/competences/Pr.png" srcset="images/competences/Pr_63.webp 63w,
