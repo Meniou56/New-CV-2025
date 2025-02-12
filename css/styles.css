@@ -63,6 +63,10 @@ ul.arrowPuce {
     z-index: 1080;
 }
 
+.max-w-280 {
+    max-width: 280px;
+}
+
 /** Animations **/
 /*Animation des progress-bar*/
 .progress-bar {
