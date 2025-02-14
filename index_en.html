@@ -9,7 +9,13 @@
     <title>Emmanuel Schmitt - Apprentice Full Stack Developer</title>
 
     <!-- Security -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net;">
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://cdn.jsdelivr.net;
+    script-src 'self' https://cdn.jsdelivr.net 'unsafe-inline';
+    style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
+    font-src 'self' https://fonts.gstatic.com;
+    img-src 'self' data:;
+">
 
     <!-- Import Bootstrap CSS and custom CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -147,10 +153,11 @@
                     aria-labelledby="bandeau-title">
                     <!-- Header with portrait and identification -->
                     <header id="en-tete" class="text-center p-3">
-                        <img class="img-fluid rounded-circle shadow"
-                        src="images/eschmitt_large.webp"
+                        <img class="rounded-circle shadow"
                         srcset="images/eschmitt_small.webp 186w, images/eschmitt_large.webp 266w"
+                        src="images/eschmitt_small.webp"
                         sizes="(max-width: 320px) 186px, 266px"
+                        fetchpriority="high"
                         width="266" height="266"
                         alt="Portrait d'Emmanuel Schmitt">
                         <div class="py-4">
