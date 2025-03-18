@@ -88,3 +88,16 @@ a:hover {
         display: none;
     }  
 }
+
+/* Drapeau anglais */
+.st0 {
+    fill: #fefefe;
+}
+
+.st1 {
+    fill: #c8102e;
+}
+
+.st2 {
+    fill: #012169;
+}
