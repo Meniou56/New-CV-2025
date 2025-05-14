@@ -1,6 +1,4 @@
 <?php
-session_start();
-
 // Vérifier si la requête est en POST
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {
     die("Accès non autorisé.");
